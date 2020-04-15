@@ -98,5 +98,5 @@ theme: hexo-theme-fluid-1.8.0-beta
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-    type: "git"
-    repo: "https://github.com/Arch1tect/Arch1tect.github.io"
+    type: git
+    repo: https://github.com/Arch1tect/Arch1tect.github.io
