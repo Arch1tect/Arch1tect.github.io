@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="David">
+  <meta name="keywords" content="">
+  <title>前行 - Architech&#39;s blog</title>
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
+<link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/3.0.1/github-markdown.min.css" />
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_9n5xqdrq0nc.css">
+
+
+
+  <link  rel="stylesheet" href="/lib/prettify/tomorrow-night-eighties.min.css" />
+
+
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>Architech's blog</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/">
+              <i class="iconfont icon-home-fill"></i>
+              首页</a>
+          </li>
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/archives/">
+              <i class="iconfont icon-archive-fill"></i>
+              归档</a>
+          </li>
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/categories/">
+              <i class="iconfont icon-category-fill"></i>
+              分类</a>
+          </li>
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/tags/">
+              <i class="iconfont icon-tags-fill"></i>
+              标签</a>
+          </li>
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/about/">
+              <i class="iconfont icon-user-fill"></i>
+              关于</a>
+          </li>
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="view intro-2" id="background" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.7)">
+          <div class="container text-center white-text fadeInUp">
+            <span class="h2" id="subtitle">
+              
+            </span>
+
+            
+              
+                <div class="mt-3 post-meta">
+                  <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+                  <time datetime="2013-04-10 06:03">
+                    星期三, 四月 10日 2013, 6:03 早上
+                  </time>
+                </div>
+              
+
+              <div class="mt-1">
+                
+                  
+                  <span class="post-meta mr-2">
+                    <i class="iconfont icon-chart"></i>
+                    1.6k 字
+                  </span>
+                
+
+                
+                  
+                  <span class="post-meta mr-2">
+                      <i class="iconfont icon-clock-fill"></i>
+                    
+                    
+                    17
+                     分钟
+                  </span>
+                
+
+                
+              </div>
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="container nopadding-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <div class="post-content mx-auto" id="post">
+            
+            <article class="markdown-body">
+              <p>很久沒有更新，但即便是拖延到此刻寫下這篇日誌，我心中也忐忑地覺得不妥。</p>
+<p>因為生活的 <a href="#notes">Priority Queue</a> 裡面還有太多比記日誌更重要的事情沒有完成，尚未從queue里pop出來。但再一想，若是當真嚴格地等到 priority_queue.top()  ==  write_a_post 了才寫日誌，大概這兒再也不會有更新了。</p>
+<p><strong>人非機器</strong></p>
+<p>如果把人看作程序的話，我顯然不是一段合格的程序，我的 priority_queue 按正確順序執行的時候也許還占不到百分之五十。另外我這段程序的一個特點（bug？）是如果排在第一位的事情沒有做的話，就絕對不會去做排在第二、第三位的正事，反而會時不時地pop出一些優先級為負的事情。（後來想想，這麼說并不恰當，因為休閒娛樂有時也是必須，優先級會時不時上升。。。）</p>
+<p>好了，趕快結束這個糟糕的比方，回想一下最近都發生了什麼，再不記下，多半馬上就要被我忘的一乾二淨了，厄，似乎已經忘了一半了。</p>
+<p><strong>集齊七顆龍珠召喚神龍實現願望</strong></p>
+<p>申請雙學位的這件事終於接近尾聲了，東奔西走、幾經碰壁后我終於弄到了一張 “神の表格” ﹣Individualized Special Joint Degree Application Form, 上面需要三個學院的四位負責人的簽名方能進行，不禁讓我想起了七龍珠的故事 ＝ ＝。第四個簽名這兩天估計就能到手了，這個學期也快結束了。 想來這件事前後花了我近三個月的時間，（等一等必須預約的appointment就過去一兩星期，等一等require attendance 的 info session，又過去兩個星期，然後發現此路不通，要另覓他法，一個月過去了。 &gt; &lt;）</p>
+<p>昨天我的Advisor表揚了我“persistance is everything”, 但我回頭看看便又發現，如果一開始得到的資訊充分并正確的話，這個申請其實是兩三個星期便可以完成的，而得到的一個最重要的教訓就是這種需要很多部門經手，很多步驟才能完成的事情，一定不能讓它停留在自己手上太久，必須立刻完成自己要做的部份然後扔給相關部門。</p>
+<p><strong>建築獅 ＋ 程序猿 ＝ ？</strong></p>
+<p>現在上的多是計算機的課程，於是認識了幾個學弟學妹，最熟的兩個是誓要進Google的S和資產階級大學霸W。他倆都很優秀，常常無形中給我各種壓力。記得上個月有次和S吃飯，他告訴了我他對進Google， FB， 微軟等公司做的各種計劃與努力，以及對於長遠未來的規劃，我聽了慚愧不已，甚至於夜不能寐。 我想這幾年我漸漸遺失了一些重要的東西。。</p>
+<p>經過這個學期到目前為止的學習，我對編程有了一個初步的印象，找機會要總結和比較一下。</p>
+<p><strong>Project</strong></p>
+<p>剛剛結束的CS project虎頭蛇尾，一開始教授告訴我們這是某證券公司提供的project，最後排名前三的同學暑假有機會去該公司實習，聽起來很有趣的樣子。但結果最後做出來發現這個project沒什麼難度，唯一的難點在於設計最快的算法，然而這部份占的分數又很少，最後的年級平均分高達80。anyway是一個不怎麼過癮的project，但下一個貌似很難的樣子，要加油！</p>
+<p>好處還是有的，我對trading產生了興趣，要繼續了解一下。</p>
+<p><strong>NCAA</strong></p>
+<p>NCAA<strong>是</strong>美國大學籃球比賽的縮寫，我接触的很多美国人喜爱它不亚于NBA，原因似乎主要是NBA人员更新慢， 来去总是那些球星，觀眾們都能“預測”球會傳到誰手裡，如何得分等等；大学的比赛则刚好相反，每年每一场都充满着意外。今年學校很難得的殺進總決賽，全校沸騰，校長更向市长请求，如果拿了总冠军，要举行大型的游行活动： <a href="http://www.annarbor.com/news/mayor-if-michigan-wins-national-title-ann-arbor-will-celebrate-in-style-with-parade-wednesday/" target="_blank" rel="noopener">新闻链接</a></p>
+<p>可惜，最后拿到的是亚军, 我其實更为看不到难得一见的parade深感遗憾。 Go blue and proud to be a wolverine forever! : )</p>
+<p><strong>Friends</strong></p>
+<p>M又做出了驚人的決定，居然放棄普林斯頓大學的offer而留在本校讀PhD，他告訴我是因為campus visit后對校園環境不滿意，我表示理解不能，不過真大神是不屑于用牛校鍍金的。╮(╯_╰)╭ （這句話貌似打擊面太廣，選校考慮聲望其實也無可厚非）</p>
+<p>G最後決定的是Cornell，雖然要讀三年半之久，但常春藤還是比他收到的其他offer感覺更promising些。</p>
+<p>剛剛和在HK的glp聊了幾句，得知他還是壓力很大的樣子，學文科就業前景確實不是很樂觀。另外我意識到我和很多老朋友們好久好久沒有聯絡了，所以我說我的priority_queue根本就靠不住啊！</p>
+<p><strong>End</strong></p>
+<p>我想我還是忘了很多想要記的東西，所以以後還是要寫的更勤一點才是。對了，最後一點，博客背景加了木頭材質的選項，如果路過請試試然後告訴我喜歡哪一種謝謝！方法： 在頂部的菜單處點擊“Wood is Good..”即可。 截圖留念：</p>
+<p><a href="/content/images/uploads/2013/04/Screen-Shot-2013-04-10-at-6.10.49-AM.png" title="求評價~"><img src="/content/images/uploads/2013/04/Screen-Shot-2013-04-10-at-6.10.49-AM-300x216.png" srcset="/img/loading.gif" alt="Screen Shot 2013-04-10 at 6.10.49 AM"></a></p>
+<div id="notes">註：為了不被吐槽不知所雲，解釋一下 priority_queue， 大概意思就是以某種標準來安排優先要做什麼的一個隊列。比如隊列裡有三件事：呼吸、吃飯、看球賽， 一般人的話呼吸總是被放在最前，然後是吃飯，最後是看球賽。每次執行隊列里最top的一件事，每次完成一件，就從隊列里pop出來，然後做隊列裡新的最top的一件事，在這個例子里的話，呼吸完成之後就是吃飯了。 而隊列除了完成任務可以pop，也可以有新的任務被push進去，所以呼吸每隔幾秒就會被push進去，吃飯則每隔幾個小時。 ( 每次push進新的任務要重新排序O(lgN)，pop則不用重新排O(1) ) <div></div></div>
+
+            </article>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+              </div>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" target="_blank" rel="nofollow noopener noopener">CC BY-SA 3.0协议</a> 。转载请注明出处！</p>
+              
+              
+                <div class="post-prevnext row">
+                  <div class="post-prev col-6">
+                    
+                    
+                      <a href="/2013/04/24/went-to-the-last-week-of/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">又到了最後一周</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </div>
+                  <div class="post-next col-6">
+                    
+                    
+                      <a href="/2013/04/07/singapore-preliminary/">
+                        <span class="hidden-mobile">新加坡初探</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </div>
+                </div>
+              
+            </div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div id="tocbot"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+  </main>
+
+  
+    <a id="scroll-top-button" href="#" role="button">
+      <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  
+
+  
+
+  <footer class="mt-5">
+  <div class="text-center py-3">
+    <div>
+      <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a>
+      <i class="iconfont icon-love"></i>
+      <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener">
+        <span>Fluid</span></a>
+    </div>
+    
+
+    
+
+    
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script  src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js" ></script>
+<script  src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+<script  src="/js/main.js" ></script>
+
+
+  <script  src="/js/lazyload.js" ></script>
+
+
+
+  
+  <script  src="https://cdn.staticfile.org/tocbot/4.10.0/tocbot.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      var boardCtn = $('#board-ctn');
+      var boardTop = boardCtn.offset().top;
+
+      tocbot.init({
+        tocSelector: '#tocbot',
+        contentSelector: '.post-content',
+        headingSelector: 'h1,h2,h3,h4,h5,h6',
+        linkClass: 'tocbot-link',
+        activeLinkClass: 'tocbot-active-link',
+        listClass: 'tocbot-list',
+        isCollapsedClass: 'tocbot-is-collapsed',
+        collapsibleClass: 'tocbot-is-collapsible',
+        collapseDepth: 0,
+        scrollSmooth: true,
+        headingsOffset: -boardTop
+      });
+      if ($('.toc-list-item').length > 0) {
+        $('#toc').css('visibility', 'visible');
+      }
+    });
+  </script>
+
+
+
+
+
+  <script defer src="https://cdn.staticfile.org/clipboard.js/2.0.6/clipboard.min.js" ></script>
+  <script  src="/js/clipboard-use.js" ></script>
+
+
+
+
+
+
+<!-- Plugins -->
+
+
+
+  <script  src="https://cdn.staticfile.org/prettify/188.0.0/prettify.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      $('pre').each(function () {
+        const pre = $(this);
+        if (pre.find('code.mermaid').length > 0) {
+          return;
+        }
+        pre.addClass('prettyprint  linenums');
+      });
+      prettyPrint();
+    })
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "前行&nbsp;",
+      ],
+      cursorChar: "_",
+      typeSpeed: 70,
+      loop: false,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "hover",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      getSearchFile(path);
+      this.onclick = null
+    }
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <script>
+    $('#post img:not(.no-zoom img, img[no-zoom]), img[zoom]').each(
+      function () {
+        var element = document.createElement('a');
+        $(element).attr('data-fancybox', 'images');
+        $(element).attr('href', $(this).attr('src'));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="David">
+  <meta name="keywords" content="">
+  <title>用PHP Imagick在服务器端得到图片影子 - Architech&#39;s blog</title>
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
+<link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/3.0.1/github-markdown.min.css" />
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_9n5xqdrq0nc.css">
+
+
+
+  <link  rel="stylesheet" href="/lib/prettify/tomorrow-night-eighties.min.css" />
+
+
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>Architech's blog</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/">
+              <i class="iconfont icon-home-fill"></i>
+              首页</a>
+          </li>
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/archives/">
+              <i class="iconfont icon-archive-fill"></i>
+              归档</a>
+          </li>
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/categories/">
+              <i class="iconfont icon-category-fill"></i>
+              分类</a>
+          </li>
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/tags/">
+              <i class="iconfont icon-tags-fill"></i>
+              标签</a>
+          </li>
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/about/">
+              <i class="iconfont icon-user-fill"></i>
+              关于</a>
+          </li>
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="view intro-2" id="background" parallax=true
+         style="background: url('/content/images/uploads/2013/06/new_image.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.7)">
+          <div class="container text-center white-text fadeInUp">
+            <span class="h2" id="subtitle">
+              
+            </span>
+
+            
+              
+                <div class="mt-3 post-meta">
+                  <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+                  <time datetime="2013-06-16 15:29">
+                    星期日, 六月 16日 2013, 3:29 下午
+                  </time>
+                </div>
+              
+
+              <div class="mt-1">
+                
+                  
+                  <span class="post-meta mr-2">
+                    <i class="iconfont icon-chart"></i>
+                    621 字
+                  </span>
+                
+
+                
+                  
+                  <span class="post-meta mr-2">
+                      <i class="iconfont icon-clock-fill"></i>
+                    
+                    
+                    7
+                     分钟
+                  </span>
+                
+
+                
+              </div>
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="container nopadding-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <div class="post-content mx-auto" id="post">
+            
+            <article class="markdown-body">
+              <p>PHP 我过去一向是用到什么就查那部分的代码，改改直接用，一直未曾认真学习过。最近的project需要我在服务器端做一个小小的图片处理，于是这次我决定要好好搞懂用的代码！</p>
+<p>But 结果发现其实就只是学会如何用Imagick库里的几个method而已，没什么算法需要自己想的。。╮(╯_╰)╭</p>
+<p>其实想想用photoshop整天要抠图，自己写一个特别精准的抠图算法应该既有挑战性又很具实际意义，有空就写这个试试吧~</p>
+<p>In short, 下面代码拿到45度角的阴影，半透明顺带模糊图片。<br> <pre><code><br> $imgFile = ‘medium_squid.png’;//原图片<br> getShadow($imgFile);</p>
+<p> function getShadow($imgPath){<br>     $im = new Imagick($imgPath);<br>     $width = $im->getImageWidth();<br>     $height = $im->getImageHeight();</p>
+<pre><code> /* Set the image format to png */  
+ $im-&gt;setImageFormat(‘png’);
+
+ /* Fill new visible areas with transparent */  
+ $im-&gt;setImageVirtualPixelMethod(Imagick::VIRTUALPIXELMETHOD_TRANSPARENT);
+
+ /* Activate matte */  
+ $im-&gt;setImageMatte(true);
+
+ /* Control points for the distortion */  
+ //图片四个顶点原来和改变后的位置  
+ //下面的.7和.3使用45°对应的二分之根号二 约等于 0.707 约等于 0.7得到的  
+ //想用其他的角度自己画个图算下就知道乘什么系数了。  
+ $controlPoints = array( 0, 0,  
+ $height*0.7, $height*0.3, 0, 
+ $height, 0, $height, $width, 0,  
+ $height*0.7+$width, $height*0.3,
+ $width, $height,  
+ $width, $height);
+
+ /* Perform the distortion */  
+ $im-&gt;distortImage(Imagick::DISTORTION_PERSPECTIVE, $controlPoints, true);
+
+ $im-&gt;setImageBackgroundColor( new ImagickPixel( ‘black’ ) );
+
+ /* Create the shadow */  
+  //第一个参数是透明度  
+ $im-&gt;shadowImage( 50, 30, 0, 0 );
+
+ /* Ouput the image */  
+ //被comment掉的是直接在网页上显示图片的方法  
+ //header(“Content-Type: image/png”);  
+ //echo $im;
+
+//这是保存这个影子图片的方法。  
+ $im-&gt;writeImage(‘new_image.png’);
+
+ $im-&gt;destroy();  </code></pre><p> }</p>
+<p></code></pre><br> 效果如下：</p>
+<p><a href="/content/images/uploads/2013/06/medium.png"><img src="/content/images/uploads/2013/06/medium-181x300.png" srcset="/img/loading.gif" alt="medium"></a>没注意乌贼酱的原图已经有影子了= =<a href="/content/images/uploads/2013/06/new_image.png"><img src="/content/images/uploads/2013/06/new_image-300x168.png" srcset="/img/loading.gif" alt="new_image"></a></p>
+<p><a href="/content/images/uploads/2013/06/m_00000000-0b82-726a-2a63-1fff00000000-1.png"><img src="/content/images/uploads/2013/06/m_00000000-0b82-726a-2a63-1fff00000000-1.png" srcset="/img/loading.gif" alt="m_00000000-0b82-726a-2a63-1fff00000000-1"></a> <a href="/content/images/uploads/2013/06/m_00000000-0b82-726a-2a63-1fff00000000shd.png"><img src="/content/images/uploads/2013/06/m_00000000-0b82-726a-2a63-1fff00000000shd.png" srcset="/img/loading.gif" alt="m_00000000-0b82-726a-2a63-1fff00000000shd"></a> <a href="/content/images/uploads/2013/06/m_00000000-0b82-726a-2a63-1fff00000000-2.png"><img src="/content/images/uploads/2013/06/m_00000000-0b82-726a-2a63-1fff00000000-2.png" srcset="/img/loading.gif" alt="m_00000000-0b82-726a-2a63-1fff00000000-2"></a> <a href="/content/images/uploads/2013/06/m_00000000-0b82-726a-2a63-1fff00000000shd-1.png"><img src="/content/images/uploads/2013/06/m_00000000-0b82-726a-2a63-1fff00000000shd-1.png" srcset="/img/loading.gif" alt="m_00000000-0b82-726a-2a63-1fff00000000shd-1"></a> <a href="/content/images/uploads/2013/06/m_00000000-0b82-726a-2a63-1fff00000000.png"><img src="/content/images/uploads/2013/06/m_00000000-0b82-726a-2a63-1fff00000000.png" srcset="/img/loading.gif" alt="m_00000000-0b82-726a-2a63-1fff00000000"></a> <a href="/content/images/uploads/2013/06/shd.png"><img src="/content/images/uploads/2013/06/shd.png" srcset="/img/loading.gif" alt="shd"></a></p>
+<p>后记：</p>
+<p>虽然上面的代码没问题，但在我需要用它的project–FaceMap里，影子相对于实体的定位比较麻烦，要设置一个anchor point, 需要预先得到影子的尺寸还不太难，但png图片里的人物形象未必脚的位置正好可以碰到图片最低端, 不一定偏上了多少。 这个应该也是可以写代码解决的，找到有色块的位置然后crop生成新图片。</p>
+<p>不过google map android api 并没有提供影子这个功能，现在弄出来也只有浏览器上能显示，手机上还得手动想办法解决。。 所以最后我决定加影子这个美好愿望还是先放一放好了。╮(╯_╰)╭</p>
+
+            </article>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+              </div>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" target="_blank" rel="nofollow noopener noopener">CC BY-SA 3.0协议</a> 。转载请注明出处！</p>
+              
+              
+                <div class="post-prevnext row">
+                  <div class="post-prev col-6">
+                    
+                    
+                      <a href="/2013/06/17/missionary/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">传教士</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </div>
+                  <div class="post-next col-6">
+                    
+                    
+                      <a href="/2013/06/09/three-weeks-is-updated-once-a-real-man/">
+                        <span class="hidden-mobile">三周更新一次大丈夫？</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </div>
+                </div>
+              
+            </div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div id="tocbot"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+  </main>
+
+  
+    <a id="scroll-top-button" href="#" role="button">
+      <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  
+
+  
+
+  <footer class="mt-5">
+  <div class="text-center py-3">
+    <div>
+      <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a>
+      <i class="iconfont icon-love"></i>
+      <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener">
+        <span>Fluid</span></a>
+    </div>
+    
+
+    
+
+    
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script  src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js" ></script>
+<script  src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+<script  src="/js/main.js" ></script>
+
+
+  <script  src="/js/lazyload.js" ></script>
+
+
+
+  
+  <script  src="https://cdn.staticfile.org/tocbot/4.10.0/tocbot.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      var boardCtn = $('#board-ctn');
+      var boardTop = boardCtn.offset().top;
+
+      tocbot.init({
+        tocSelector: '#tocbot',
+        contentSelector: '.post-content',
+        headingSelector: 'h1,h2,h3,h4,h5,h6',
+        linkClass: 'tocbot-link',
+        activeLinkClass: 'tocbot-active-link',
+        listClass: 'tocbot-list',
+        isCollapsedClass: 'tocbot-is-collapsed',
+        collapsibleClass: 'tocbot-is-collapsible',
+        collapseDepth: 0,
+        scrollSmooth: true,
+        headingsOffset: -boardTop
+      });
+      if ($('.toc-list-item').length > 0) {
+        $('#toc').css('visibility', 'visible');
+      }
+    });
+  </script>
+
+
+
+
+
+  <script defer src="https://cdn.staticfile.org/clipboard.js/2.0.6/clipboard.min.js" ></script>
+  <script  src="/js/clipboard-use.js" ></script>
+
+
+
+
+
+
+<!-- Plugins -->
+
+
+
+  <script  src="https://cdn.staticfile.org/prettify/188.0.0/prettify.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      $('pre').each(function () {
+        const pre = $(this);
+        if (pre.find('code.mermaid').length > 0) {
+          return;
+        }
+        pre.addClass('prettyprint  linenums');
+      });
+      prettyPrint();
+    })
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "用PHP Imagick在服务器端得到图片影子&nbsp;",
+      ],
+      cursorChar: "_",
+      typeSpeed: 70,
+      loop: false,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "hover",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      getSearchFile(path);
+      this.onclick = null
+    }
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <script>
+    $('#post img:not(.no-zoom img, img[no-zoom]), img[zoom]').each(
+      function () {
+        var element = document.createElement('a');
+        $(element).attr('data-fancybox', 'images');
+        $(element).attr('href', $(this).attr('src'));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

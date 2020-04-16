@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="David">
+  <meta name="keywords" content="">
+  <title>Architech&#39;s blog</title>
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
+<link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/3.0.1/github-markdown.min.css" />
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_9n5xqdrq0nc.css">
+
+
+
+  <link  rel="stylesheet" href="/lib/prettify/tomorrow-night-eighties.min.css" />
+
+
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+
+<body>
+  <header style="height: 100vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>Architech's blog</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/">
+              <i class="iconfont icon-home-fill"></i>
+              首页</a>
+          </li>
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/archives/">
+              <i class="iconfont icon-archive-fill"></i>
+              归档</a>
+          </li>
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/categories/">
+              <i class="iconfont icon-category-fill"></i>
+              分类</a>
+          </li>
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/tags/">
+              <i class="iconfont icon-tags-fill"></i>
+              标签</a>
+          </li>
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/about/">
+              <i class="iconfont icon-user-fill"></i>
+              关于</a>
+          </li>
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="view intro-2" id="background" parallax=true
+         style="background: url('https://dnsofx4sf31ab.cloudfront.net/00000_chat_upload/38559-1.jpg') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="container text-center white-text fadeInUp">
+            <span class="h2" id="subtitle">
+              
+            </span>
+
+            
+          </div>
+
+          
+            <div class="scroll-down-bar">
+              <i class="iconfont icon-arrowdown"></i>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      <div class="container nopadding-md">
+        <div class="py-5" id="board"
+          style=margin-top:0>
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 m-auto">
+                
+
+
+  <div class="row mx-auto index-card">
+    
+    
+    <div class="col-12 col-md-12 mx-auto index-info">
+      <a class="index-header" href="/2012/06/13/-e5-a6-82-e4-bd-95-e5-9c-a8wordpress-e4-bb-aa-e8-a1-a8-e7-9b-98-e5-a2-9e-e5-8a-a0rss-e8-ae-a2-e9-98-85/">如何在Wordpress仪表盘增加RSS订阅</a>
+
+      <a href="/2012/06/13/-e5-a6-82-e4-bd-95-e5-9c-a8wordpress-e4-bb-aa-e8-a1-a8-e7-9b-98-e5-a2-9e-e5-8a-a0rss-e8-ae-a2-e9-98-85/" class="index-excerpt">
+        
+        
+          
+        
+        <div>首先，仪表盘里默认的这几个RSS是在wp-admin/includes/dashboard.php里面设定好了的，由wp-admin/index.php这个文件来调用。可以直接在那个文件处修改.
+增加rss需要用到这两个function： custom_dashboard_widget() 和 add_custom_dashboard_widget()
+例：
+  
+ //下方代码添加一个名为“我订</div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>&nbsp;2012-06-13
+          </div>
+        
+        
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <div class="col-12 col-md-12 mx-auto index-info">
+      <a class="index-header" href="/2012/05/01/attaching-image--e8-b4-b4-e5-9b-be/">Attaching Image | 贴图</a>
+
+      <a href="/2012/05/01/attaching-image--e8-b4-b4-e5-9b-be/" class="index-excerpt">
+        
+        
+          
+        
+        <div>This post is about attaching image! 该篇将介绍如何贴图!
+You need to know how to use canvas before reading this but don’t worry that’s quite easy to learn. First we need to prepare two images ‘tinywhale.png’ an</div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>&nbsp;2012-05-01
+          </div>
+        
+        
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2012/04/03/208-clicks-on-april-1st/" target="_self">
+          <img src="/content/images/uploads/2012/04/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7-2012-08-26-%E4%B8%8B%E5%8D%8805.09.42.png" srcset="/img/loading.gif" alt="208 clicks on April 1st because of google">
+        </a>
+      </div>
+    
+    <div class="col-12 col-md-8 mx-auto index-info">
+      <a class="index-header" href="/2012/04/03/208-clicks-on-april-1st/">208 clicks on April 1st because of google</a>
+
+      <a href="/2012/04/03/208-clicks-on-april-1st/" class="index-excerpt">
+        
+        
+          
+        
+        <div>Got 208 clicks on April 1st, surprised then realized it might because google made something fun in their front page with box2dweb：
+愚人节那天突然博客突然有208次的高点击，后来发现貌似是因为google用box2dweb做了个好玩的东西：
+  
+
+</div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>&nbsp;2012-04-03
+          </div>
+        
+        
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <div class="col-12 col-md-12 mx-auto index-info">
+      <a class="index-header" href="/2012/03/23/collision-detection--e7-a2-b0-e6-92-9e-e6-a3-80-e6-b5-8b/">Collision Detection  |  碰撞检测</a>
+
+      <a href="/2012/03/23/collision-detection--e7-a2-b0-e6-92-9e-e6-a3-80-e6-b5-8b/" class="index-excerpt">
+        
+        
+          
+        
+        <div>This post will introduce collision detection. Do I need to explain why this is extremely useful in a game? ^ ^
+这篇介绍碰撞检测，它的用处太多了吧, 比方说如果玩家碰到什么不该碰的东西就会挂掉之类的。。 ^ ^
+The simplest reason for why we need a c</div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>&nbsp;2012-03-23
+          </div>
+        
+        
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <div class="col-12 col-md-12 mx-auto index-info">
+      <a class="index-header" href="/2012/03/20/villa-savoye-section-box2d/">Villa Savoye Section | Box2d</a>
+
+      <a href="/2012/03/20/villa-savoye-section-box2d/" class="index-excerpt">
+        
+        
+          
+        
+        <div>An idea of using the section of  Villa Savoye as the platform for a Box2dweb game (well..the game is not there yet)    ^ ^
+用萨夫伊别墅的剖面作为 Box2dweb 的游戏平台  ^ ^
+  
+
+
+background image source
+</div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>&nbsp;2012-03-20
+          </div>
+        
+        
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <div class="col-12 col-md-12 mx-auto index-info">
+      <a class="index-header" href="/2012/03/14/weather-is-so-nice-need-to-get-myself-outside/">Weather is so nice, need to get myself outside!</a>
+
+      <a href="/2012/03/14/weather-is-so-nice-need-to-get-myself-outside/" class="index-excerpt">
+        
+        
+          
+        
+        <div>Looking forward to exploring new fields next semester!
+
+(a photo from site visit on New York Times Square ^ ^)
+</div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>&nbsp;2012-03-14
+          </div>
+        
+        
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <div class="col-12 col-md-12 mx-auto index-info">
+      <a class="index-header" href="/2012/03/14/interactivity--e6-93-8d-e7-ba-b5/">Interactivity  |  操纵</a>
+
+      <a href="/2012/03/14/interactivity--e6-93-8d-e7-ba-b5/" class="index-excerpt">
+        
+        
+          
+        
+        <div>This post shows how to control your object during the game with different methods.
+此篇介绍如何用不同的方法操纵 Box2d 中的物体。
+This should be an exciting post for newbies, finally we are able to control things in the </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>&nbsp;2012-03-14
+          </div>
+        
+        
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <div class="col-12 col-md-12 mx-auto index-info">
+      <a class="index-header" href="/2012/03/10/powerful-joints--e5-bc-ba-e5-a4-a7-e7-9a-84-e8-8a-82-e7-82-b9/">Powerful Joints |  强大的连接器</a>
+
+      <a href="/2012/03/10/powerful-joints--e5-bc-ba-e5-a4-a7-e7-9a-84-e8-8a-82-e7-82-b9/" class="index-excerpt">
+        
+        
+          
+        
+        <div>This post mainly introduces revolute joint and a little bit of mouse joint.
+本文主要介绍旋转连接器与鼠标连接器。
+Revolute Joint
+To me revolute joint is the most useful joint, it’s also quite easy to set up. Before that</div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>&nbsp;2012-03-10
+          </div>
+        
+        
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <div class="col-12 col-md-12 mx-auto index-info">
+      <a class="index-header" href="/2012/03/09/back-to-studio--e5-8f-88-e5-bc-80-e5-ad-a6-e4-ba-86-e8-af-b6-ef-bd-9e/">Back to Studio~ | 又开学了诶～</a>
+
+      <a href="/2012/03/09/back-to-studio--e5-8f-88-e5-bc-80-e5-ad-a6-e4-ba-86-e8-af-b6-ef-bd-9e/" class="index-excerpt">
+        
+        
+          
+        
+        <div>Wasn’t able to finish all these study notes during spring break and first week back to school is busy as hell… Got something done though, which is great~  especially the exhibition in NL is basically </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>&nbsp;2012-03-09
+          </div>
+        
+        
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <div class="col-12 col-md-12 mx-auto index-info">
+      <a class="index-header" href="/2012/03/04/polygon-and-multiple-fixtures--e5-a4-9a-e8-be-b9-e5-bd-a2-e5-8f-8a-e5-a4-8d-e6-9d-82-e5-bd-a2-e4-bd-93/">Polygon and Multiple Fixtures | 多边形及组合体</a>
+
+      <a href="/2012/03/04/polygon-and-multiple-fixtures--e5-a4-9a-e8-be-b9-e5-bd-a2-e5-8f-8a-e5-a4-8d-e6-9d-82-e5-bd-a2-e4-bd-93/" class="index-excerpt">
+        
+        
+          
+        
+        <div>The previous two posts are supposed to show you the basic structure of creating world and objects in Box2d, it might take you some time to understand. But since they are so crucial that you have to gr</div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>&nbsp;2012-03-04
+          </div>
+        
+        
+        
+      </div>
+    </div>
+  </div>
+
+
+
+  <nav aria-label="navigation">
+    <span class="pagination" id="pagination">
+      <a class="extend prev" rel="prev" href="/page/18/"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/17/">17</a><a class="page-number" href="/page/18/">18</a><span class="page-number current">19</span><a class="page-number" href="/page/20/">20</a><a class="page-number" href="/page/21/">21</a><a class="page-number" href="/page/22/">22</a><a class="extend next" rel="next" href="/page/20/"><i class="iconfont icon-arrowright"></i></a>
+    </span>
+  </nav>
+  
+  <script>
+    for (ele of document.getElementById("pagination").getElementsByTagName("a")) {
+      ele.href += '#board';
+    }
+  </script>
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+  </main>
+
+  
+    <a id="scroll-top-button" href="#" role="button">
+      <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  
+
+  
+
+  <footer class="mt-5">
+  <div class="text-center py-3">
+    <div>
+      <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a>
+      <i class="iconfont icon-love"></i>
+      <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener">
+        <span>Fluid</span></a>
+    </div>
+    
+
+    
+
+    
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script  src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js" ></script>
+<script  src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+<script  src="/js/main.js" ></script>
+
+
+  <script  src="/js/lazyload.js" ></script>
+
+
+
+
+
+  <script defer src="https://cdn.staticfile.org/clipboard.js/2.0.6/clipboard.min.js" ></script>
+  <script  src="/js/clipboard-use.js" ></script>
+
+
+
+
+
+
+<!-- Plugins -->
+
+
+
+
+
+  <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "你好，欢迎~&nbsp;",
+      ],
+      cursorChar: "_",
+      typeSpeed: 70,
+      loop: false,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "hover",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      getSearchFile(path);
+      this.onclick = null
+    }
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="David">
+  <meta name="keywords" content="">
+  <title>Creating a World and a Box | 创造世界与一个盒子 - Architech&#39;s blog</title>
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
+<link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/3.0.1/github-markdown.min.css" />
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_9n5xqdrq0nc.css">
+
+
+
+  <link  rel="stylesheet" href="/lib/prettify/tomorrow-night-eighties.min.css" />
+
+
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>Architech's blog</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/">
+              <i class="iconfont icon-home-fill"></i>
+              首页</a>
+          </li>
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/archives/">
+              <i class="iconfont icon-archive-fill"></i>
+              归档</a>
+          </li>
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/categories/">
+              <i class="iconfont icon-category-fill"></i>
+              分类</a>
+          </li>
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/tags/">
+              <i class="iconfont icon-tags-fill"></i>
+              标签</a>
+          </li>
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/about/">
+              <i class="iconfont icon-user-fill"></i>
+              关于</a>
+          </li>
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="view intro-2" id="background" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.7)">
+          <div class="container text-center white-text fadeInUp">
+            <span class="h2" id="subtitle">
+              
+            </span>
+
+            
+              
+                <div class="mt-3 post-meta">
+                  <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+                  <time datetime="2012-03-03 21:47">
+                    星期六, 三月 3日 2012, 9:47 晚上
+                  </time>
+                </div>
+              
+
+              <div class="mt-1">
+                
+                  
+                  <span class="post-meta mr-2">
+                    <i class="iconfont icon-chart"></i>
+                    1.4k 字
+                  </span>
+                
+
+                
+                  
+                  <span class="post-meta mr-2">
+                      <i class="iconfont icon-clock-fill"></i>
+                    
+                    
+                    19
+                     分钟
+                  </span>
+                
+
+                
+              </div>
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="container nopadding-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <div class="post-content mx-auto" id="post">
+            
+            <article class="markdown-body">
+              <p>Now we are ready to create our Box2d world. You will write a html file with <em>TextEdit</em> or <em>Notepad</em> or whatever you like.</p>
+<p>我们马上就要开始创造Box2d world了！ 它将会是一个html文件， 你可以直接打开记事本或者其它随便什么顺手的文字处理工具。<br><img src="/content/images/uploads/2012/03/box2ddiagramnew-1024x1024.jpg" srcset="/img/loading.gif" alt=""><br><strong>Creating Box2d world</strong></p>
+<pre><code> Remember the above diagram from last post? You can see that a world has two parameters which are &lt;span style=&quot;text-decoration: underline;&quot;&gt;gravity&lt;/span&gt; and &lt;span style=&quot;text-decoration: underline;&quot;&gt;sleep&lt;/span&gt;.  Gravity is self-evident, ‘sleep’ here means an object in this world will fall asleep if it’s not moving physically and there’s no other moving objects harass it for over 0.5 second (you can change this time as needed). We usually allow objects to sleep because when an object is sleeping it won’t be simulated by Box2d, so that energy of your device can be saved, meanwhile it can be woken up fast and easily.</code></pre><p><code>var world = new b2World(new b2Vec2(0,10), true);</code> </p>
+<pre><code> Believe it or not,  with this one line javascript code we just finish creating a Box2d world with gravity of 10m/s/s. And sleeping is allowed, that’s what ‘true’ in the parentheses means. Notice that gravity is set as a vector of (0,10)  instead of (0, -10), because in the coordinate system of Box2d, Y direction goes down. Box2D uses meters, kilograms, and seconds for units and radians for angles. What does ‘b2′ mean? It’s just a prefix to avoid name clashing. And you’ll see it everywhere soon.</code></pre><p><strong>Creating a simple box</strong></p>
+<pre><code> Again, look at the diagram above and see what’s inside the happy blue box. You can see that bodyDef and fixtureDef defines the object together.In ***bodyDef***, you can define the type of the object – either dynamic or static. The position of the body relative to the world is also decided in bodyDef. Then we use ***fixtureDef*** to define the properties of an object including density, friction and restitution, moreover, ***shape*** is also under the fixtureDef class and is used to define object’s shape and size. Now you should be able to understand how the following codes define a 1×1 box at the position of (2, 2).</code></pre><pre><code>  
+ var bodyDef = new b2BodyDef;  
+ bodyDef.type = b2Body.b2_dynamicBody; //define object type  
+ bodyDef.position.Set(2, 2); //define position
+
+var fixDef = new b2FixtureDef;  
+ fixDef.density = 10.0; //define density  
+ fixDef.friction = 0.5; //define friction  
+ fixDef.restitution =0.2; //define restitution
+
+fixDef.shape = new b2PolygonShape; //define shape  
+ fixDef.shape.SetAsBox(1, 1); //define size  
+</code></pre>
+
+<pre><code> That’s all for creating a box? Almost, there is just one last step which is to add this box into the Box2d world we just created.</code></pre><p><code>world.CreateBody(bodyDef).CreateFixture(fixDef);</code><br>     Well done! Wait, isn’t it a good idea to give this object a name, so we can find and manipulate it conveniently in the future. Alright, let’s just change the above code into this:</p>
+<p> <code>var happyBox = world.CreateBody(bodyDef);  
+ happyBox.CreateFixture(fixDef);</code></p>
+<pre><code> Sweet, we have finished everything for now. Mr happyBox should be happy falling in our Box2d world, and you’ll be able to see how he’s doing in the following article. ^ ^</code></pre><hr>
+<p><a href="http://box2dweb.com/blog/2012/03/03/core-concepts-%e6%a0%b8%e5%bf%83%e6%a6%82%e5%bf%b5/box2ddiagramnew/" target="_blank" rel="noopener"><img src="/content/images/uploads/2012/03/box2ddiagramnew-1024x1024.jpg" srcset="/img/loading.gif" alt="" title="box2ddiagramnew"></a></p>
+<p><strong>创造Box2d世界</strong></p>
+<pre><code> 还记得上面的图表吧？ 它告诉我们世界的定义主要包含重力与休眠两个参数。 重力毋需多说， “休眠”是指Box2d世界中的某物体如果超过0.5秒没有做物理运动，同时也没有别的运动物体与之接触， 它就会无聊得“睡着”（但是它不会变胖）。。。 0.5秒是默认时间，你可以随意修改。多数情况下我们允许物体休眠，因为当它们休眠时， Box2d会停止对它们的运算， 从而降低机器的负担。 而且即便睡着了，它们也灵敏不减。</code></pre><p> <code>var world = new b2World(new b2Vec2(0,10), true);</code></p>
+<pre><code> 是的，仅上面这短短一行我们就完成了对一个新世界的定义： 这是一个重力竖直向下，大小等于10米每秒平方，并且允许物体睡觉的世界。重力是用矢量（0，10）定义的， 之所以不是（0，－10）是因为Box2d的坐标系中Y方向是向下的。Box2d使用米，千克，秒作为单位，用弧度来描述角的大小。那“b2” 又是什么意思呢？ 它只是一个用于避免此物理引擎中的名字和使用者其它文件的名字冲突的前缀，后面你会发现它到处都是，注意不要从右往左看它哦。至于括号里的“true”则表示允许物体睡觉。</code></pre><p><strong>创造一个盒子</strong></p>
+<p>请看看上图中那个快乐的蓝色盒子， 你会发现这个盒子是由 bodyDef 和 fixtureDef 共同定义的。 在bodyDef中，你可以设定物体的类型－动态的还是静态的， 你还可以设定物体的初始位置。fixtureDef则掌管物体的基本性质包括有密度、摩擦系数以及恢复系数等等，值得注意的是shape也在 fixtureDef下， 它决定物体的形状与大小。 好了， 现在你应该可以理解下面这段代码了，它定义了一个1×1大小的盒子，初始位置为（2，2）。</p>
+<pre><code>  
+ var bodyDef = new b2BodyDef;  
+ bodyDef.type = b2Body.b2_dynamicBody; //定义物体类型  
+ bodyDef.position.Set(2, 2); //定义位置
+
+var fixDef = new b2FixtureDef;  
+ fixDef.density = 10.0; //定义密度  
+ fixDef.friction = 0.5; //定义摩擦系数  
+ fixDef.restitution =0.2; //定义恢复系数
+
+fixDef.shape = new b2PolygonShape; //定义形状  
+ fixDef.shape.SetAsBox(1, 1); //定义尺寸  
+</code></pre>
+
+<pre><code> 完成了？ 不， 还差最后一步， 我们要把这个定义好了的盒子添加进刚刚建好的那个世界中去。</code></pre><p> <code>world.CreateBody(bodyDef).CreateFixture(fixDef);</code>  </p>
+<pre><code> 这回的确大功告成了。可是等等， 如果我们给这个盒子起个名字， 以后在偌大的世界的茫茫“人”海中找起来就容易多了不是吗？ 我们只要把上面那行代码稍稍改进一下。</code></pre><p> <code>var happyBox = world.CreateBody(bodyDef);  
+ happyBox.CreateFixture(fixDef);</code>  </p>
+<pre><code> 很好，任务圆满完成！ “快乐盒子” 童鞋现在应该正在 Box2d 世界中快乐的堕落着。 下文中我们就可以一睹他的庐山真面目了。 ^ ^ &lt;span style=&quot;text-align: justify;&quot;&gt; &lt;/span&gt;</code></pre>
+            </article>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+              </div>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" target="_blank" rel="nofollow noopener noopener">CC BY-SA 3.0协议</a> 。转载请注明出处！</p>
+              
+              
+                <div class="post-prevnext row">
+                  <div class="post-prev col-6">
+                    
+                    
+                      <a href="/2012/03/03/render-and-time--e6-b8-b2-e6-9f-93-e4-b8-8e-e6-97-b6-e9-97-b4/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">Render and Time | 渲染与时间</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </div>
+                  <div class="post-next col-6">
+                    
+                    
+                      <a href="/2012/03/03/core-concepts--e6-a0-b8-e5-bf-83-e6-a6-82-e5-bf-b5/">
+                        <span class="hidden-mobile">Core Concepts | 核心概念</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </div>
+                </div>
+              
+            </div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div id="tocbot"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+  </main>
+
+  
+    <a id="scroll-top-button" href="#" role="button">
+      <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  
+
+  
+
+  <footer class="mt-5">
+  <div class="text-center py-3">
+    <div>
+      <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a>
+      <i class="iconfont icon-love"></i>
+      <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener">
+        <span>Fluid</span></a>
+    </div>
+    
+
+    
+
+    
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script  src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js" ></script>
+<script  src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+<script  src="/js/main.js" ></script>
+
+
+  <script  src="/js/lazyload.js" ></script>
+
+
+
+  
+  <script  src="https://cdn.staticfile.org/tocbot/4.10.0/tocbot.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      var boardCtn = $('#board-ctn');
+      var boardTop = boardCtn.offset().top;
+
+      tocbot.init({
+        tocSelector: '#tocbot',
+        contentSelector: '.post-content',
+        headingSelector: 'h1,h2,h3,h4,h5,h6',
+        linkClass: 'tocbot-link',
+        activeLinkClass: 'tocbot-active-link',
+        listClass: 'tocbot-list',
+        isCollapsedClass: 'tocbot-is-collapsed',
+        collapsibleClass: 'tocbot-is-collapsible',
+        collapseDepth: 0,
+        scrollSmooth: true,
+        headingsOffset: -boardTop
+      });
+      if ($('.toc-list-item').length > 0) {
+        $('#toc').css('visibility', 'visible');
+      }
+    });
+  </script>
+
+
+
+
+
+  <script defer src="https://cdn.staticfile.org/clipboard.js/2.0.6/clipboard.min.js" ></script>
+  <script  src="/js/clipboard-use.js" ></script>
+
+
+
+
+
+
+<!-- Plugins -->
+
+
+
+  <script  src="https://cdn.staticfile.org/prettify/188.0.0/prettify.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      $('pre').each(function () {
+        const pre = $(this);
+        if (pre.find('code.mermaid').length > 0) {
+          return;
+        }
+        pre.addClass('prettyprint  linenums');
+      });
+      prettyPrint();
+    })
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "Creating a World and a Box | 创造世界与一个盒子&nbsp;",
+      ],
+      cursorChar: "_",
+      typeSpeed: 70,
+      loop: false,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "hover",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      getSearchFile(path);
+      this.onclick = null
+    }
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <script>
+    $('#post img:not(.no-zoom img, img[no-zoom]), img[zoom]').each(
+      function () {
+        var element = document.createElement('a');
+        $(element).attr('data-fancybox', 'images');
+        $(element).attr('href', $(this).attr('src'));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

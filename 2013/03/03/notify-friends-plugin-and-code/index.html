@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="David">
+  <meta name="keywords" content="">
+  <title>Notify Friends Plugin and Code - Architech&#39;s blog</title>
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
+<link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/3.0.1/github-markdown.min.css" />
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_9n5xqdrq0nc.css">
+
+
+
+  <link  rel="stylesheet" href="/lib/prettify/tomorrow-night-eighties.min.css" />
+
+
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>Architech's blog</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/">
+              <i class="iconfont icon-home-fill"></i>
+              首页</a>
+          </li>
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/archives/">
+              <i class="iconfont icon-archive-fill"></i>
+              归档</a>
+          </li>
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/categories/">
+              <i class="iconfont icon-category-fill"></i>
+              分类</a>
+          </li>
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/tags/">
+              <i class="iconfont icon-tags-fill"></i>
+              标签</a>
+          </li>
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/about/">
+              <i class="iconfont icon-user-fill"></i>
+              关于</a>
+          </li>
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="view intro-2" id="background" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.7)">
+          <div class="container text-center white-text fadeInUp">
+            <span class="h2" id="subtitle">
+              
+            </span>
+
+            
+              
+                <div class="mt-3 post-meta">
+                  <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+                  <time datetime="2013-03-03 20:59">
+                    星期日, 三月 3日 2013, 8:59 晚上
+                  </time>
+                </div>
+              
+
+              <div class="mt-1">
+                
+                  
+                  <span class="post-meta mr-2">
+                    <i class="iconfont icon-chart"></i>
+                    948 字
+                  </span>
+                
+
+                
+                  
+                  <span class="post-meta mr-2">
+                      <i class="iconfont icon-clock-fill"></i>
+                    
+                    
+                    15
+                     分钟
+                  </span>
+                
+
+                
+              </div>
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="container nopadding-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <div class="post-content mx-auto" id="post">
+            
+            <article class="markdown-body">
+              <p>Feel free to comment and help me improve! <img src="http://swotong.com/wp-includes/images/smilies/icon_smile.gif" srcset="/img/loading.gif" alt=":)"></p>
+<p>English version</p>
+<p>The code below will email your friend once you publish your post if you have @ their names in your post. And you’ll receive an email yourself about how many of your friends received your email notification successfully. Just paste the code below into your functions.php file in the theme you are currently using and you are good to go! Or you can download the simple plugin which is basically the same thing except more convenient for you to activate/deactivate.</p>
+<p>Only works for friends who have commented on your blog before (otherwise how do you get their email)</p>
+<pre><code>  
+ function email_friend() {
+
+// get post object  
+ $post = get_post($id);  
+ // get post content  
+ $content = $post->post_content;  
+ // get how many people is mentioned in this post  
+ //$mentionCount = preg_match_all(‘/(@(\w)+)/’, $content, $matches);  
+ $mentionCount = preg_match_all(‘/(@[^\s]+)/’, $content, $matches);//support other lang
+
+// if there is at least one @ with a name after it  
+ if (0 !== $mentionCount) {
+
+$friendList = array();//for storing correct names
+
+for ($mentionIndex=0; $mentionIndex < $mentionCount; $mentionIndex++) {
+
+$mentionName = $matches[0][$mentionIndex];
+
+$mentionName = str_replace(‘_’,’ ‘,$mentionName); //change _ back to space
+
+$mentionName = substr($mentionName, 1); //get rid of @  
+ //for security and add wildcard  
+ $friend_display_name_like = ‘%’ . like_escape($mentionName) . ‘%’;
+
+global $wpdb;
+
+// get correct name first  
+ $friendCorrectName = $wpdb->get_var( $wpdb->prepare( ”
+
+SELECT comment_author  
+ FROM $wpdb->comments  
+ WHERE comment_author  
+ LIKE %s “,  
+ $friend_display_name_like  
+ )) ;
+
+// get friend email by comment author name  
+ $friend_email = $wpdb->get_var( $wpdb->prepare( ”
+
+SELECT comment_author_email  
+ FROM $wpdb->comments  
+ WHERE comment_author  
+ LIKE %s “,  
+ $friendCorrectName  
+ )) ;
+
+if($friend_email) {// if found email address then email
+
+$postTitle = get_the_title($id);  
+ $post_permalink = get_permalink( $id );  
+ $to = $friend_email;  
+ $subject = ‘Arch!tect mentioned you in his new post 《’.$postTitle .
+
+‘》’;
+
+$from = “noreplay@swotong.com”;
+
+$headers = “From:” . $from;
+
+$message = “Arch!tect mentioned you in his new post《”.$postTitle .  
+ “》 check it out？\n\n” .”Post link：”.$post_permalink  
+ .”\n\n\nPlease don’t reply this email.\r\n”;
+
+if(mail($to, $subject, $message, $headers)) {  
+ //if send successfully put his/her name in my list  
+ array_push($friendList, $friendCorrectName);  
+ //array_push($friendList, $friend_email);  
+ }
+
+}
+
+}  
+ $comma_separated = implode(“,”, $friendList); //friend list array to string
+
+// now send an email to myself about the result  
+ $postTitle = get_the_title($id);  
+ $post_permalink = get_permalink( $id );  
+ $to = ‘myOwn@email.com’;  
+ $subject = “Your new post《”.$postTitle .  
+ “》has notified “.count($friendList).”friends successfully”;  
+ $from = “noreplay@email.com”;  
+ $headers = “From:” . $from;  
+ //list all friends that received my email  
+ $message = “Your new post《”.$postTitle .  
+ “》has notified “.count($friendList).”friends successfully:\n\n”.$comma_separated ;
+
+mail($to, $subject, $message, $headers);
+
+}
+
+}//end of email_friend function
+
+add_action ( ‘publish_post’, ‘email_friend’ );  
+</code></pre>
+
+
+
+<p>——————————————————–中文版—————————————————————–</p>
+<p>这段代码用于通知朋友你的新博文中提到了对方，用法很简单，像社交网站那样@一下对方的用户名就好啦~ 文章发表的同时email就会发出，然后会有一封email发回给你自己，报告有多少朋友成功收到了你的email通知，听上去很简单吧！你可以下载插件或者直接把下面的代码粘贴到当前主题的functions.php文件里，妥妥的~</p>
+<p>只对曾在你的博客评论过的朋友有效哦~ （不然要怎样获取对方的邮箱地址）</p>
+<pre><code> 
+ function email_friend() {  
+ // get post object  
+ $post = get_post($id);  
+ // get post content  
+ $content = $post->post_content;  
+ // 看有几个@ （@后面要有跟字符，单独一个@不算）  
+ //$mentionCount = preg_match_all(‘/(@(\w)+)/’, $content, $matches);  
+ $mentionCount = preg_match_all(‘/(@[^\s]+)/’, $content, $matches);// \s支持中文  
+ if (0 !== $mentionCount) { //如果有的话
+
+$friendList = array(); //这个array用来放一会儿成功发送过去的朋友名单
+
+for ($mentionIndex=0; $mentionIndex < $mentionCount; $mentionIndex++)
+
+{
+
+$mentionName = $matches[0][$mentionIndex];
+
+$mentionName = str_replace(‘_’,’ ‘,$mentionName); //把下划线变回空格
+
+$mentionName = substr($mentionName, 1); //去掉 @ 符号
+
+$friend_display_name_like = ‘%’ . like_escape($mentionName) . ‘%’; //like_escape为了数据库安全
+
+global $wpdb;
+
+// 获取正确ID名，因为前面@的不一定是完整的拼写  
+ $friendCorrectName = $wpdb->get_var( $wpdb->prepare( ”
+
+SELECT comment_author  
+ FROM $wpdb->comments  
+ WHERE comment_author  
+ LIKE %s “,  
+ $friend_display_name_like  
+ )) ;
+
+// 获取朋友的邮箱地址
+
+$friend_email = $wpdb->get_var( $wpdb->prepare( ”
+
+SELECT comment_author_email  
+ FROM $wpdb->comments  
+ WHERE comment_author  
+ LIKE %s “,  
+ $friendCorrectName  
+ )) ;
+
+if($friend_email) {// 如果有找到提到的朋友的邮箱地址就发信给他~  
+ $postTitle = get_the_title($id);
+
+$post_permalink = get_permalink( $id );
+
+$to = $friend_email;
+
+$subject = ‘Arch!tect在他的新博文 《’.$postTitle .
+
+‘》中@了你 \(^o^)/’;
+
+$from = “noreplay@whatsoever.com”;
+
+$headers = “From:” . $from;
+
+$message = “Arch!tect在他的新博文 《”.$postTitle .
+
+“》 中@了你，不去看看吗？\n\n” .”博文地址：”.$post_permalink
+
+.”\n\n\n请误直接回复本邮件。 \r\n”;
+
+if(mail($to, $subject, $message, $headers)) {
+
+array_push($friendList, $friendCorrectName); //如果发送成功了，放进名单里  
+ //array_push($friendList, $friend_email);  
+ }
+
+}
+
+}  
+ $comma_separated = implode(“,”, $friendList);
+
+$postTitle = get_the_title($id);  
+ $post_permalink = get_permalink( $id );  
+ $to = ‘youremail@address.com’;//你的邮箱地址，记得引号哦  
+ $subject = “博文《”.$postTitle .  
+ “》发布同时成功通知了”.count($friendList).”位朋友”;  
+ $from = “noreplay@whatever.com”; //希望显示的发信人地址  
+ $headers = “From:” . $from;  
+ $message = “博文《”.$postTitle .  
+ “》发布同时成功通知了”.count($friendList).”位朋友： \n\n” .$comma_separated ;
+
+mail($to, $subject, $message, $headers);  
+ }
+
+}//end of email_friend function
+
+add_action ( ‘publish_post’, ‘email_friend’ );
+
+</code></pre>
+
+
+
+
+
+
+
+            </article>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+              </div>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" target="_blank" rel="nofollow noopener noopener">CC BY-SA 3.0协议</a> 。转载请注明出处！</p>
+              
+              
+                <div class="post-prevnext row">
+                  <div class="post-prev col-6">
+                    
+                    
+                      <a href="/2013/03/06/google-glass-coming/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">Google Glass Coming</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </div>
+                  <div class="post-next col-6">
+                    
+                    
+                      <a href="/2013/03/03/in-spring-break/">
+                        <span class="hidden-mobile">放春假了</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </div>
+                </div>
+              
+            </div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div id="tocbot"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+  </main>
+
+  
+    <a id="scroll-top-button" href="#" role="button">
+      <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  
+
+  
+
+  <footer class="mt-5">
+  <div class="text-center py-3">
+    <div>
+      <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a>
+      <i class="iconfont icon-love"></i>
+      <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener">
+        <span>Fluid</span></a>
+    </div>
+    
+
+    
+
+    
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script  src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js" ></script>
+<script  src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+<script  src="/js/main.js" ></script>
+
+
+  <script  src="/js/lazyload.js" ></script>
+
+
+
+  
+  <script  src="https://cdn.staticfile.org/tocbot/4.10.0/tocbot.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      var boardCtn = $('#board-ctn');
+      var boardTop = boardCtn.offset().top;
+
+      tocbot.init({
+        tocSelector: '#tocbot',
+        contentSelector: '.post-content',
+        headingSelector: 'h1,h2,h3,h4,h5,h6',
+        linkClass: 'tocbot-link',
+        activeLinkClass: 'tocbot-active-link',
+        listClass: 'tocbot-list',
+        isCollapsedClass: 'tocbot-is-collapsed',
+        collapsibleClass: 'tocbot-is-collapsible',
+        collapseDepth: 0,
+        scrollSmooth: true,
+        headingsOffset: -boardTop
+      });
+      if ($('.toc-list-item').length > 0) {
+        $('#toc').css('visibility', 'visible');
+      }
+    });
+  </script>
+
+
+
+
+
+  <script defer src="https://cdn.staticfile.org/clipboard.js/2.0.6/clipboard.min.js" ></script>
+  <script  src="/js/clipboard-use.js" ></script>
+
+
+
+
+
+
+<!-- Plugins -->
+
+
+
+  <script  src="https://cdn.staticfile.org/prettify/188.0.0/prettify.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      $('pre').each(function () {
+        const pre = $(this);
+        if (pre.find('code.mermaid').length > 0) {
+          return;
+        }
+        pre.addClass('prettyprint  linenums');
+      });
+      prettyPrint();
+    })
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "Notify Friends Plugin and Code&nbsp;",
+      ],
+      cursorChar: "_",
+      typeSpeed: 70,
+      loop: false,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "hover",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      getSearchFile(path);
+      this.onclick = null
+    }
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <script>
+    $('#post img:not(.no-zoom img, img[no-zoom]), img[zoom]').each(
+      function () {
+        var element = document.createElement('a');
+        $(element).attr('data-fancybox', 'images');
+        $(element).attr('href', $(this).attr('src'));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="David">
+  <meta name="keywords" content="">
+  <title>Intro to Box2dweb | Box2dweb简介 - Architech&#39;s blog</title>
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
+<link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/3.0.1/github-markdown.min.css" />
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_9n5xqdrq0nc.css">
+
+
+
+  <link  rel="stylesheet" href="/lib/prettify/tomorrow-night-eighties.min.css" />
+
+
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>Architech's blog</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/">
+              <i class="iconfont icon-home-fill"></i>
+              首页</a>
+          </li>
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/archives/">
+              <i class="iconfont icon-archive-fill"></i>
+              归档</a>
+          </li>
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/categories/">
+              <i class="iconfont icon-category-fill"></i>
+              分类</a>
+          </li>
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/tags/">
+              <i class="iconfont icon-tags-fill"></i>
+              标签</a>
+          </li>
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/about/">
+              <i class="iconfont icon-user-fill"></i>
+              关于</a>
+          </li>
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="view intro-2" id="background" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.7)">
+          <div class="container text-center white-text fadeInUp">
+            <span class="h2" id="subtitle">
+              
+            </span>
+
+            
+              
+                <div class="mt-3 post-meta">
+                  <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+                  <time datetime="2012-03-03 21:43">
+                    星期六, 三月 3日 2012, 9:43 晚上
+                  </time>
+                </div>
+              
+
+              <div class="mt-1">
+                
+                  
+                  <span class="post-meta mr-2">
+                    <i class="iconfont icon-chart"></i>
+                    1k 字
+                  </span>
+                
+
+                
+                  
+                  <span class="post-meta mr-2">
+                      <i class="iconfont icon-clock-fill"></i>
+                    
+                    
+                    15
+                     分钟
+                  </span>
+                
+
+                
+              </div>
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="container nopadding-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <div class="post-content mx-auto" id="post">
+            
+            <article class="markdown-body">
+              <p>FYI: The notes for <strong>Box2dweb</strong> starts in my next article.</p>
+<p>注：关于Box2dweb的学习笔记从下一篇博文开始，这篇只是介绍。</p>
+<pre><code> While having my sweet spring break, I finally have time to write some notes for this great engine – Box2dweb. Box2d is quite famous and since it’s open source, it has been widely used in thousands of games, even if you have never heard about box2d, you must know that game that has been downloaded more than 350 million times with earnings exceed 80 million US dollars —– “Angry birds”. [Yes, it uses box2d.](http://www.geek.com/articles/mobile/box2d-creator-asks-rovio-for-angry-birds-credit-at-gdc-2011032/ &quot;story behind angry birds &quot;)  And once you understand box2d, you will realize there’s actually not much work left to make a game like “Angry birds”. (absolutely no offense to Angry birds team, I love your game : ) OK, I don’t want to talk too much about Box2d since [Wikipedia](http://en.wikipedia.org/wiki/Box2D &quot;about box2d&quot;) can do a much better job than me.</code></pre><p><strong>Box2dweb</strong> is the latest javascript port of Box2d，the <strong>advantage</strong> of this port is you can well combine it with Html5 and make really neat game or whatever you want. And since it’s ported to javascript, it’s supported by most browsers if not all. So no matter windows or mac you are using, you can access your game through your browser and it will look no difference. Also because it’s totally written in javascript, you can use both iphone and ipad to open it while Apple has announced they won’t support flash which seems always crash but they love Html5…</p>
+<pre><code>The “disadvantage” of Box2dweb is that there are not many tutorials about it which is quite frustrating when I was learning it. (most tutorials I found are either for C++ or flash port of box2d) Therefore I decide to make my study note more detailed and easy to understand for others, so that it might help someone who get interest into it like me . ^-^</code></pre><p><span style="text-align: left;">    Btw I just found my interest in these stuff recently and I’m a student who has taken zero courses about computer or computer language. So if you can kindly point out my mistake and maybe even take 3 minutes to explain it a little bit for me, </span>*<em>you are very much appreciated! *</em></p>
+<pre><code> Check out [the first game I made in my life with Box2d!](http://box2dweb.com/html5-game-box2dweb/ &quot;HTML5 Game (Box2dweb)&quot;)</code></pre><p>－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－</p>
+<pre><code>美好的春假让我终于可以空出点时间来写 Box2dweb 的学习笔记 ^^ Box2d 是一个非常有名的开源2D物理引擎，成百上千的游戏都曾经或者正在使用它。即便你没有听说过 Box2d, 我想你一定知道那个下载次数超过3.5亿, 赚走了超过8千万美元的“愤怒的小鸟”。 是的，[愤怒的小鸟用的就是box2d物理引擎。](http://www.geek.com/articles/mobile/box2d-creator-asks-rovio-for-angry-birds-credit-at-gdc-2011032/ &quot;愤怒的小鸟承认使用box2d物理引擎&quot;) 而一旦你明白 Box2d 可以做些什么，你就会发现写一个能赚取8千万的游戏并没有你想象中那么难（无意冒犯愤怒的小鸟的制作团队，我也很爱你们的游戏：）好啦， 我不想过多的介绍这个物理引擎的光辉历史了，[Wikipedia](http://en.wikipedia.org/wiki/Box2D &quot;about box2d&quot;) 介绍的很详尽了，但百度百科的介绍（如果那真的是介绍的话）就太费解了 ＝ ＝
+
+ 至于 Box2dweb 呢，则是 Box2d 的最新 javascript 版，使用 javascript 版的优点主要在于你可以把它和来势汹汹的 html5 结合来做出很简洁的游戏或者什么有趣的应用，它完全不依赖flash。因为是使用浏览器来运行，你可以在任意操作系统下得到一致的效果。同样的你也可以使用 iphone、ipod、ipad 等来进行正常的访问。 苹果已经宣布不支持flash，对[html5](http://tech.163.com/11/0920/16/7EDK3QVS0009387E.html &quot;html5 is the future&quot;)则是寄予厚望。。。
+
+ 遗憾的是，不像 flash或者 C＋＋ 版的 Box2d，关于 Box2dweb 的学习资料着实少之又少， 学起来耗时耗力（我自己是看着其它语言的教程，摸索的javascript 版 ⊙﹏⊙）因此， 我决定把这个学习笔记写得尽量详细一些，或许可以帮到像我一样突然对这个物理引擎产生兴趣的朋友 ^-^
+
+ 顺便一提，在下只是最近突然对html5、box2d等产生了浓厚兴趣，并无任何计算机编程方面的基础。所以文中难免错漏百出，看官您若不吝赐教，着实感激不禁！
+
+ 去看看我用Box2d写的[第一个游戏！](http://box2dweb.com/html5-game-box2dweb/ &quot;HTML5 Game (Box2dweb)&quot;)</code></pre>
+            </article>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+              </div>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" target="_blank" rel="nofollow noopener noopener">CC BY-SA 3.0协议</a> 。转载请注明出处！</p>
+              
+              
+                <div class="post-prevnext row">
+                  <div class="post-prev col-6">
+                    
+                    
+                      <a href="/2012/03/03/setup-box2dweb--e5-ae-89-e8-a3-85box2dweb/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">Setup Box2dweb | 安装Box2dweb</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </div>
+                  <div class="post-next col-6">
+                    
+                    
+                      <a href="/2012/03/03/a-fun-video-about-my-first-game--e4-b8-80-e4-b8-aa-e6-ac-a2-e4-b9-90-e7-9a-84-e8-a7-86-e9-a2-91-ef-bd-9e/">
+                        <span class="hidden-mobile">A Fun Video About My First Game! 一个欢乐的视频～</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </div>
+                </div>
+              
+            </div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div id="tocbot"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+  </main>
+
+  
+    <a id="scroll-top-button" href="#" role="button">
+      <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  
+
+  
+
+  <footer class="mt-5">
+  <div class="text-center py-3">
+    <div>
+      <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a>
+      <i class="iconfont icon-love"></i>
+      <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener">
+        <span>Fluid</span></a>
+    </div>
+    
+
+    
+
+    
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script  src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js" ></script>
+<script  src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+<script  src="/js/main.js" ></script>
+
+
+  <script  src="/js/lazyload.js" ></script>
+
+
+
+  
+  <script  src="https://cdn.staticfile.org/tocbot/4.10.0/tocbot.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      var boardCtn = $('#board-ctn');
+      var boardTop = boardCtn.offset().top;
+
+      tocbot.init({
+        tocSelector: '#tocbot',
+        contentSelector: '.post-content',
+        headingSelector: 'h1,h2,h3,h4,h5,h6',
+        linkClass: 'tocbot-link',
+        activeLinkClass: 'tocbot-active-link',
+        listClass: 'tocbot-list',
+        isCollapsedClass: 'tocbot-is-collapsed',
+        collapsibleClass: 'tocbot-is-collapsible',
+        collapseDepth: 0,
+        scrollSmooth: true,
+        headingsOffset: -boardTop
+      });
+      if ($('.toc-list-item').length > 0) {
+        $('#toc').css('visibility', 'visible');
+      }
+    });
+  </script>
+
+
+
+
+
+  <script defer src="https://cdn.staticfile.org/clipboard.js/2.0.6/clipboard.min.js" ></script>
+  <script  src="/js/clipboard-use.js" ></script>
+
+
+
+
+
+
+<!-- Plugins -->
+
+
+
+  <script  src="https://cdn.staticfile.org/prettify/188.0.0/prettify.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      $('pre').each(function () {
+        const pre = $(this);
+        if (pre.find('code.mermaid').length > 0) {
+          return;
+        }
+        pre.addClass('prettyprint  linenums');
+      });
+      prettyPrint();
+    })
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "Intro to Box2dweb | Box2dweb简介&nbsp;",
+      ],
+      cursorChar: "_",
+      typeSpeed: 70,
+      loop: false,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "hover",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      getSearchFile(path);
+      this.onclick = null
+    }
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <script>
+    $('#post img:not(.no-zoom img, img[no-zoom]), img[zoom]').each(
+      function () {
+        var element = document.createElement('a');
+        $(element).attr('data-fancybox', 'images');
+        $(element).attr('href', $(this).attr('src'));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

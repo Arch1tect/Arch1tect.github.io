@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="David">
+  <meta name="keywords" content="">
+  <title>Powerful Joints |  强大的连接器 - Architech&#39;s blog</title>
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
+<link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/3.0.1/github-markdown.min.css" />
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_9n5xqdrq0nc.css">
+
+
+
+  <link  rel="stylesheet" href="/lib/prettify/tomorrow-night-eighties.min.css" />
+
+
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>Architech's blog</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/">
+              <i class="iconfont icon-home-fill"></i>
+              首页</a>
+          </li>
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/archives/">
+              <i class="iconfont icon-archive-fill"></i>
+              归档</a>
+          </li>
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/categories/">
+              <i class="iconfont icon-category-fill"></i>
+              分类</a>
+          </li>
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/tags/">
+              <i class="iconfont icon-tags-fill"></i>
+              标签</a>
+          </li>
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/about/">
+              <i class="iconfont icon-user-fill"></i>
+              关于</a>
+          </li>
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="view intro-2" id="background" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.7)">
+          <div class="container text-center white-text fadeInUp">
+            <span class="h2" id="subtitle">
+              
+            </span>
+
+            
+              
+                <div class="mt-3 post-meta">
+                  <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+                  <time datetime="2012-03-10 22:06">
+                    星期六, 三月 10日 2012, 10:06 晚上
+                  </time>
+                </div>
+              
+
+              <div class="mt-1">
+                
+                  
+                  <span class="post-meta mr-2">
+                    <i class="iconfont icon-chart"></i>
+                    1.7k 字
+                  </span>
+                
+
+                
+                  
+                  <span class="post-meta mr-2">
+                      <i class="iconfont icon-clock-fill"></i>
+                    
+                    
+                    28
+                     分钟
+                  </span>
+                
+
+                
+              </div>
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="container nopadding-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <div class="post-content mx-auto" id="post">
+            
+            <article class="markdown-body">
+              <p>This post mainly introduces revolute joint and a little bit of mouse joint.</p>
+<p>本文主要介绍旋转连接器与鼠标连接器。</p>
+<p><strong>Revolute Joint</strong></p>
+<p>To me revolute joint is the most useful joint, it’s also quite easy to set up. Before that, I need to change the shape of the car to be a convex polygon and create those two wheels as individual objects this time instead of being fixtures of ‘car’.</p>
+<pre><code>
+
+ //  making a car  
+ //  two wheels  
+ var bodyDef = new b2BodyDef;  
+ bodyDef.type = b2Body.b2_dynamicBody;  
+ var fixDef = new b2FixtureDef;  
+ fixDef.density = 30;  
+ fixDef.friction = 10;  
+ fixDef.restitution = 0.1;  
+ fixDef.shape = new b2CircleShape(0.3)  
+ // wheel1
+
+var wheel1=world.CreateBody(bodyDef)  
+ wheel1.CreateFixture(fixDef);  
+ // wheel2  
+ var wheel2=world.CreateBody(bodyDef)  
+ wheel2.CreateFixture(fixDef);
+
+// convex car body  
+ var bodyDef = new b2BodyDef;  
+ bodyDef.type = b2Body.b2_dynamicBody;  
+ bodyDef.position.Set(24,9)  
+ // just change the fixDef.shape and keep other properties  
+ fixDef.shape = new b2PolygonShape  
+ fixDef.shape.SetAsArray([  
+ new b2Vec2(1 , -1.2),  
+ new b2Vec2(1.5, -0.5),  
+ new b2Vec2(1.3 , 0),  
+ new b2Vec2(-1.3, 0),  
+ new b2Vec2(-1.5, -0.5),  
+ new b2Vec2(-0.3 , -1.2)  
+ ]);
+
+ var car = world.CreateBody(bodyDef);  
+ car.CreateFixture(fixDef);
+
+// joints  
+ var myjoint = new b2RevoluteJointDef();  
+ myjoint.bodyA = car;  
+ myjoint.bodyB = wheel1;  
+ myjoint.localAnchorA.Set(-0.7,0);  
+ myjoint.enableMotor = true;  
+ myjoint.maxMotorTorque = 55;  
+ myjoint.motorSpeed=-10;  
+ world.CreateJoint(myjoint);
+
+myjoint.bodyA = car;  
+ myjoint.bodyB = wheel2;  
+ myjoint.localAnchorA.Set(0.8,0);  
+ world.CreateJoint(myjoint);  
+ </code></pre>
+
+<p>Let’s look at the joint part starting from line 39, one joint usually connects two bodies, and you can use ‘<span style="text-decoration: underline;">localAnchor</span>‘ to specify where the joint is on that object. *<em>Motor *</em>is an interesting feature of joint, motorSpeed is in radian and clockwise direction. Notice that the car below isn’t able to climb to the top of the hill? That’s because the maxMotorTorque isn’t big enough. Btw don’t forget to add ‘ b2RevoluteJointDef = Box2D. Dynamics. Joints. b2RevoluteJointDef ‘ at the beginning.</p>
+<center>  
+<iframe height="240" scrolling="no" src="/content/images/project/box2d_example/studynotes3.5.html" style="width: 600px; height: 330px;" width="320"></iframe></center> **Mouse Joint**
+
+<p>If you click on the car above, you can drag it and throw it anywhere. Isn’t it fun? Thanks to Mouse joint that makes it possible. But the way it’s set up is quite complex and requires deeper understanding of Box2d. Therefore I’ll just show you how to apply it for now and explain how it functions in the future.</p>
+<p><strong>Step 1</strong>, make sure you have these codes at the beginning.</p>
+<pre><code>
+
+var b2Vec2 = Box2D.Common.Math.b2Vec2  
+ , b2BodyDef = Box2D.Dynamics.b2BodyDef  
+ , b2Body = Box2D.Dynamics.b2Body  
+ , b2FixtureDef = Box2D.Dynamics.b2FixtureDef  
+ , b2World = Box2D.Dynamics.b2World  
+ , b2PolygonShape = Box2D.Collision.Shapes.b2PolygonShape  
+ , b2CircleShape = Box2D.Collision.Shapes.b2CircleShape  
+ , b2RevoluteJointDef=Box2D.Dynamics.Joints.b2RevoluteJointDef  
+ , b2MouseJointDef = Box2D.Dynamics.Joints.b2MouseJointDef  
+ , b2DebugDraw = Box2D.Dynamics.b2DebugDraw  
+ , b2Fixture = Box2D.Dynamics.b2Fixture  
+ , b2AABB = Box2D.Collision.b2AABB;
+
+</code></pre>
+
+<p><strong>Step 2</strong>, add the following codes after <span style="text-decoration: underline;">window.setInterval(update, 1000 / 60);</span></p>
+<pre><code>
+
+//mouse
+
+var mouseX, mouseY, mousePVec, isMouseDown, selectedBody, mouseJoint;  
+ var canvasPosition = getElementPosition(document.getElementById( “canvas” ));
+
+document.addEventListener( “mousedown” , function(e) {  
+ isMouseDown = true;  
+ handleMouseMove(e);  
+ document.addEventListener( “mousemove” , handleMouseMove, true);  
+ }, true);
+
+document.addEventListener( “mouseup”, function() {  
+ document.removeEventListener( “mousemove” , handleMouseMove, true);  
+ isMouseDown = false;  
+ mouseX = undefined;  
+ mouseY = undefined;  
+ }, true);
+
+function handleMouseMove(e) {  
+ mouseX = (e.clientX – canvasPosition.x) / 30;  
+ mouseY = (e.clientY – canvasPosition.y) / 30;  
+ };
+
+function getBodyAtMouse() {  
+ mousePVec = new b2Vec2(mouseX, mouseY);  
+ var aabb = new b2AABB();  
+ aabb.lowerBound.Set(mouseX – 0.001, mouseY – 0.001);  
+ aabb.upperBound.Set(mouseX + 0.001, mouseY + 0.001);
+
+// Query the world for overlapping shapes.
+
+selectedBody = null;  
+ world.QueryAABB(getBodyCB, aabb);  
+ return selectedBody;  
+ }
+
+function getBodyCB(fixture) {  
+ if(fixture.GetBody().GetType() != b2Body.b2_staticBody) {  
+ if(fixture.GetShape().TestPoint(fixture.GetBody().GetTransform(), mousePVec)) {  
+ selectedBody = fixture.GetBody();  
+ return false;  
+ }  
+ }  
+ return true;  
+ }
+
+</code></pre>
+
+<p><strong>Step 3</strong>, insert the following codes <strong>inside</strong> update() function:</p>
+<pre><code>
+
+if(isMouseDown && (!mouseJoint)) {  
+ var body = getBodyAtMouse();  
+ if(body) {  
+ var md = new b2MouseJointDef();  
+ md.bodyA = world.GetGroundBody();  
+ md.bodyB = body;  
+ md.target.Set(mouseX, mouseY);  
+ md.collideConnected = true;  
+ md.maxForce = 300.0 * body.GetMass();  
+ mouseJoint = world.CreateJoint(md);  
+ body.SetAwake(true);  
+ }  
+ }
+
+if(mouseJoint) {  
+ if(isMouseDown) {  
+ mouseJoint.SetTarget(new b2Vec2(mouseX, mouseY));  
+ } else {  
+ world.DestroyJoint(mouseJoint);  
+ mouseJoint = null;  
+ }  
+ }  
+ </code></pre>
+
+<p><strong>Step 4</strong>, add following codes in the end:</p>
+<pre><code>  
+ //helpers
+
+//http://js-tut.aardon.de/js-tut/tutorial/position.html  
+ function getElementPosition(element) {  
+ var elem=element, tagname=””, x=0, y=0;
+
+while((typeof(elem) == “object”) && (typeof(elem.tagName) != “undefined”)) {  
+ y += elem.offsetTop;  
+ x += elem.offsetLeft;  
+ tagname = elem.tagName.toUpperCase();
+
+if(tagname == “BODY”)  
+ elem=0;
+
+if(typeof(elem) == “object”) {  
+ if(typeof(elem.offsetParent) == “object”)  
+ elem = elem.offsetParent;  
+ }  
+ }
+
+return {x: x, y: y};  
+ }  
+ </code></pre>
+
+<p>That’s it, have fun~ ^ ^</p>
+<p>－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－</p>
+<p><strong>旋转连接器</strong></p>
+<p>我目前觉得“旋转连接器”是最有用的一种连接器，同时它的设置也非常简单。在此之前，我先将车身的形状改成凸多边形，并且将车轮创建为独立物体而不再仅仅是车的一部分。</p>
+<pre><code>
+
+//  造车  
+ //  造轮  
+ var bodyDef = new b2BodyDef;  
+ bodyDef.type = b2Body.b2_dynamicBody;  
+ var fixDef = new b2FixtureDef;  
+ fixDef.density = 30;  
+ fixDef.friction = 10;  
+ fixDef.restitution = 0.1;  
+ fixDef.shape = new b2CircleShape(0.3)  
+ // 前轮
+
+var wheel1=world.CreateBody(bodyDef)  
+ wheel1.CreateFixture(fixDef);  
+ // 后轮  
+ var wheel2=world.CreateBody(bodyDef)  
+ wheel2.CreateFixture(fixDef);
+
+// 车身（凸多边形）  
+ var bodyDef = new b2BodyDef;  
+ bodyDef.type = b2Body.b2_dynamicBody;  
+ bodyDef.position.Set(24,9)  
+ // 只重新定义fixDef中的形状，其他属性不变  
+ fixDef.shape = new b2PolygonShape  
+ fixDef.shape.SetAsArray([  
+ new b2Vec2(1 , -1.2),  
+ new b2Vec2(1.5, -0.5),  
+ new b2Vec2(1.3 , 0),  
+ new b2Vec2(-1.3, 0),  
+ new b2Vec2(-1.5, -0.5),  
+ new b2Vec2(-0.3 , -1.2)  
+ ]);
+
+var car = world.CreateBody(bodyDef);  
+ car.CreateFixture(fixDef);
+
+// 连接器  
+ var myjoint = new b2RevoluteJointDef();  
+ myjoint.bodyA = car;  
+ myjoint.bodyB = wheel1;  
+ myjoint.localAnchorA.Set(-0.7,0);  
+ myjoint.enableMotor = true;  
+ myjoint.maxMotorTorque = 55;  
+ myjoint.motorSpeed=-10;  
+ world.CreateJoint(myjoint);
+
+myjoint.bodyA = car;  
+ myjoint.bodyB = wheel2;  
+ myjoint.localAnchorA.Set(0.8,0);  
+ world.CreateJoint(myjoint);  
+ </code></pre>
+
+<p>我们来看看从 39 行开始的连接器部分吧，一个连接器通常连接着两个物体。连接后你可以用 <span style="text-decoration: underline;">localAnchor</span>  来定义节点在各物体的具体什么位置。 马达是连接器中一个非常有趣的功能，马达速度是以弧度为单位并且顺时针为正。 看到下面的小车无法爬上陡峭的“山坡”了吗？ 这是因为马达的  <span style="text-decoration: underline;">maxMotorTorque</span>  设置的不够大。大家使用的时候别忘了在代码开头加上  b2RevoluteJointDef = Box2D. Dynamics. Joints. b2RevoluteJointDef  哦。</p>
+<center>  
+<iframe height="240" scrolling="no" src="/content/images/project/box2d_example/studynotes3.5.html" style="width: 600px; height: 330px;" width="320"></iframe></center>**鼠标连接器** 
+
+<p>也许你还没发现，其实你完全可以用鼠标任意拖拽上面的小车哦！这都要归功于强大的鼠标连接器，不过它的创建方法如果现在就介绍还是过于复杂了，所以这里我只把它的使用代码贴一下，大家就勉为其难先知其然，迟些再知其所以然吧：</p>
+<p><strong>步骤 1</strong>, 先确认你的文件开头有下面几行代码：</p>
+<pre><code>
+
+var b2Vec2 = Box2D.Common.Math.b2Vec2  
+ , b2BodyDef = Box2D.Dynamics.b2BodyDef  
+ , b2Body = Box2D.Dynamics.b2Body  
+ , b2FixtureDef = Box2D.Dynamics.b2FixtureDef  
+ , b2World = Box2D.Dynamics.b2World  
+ , b2PolygonShape = Box2D.Collision.Shapes.b2PolygonShape  
+ , b2CircleShape = Box2D.Collision.Shapes.b2CircleShape  
+ , b2RevoluteJointDef=Box2D.Dynamics.Joints.b2RevoluteJointDef  
+ , b2MouseJointDef = Box2D.Dynamics.Joints.b2MouseJointDef  
+ , b2DebugDraw = Box2D.Dynamics.b2DebugDraw  
+ , b2Fixture = Box2D.Dynamics.b2Fixture  
+ , b2AABB = Box2D.Collision.b2AABB;
+
+</code></pre>
+
+<p><strong>步骤 2</strong>, 将下面的代码加到  <span style="text-decoration: underline;">window.setInterval(update, 1000 / 60);  </span>的后面：</p>
+<pre><code>
+
+//鼠标
+
+var mouseX, mouseY, mousePVec, isMouseDown, selectedBody, mouseJoint;  
+ var canvasPosition = getElementPosition(document.getElementById(“canvas”));
+
+document.addEventListener(“mousedown”, function(e) {  
+ isMouseDown = true;  
+ handleMouseMove(e);  
+ document.addEventListener(“mousemove”, handleMouseMove, true);  
+ }, true);
+
+document.addEventListener(“mouseup”, function() {  
+ document.removeEventListener(“mousemove”, handleMouseMove, true);  
+ isMouseDown = false;  
+ mouseX = undefined;  
+ mouseY = undefined;  
+ }, true);
+
+function handleMouseMove(e) {  
+ mouseX = (e.clientX – canvasPosition.x) / 30;  
+ mouseY = (e.clientY – canvasPosition.y) / 30;  
+ };
+
+function getBodyAtMouse() {  
+ mousePVec = new b2Vec2(mouseX, mouseY);  
+ var aabb = new b2AABB();  
+ aabb.lowerBound.Set(mouseX – 0.001, mouseY – 0.001);  
+ aabb.upperBound.Set(mouseX + 0.001, mouseY + 0.001);
+
+// 遍历寻找重合物体
+
+selectedBody = null;  
+ world.QueryAABB(getBodyCB, aabb);  
+ return selectedBody;  
+ }
+
+function getBodyCB(fixture) {  
+ if(fixture.GetBody().GetType() != b2Body.b2_staticBody) {  
+ if(fixture.GetShape().TestPoint(fixture.GetBody().GetTransform(), mousePVec)) {  
+ selectedBody = fixture.GetBody();  
+ return false;  
+ }  
+ }  
+ return true;  
+ }
+
+</code></pre>
+
+<p><strong>步骤 3</strong>, 将下面的代码放进 update() 方法中:</p>
+<pre><code>
+
+if(isMouseDown && (!mouseJoint)) {  
+ var body = getBodyAtMouse();  
+ if(body) {  
+ var md = new b2MouseJointDef();  
+ md.bodyA = world.GetGroundBody();  
+ md.bodyB = body;  
+ md.target.Set(mouseX, mouseY);  
+ md.collideConnected = true;  
+ md.maxForce = 300.0 * body.GetMass();  
+ mouseJoint = world.CreateJoint(md);  
+ body.SetAwake(true);  
+ }  
+ }
+
+if(mouseJoint) {  
+ if(isMouseDown) {  
+ mouseJoint.SetTarget(new b2Vec2(mouseX, mouseY));  
+ } else {  
+ world.DestroyJoint(mouseJoint);  
+ mouseJoint = null;  
+ }  
+ }  
+ </code></pre>
+
+<p><strong>步骤 4</strong>, 在文件最后加入下面的代码:</p>
+<pre><code>  
+ //帮助
+
+//http://js-tut.aardon.de/js-tut/tutorial/position.html  
+ function getElementPosition(element) {  
+ var elem=element, tagname=””, x=0, y=0;
+
+while((typeof(elem) == “object”) && (typeof(elem.tagName) != “undefined”)) {  
+ y += elem.offsetTop;  
+ x += elem.offsetLeft;  
+ tagname = elem.tagName.toUpperCase();
+
+if(tagname == “BODY”)  
+ elem=0;
+
+if(typeof(elem) == “object”) {  
+ if(typeof(elem.offsetParent) == “object”)  
+ elem = elem.offsetParent;  
+ }  
+ }
+
+return {x: x, y: y};  
+ }  
+ </code></pre>
+
+<p>大功告成了~  ^ ^</p>
+<p>放一个无关紧要的有趣例子吧（没有节操的童鞋是看不到的哦）：</p>
+<center>  
+<iframe height="240" scrolling="no" src="/content/images/project/box2d_example/temple(big).html" style="width: 600px; height: 450px;" width="320"></iframe></center>
+
+            </article>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+              </div>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" target="_blank" rel="nofollow noopener noopener">CC BY-SA 3.0协议</a> 。转载请注明出处！</p>
+              
+              
+                <div class="post-prevnext row">
+                  <div class="post-prev col-6">
+                    
+                    
+                      <a href="/2012/03/14/interactivity--e6-93-8d-e7-ba-b5/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">Interactivity  |  操纵</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </div>
+                  <div class="post-next col-6">
+                    
+                    
+                      <a href="/2012/03/09/back-to-studio--e5-8f-88-e5-bc-80-e5-ad-a6-e4-ba-86-e8-af-b6-ef-bd-9e/">
+                        <span class="hidden-mobile">Back to Studio~ | 又开学了诶～</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </div>
+                </div>
+              
+            </div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div id="tocbot"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+  </main>
+
+  
+    <a id="scroll-top-button" href="#" role="button">
+      <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  
+
+  
+
+  <footer class="mt-5">
+  <div class="text-center py-3">
+    <div>
+      <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a>
+      <i class="iconfont icon-love"></i>
+      <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener">
+        <span>Fluid</span></a>
+    </div>
+    
+
+    
+
+    
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script  src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js" ></script>
+<script  src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+<script  src="/js/main.js" ></script>
+
+
+  <script  src="/js/lazyload.js" ></script>
+
+
+
+  
+  <script  src="https://cdn.staticfile.org/tocbot/4.10.0/tocbot.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      var boardCtn = $('#board-ctn');
+      var boardTop = boardCtn.offset().top;
+
+      tocbot.init({
+        tocSelector: '#tocbot',
+        contentSelector: '.post-content',
+        headingSelector: 'h1,h2,h3,h4,h5,h6',
+        linkClass: 'tocbot-link',
+        activeLinkClass: 'tocbot-active-link',
+        listClass: 'tocbot-list',
+        isCollapsedClass: 'tocbot-is-collapsed',
+        collapsibleClass: 'tocbot-is-collapsible',
+        collapseDepth: 0,
+        scrollSmooth: true,
+        headingsOffset: -boardTop
+      });
+      if ($('.toc-list-item').length > 0) {
+        $('#toc').css('visibility', 'visible');
+      }
+    });
+  </script>
+
+
+
+
+
+  <script defer src="https://cdn.staticfile.org/clipboard.js/2.0.6/clipboard.min.js" ></script>
+  <script  src="/js/clipboard-use.js" ></script>
+
+
+
+
+
+
+<!-- Plugins -->
+
+
+
+  <script  src="https://cdn.staticfile.org/prettify/188.0.0/prettify.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      $('pre').each(function () {
+        const pre = $(this);
+        if (pre.find('code.mermaid').length > 0) {
+          return;
+        }
+        pre.addClass('prettyprint  linenums');
+      });
+      prettyPrint();
+    })
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "Powerful Joints |  强大的连接器&nbsp;",
+      ],
+      cursorChar: "_",
+      typeSpeed: 70,
+      loop: false,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "hover",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      getSearchFile(path);
+      this.onclick = null
+    }
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <script>
+    $('#post img:not(.no-zoom img, img[no-zoom]), img[zoom]').each(
+      function () {
+        var element = document.createElement('a');
+        $(element).attr('data-fancybox', 'images');
+        $(element).attr('href', $(this).attr('src'));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

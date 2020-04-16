@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="David">
+  <meta name="keywords" content="">
+  <title>Collision Detection  |  碰撞检测 - Architech&#39;s blog</title>
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
+<link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/3.0.1/github-markdown.min.css" />
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_9n5xqdrq0nc.css">
+
+
+
+  <link  rel="stylesheet" href="/lib/prettify/tomorrow-night-eighties.min.css" />
+
+
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>Architech's blog</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/">
+              <i class="iconfont icon-home-fill"></i>
+              首页</a>
+          </li>
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/archives/">
+              <i class="iconfont icon-archive-fill"></i>
+              归档</a>
+          </li>
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/categories/">
+              <i class="iconfont icon-category-fill"></i>
+              分类</a>
+          </li>
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/tags/">
+              <i class="iconfont icon-tags-fill"></i>
+              标签</a>
+          </li>
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/about/">
+              <i class="iconfont icon-user-fill"></i>
+              关于</a>
+          </li>
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="view intro-2" id="background" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.7)">
+          <div class="container text-center white-text fadeInUp">
+            <span class="h2" id="subtitle">
+              
+            </span>
+
+            
+              
+                <div class="mt-3 post-meta">
+                  <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+                  <time datetime="2012-03-23 02:22">
+                    星期五, 三月 23日 2012, 2:22 凌晨
+                  </time>
+                </div>
+              
+
+              <div class="mt-1">
+                
+                  
+                  <span class="post-meta mr-2">
+                    <i class="iconfont icon-chart"></i>
+                    1.1k 字
+                  </span>
+                
+
+                
+                  
+                  <span class="post-meta mr-2">
+                      <i class="iconfont icon-clock-fill"></i>
+                    
+                    
+                    16
+                     分钟
+                  </span>
+                
+
+                
+              </div>
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="container nopadding-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <div class="post-content mx-auto" id="post">
+            
+            <article class="markdown-body">
+              <p>This post will introduce collision detection. Do I need to explain why this is extremely useful in a game? ^ ^</p>
+<p>这篇介绍碰撞检测，它的用处太多了吧, 比方说如果玩家碰到什么不该碰的东西就会挂掉之类的。。 ^ ^</p>
+<p>The simplest reason for why we need a collision detection would be deciding whether your player can jump or not.（You don’t want your player to be able to jump even when falling in the air right?）So to know whether your player is on the ground is important. Before I learn collision detection, this is how I solve the problem:</p>
+<pre><code>  
+ …  
+ if (player.y=10) // ’10′ is the y coordinate of player when it’s on the ground  
+ canjump=true;  
+ …  
+ if (actualkey== ”w”  &&  canjump)  
+ jump();  
+</code></pre>
+
+<p>When the player is jumping its y coordinate will be smaller than 10 therefore can’t jump anymore.  That seems pretty easy right? No, It can be a lot of work in a real game if done that way! Imagine having 20 floating platforms, moreover your player may need to jump on other moving objects too… Now let’s look at a better way – <strong>b2ContactListener</strong>. It’s a very powerful and complex function but for now we only need <strong>BeginContact **and</strong> EndContact**. As their names suggest, they tell you when the contact begin and end. So you can know when your player is contacting the ground or other objects and when it’s not. I’m going to use the same example from my <a href="http://box2dweb.com/interactivity-%e6%93%8d%e7%ba%b5/" target="_blank" rel="noopener" title="Interactivity  |  操纵">last post</a> to show you how it works:</p>
+<p><strong>Step 1</strong>,<br>add userData</p>
+<p>For later referring, just add this line <span style="text-decoration: underline;">bodyDef.userData = ‘wheel’</span> when creating the wheel of the car :</p>
+<pre><code>  
+ var bodyDef = new b2BodyDef;  
+ bodyDef.type = b2Body.b2_dynamicBody;  
+ bodyDef.userData = ‘wheel’ // just add this line into the original code  
+ …  
+ …  
+ var wheel1=world.CreateBody(bodyDef);  
+ wheel1.CreateFixture(fixDef);  
+</code></pre>
+
+<p><strong>Step 2</strong>, set up jump function and key:</p>
+<pre><code>   
+ function jump() {  
+ car.SetLinearVelocity(new b2Vec2(0,-10))  
+ }  
+ …  
+ …  
+ //you learnt where to put the following lines from last post  
+ if (actualkey==”j” && onground )  
+ jump();  
+</code></pre>
+
+<p><strong>Step 3</strong>, set up listener</p>
+ <pre><code>   
+ var listener = new Box2D.Dynamics.b2ContactListener;  
+ listener. BeginContact = function(contact) {  
+ if (contact.GetFixtureA().GetBody().GetUserData()== ‘wheel’ || contact.GetFixtureB().GetBody().GetUserData()== ‘wheel’ )  // think about why we don’t use fixture’s userData directly.  
+ onground = true;  // don’t put ‘var’ here!  
+ }  
+ listener. EndContact = function(contact) {  
+ if (contact.GetFixtureA().GetBody().GetUserData()== ‘wheel’ || contact.GetFixtureB().GetBody().GetUserData()== ‘wheel’ )  
+ onground = false;  
+ }  
+ </code></pre>
+
+<p><strong>Step 4</strong>, add following line into update()</p>
+<p><code>world.SetContactListener(listener);</code></p>
+<p>In step 3, it’s basically checking whether one of the two fixtures that are involved in contact is ‘wheel’. Alright, now if  you press ‘j’ when the wheel is contacting the ground, the car below should be able to jump!</p>
+<center>  
+<iframe height="240" scrolling="no" src="/content/images/project/box2d_example/studynotes7.html" style="width: 600px; height: 330px;" width="320"></iframe></center> －－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+<p>窃以为碰撞检测最基本的用途是用来判定一个物体是否可以“往上跳”（当物体正在空中下坠的时候，一般来说是不允许跳的对吧）。具体要如何判定是问题的关键！ 在寡人学会用碰撞检测之前，本王是这么解决这个问题的：</p>
+<pre><code>  
+ …  
+ if (player.y=10) // ’10′是指玩家在地上时候的纵坐标  
+ canjump=true;  
+ …  
+ if (actualkey==”w” && canjump)  
+ jump();  
+ </code></pre>
+
+<p>于是当玩家在地上的时候，它的纵坐标就大于等于 10，跳起来就小于 10 了，于是就不能跳了。 这似乎是个简单易行的方法？ 当然不！这完全是个费力不讨好的笨法子。 当你面对十几、二十个浮动的平台，而且还有其他活动的物体需要玩家踩着往上跳的时候，你的头就果断变大了。。。所以现在,我们开始学习高端技术 –  接触监听器（<strong>b2ContactListener）。 **这是 box2d 提供的一个非常强大的功能，我们暂时只介绍其中的接触开始（</strong>BeginContact）<strong>与   接触结束</strong>（EndContact）。** 就像名字听起来一样，它们分别在物体间的接触开始和结束的时候给于你提示。 没错~ 有了它们我们就可以对玩家是否站在地上了如指掌了~ 现在我直接拿<a href="http://box2dweb.com/interactivity-%e6%93%8d%e7%ba%b5/" target="_blank" rel="noopener" title="Interactivity  |  操纵">上篇</a>中的例子向你展示<strong>接触监听器</strong>具体是如何使用的:</p>
+<p><strong>步骤 1,</strong> 添加 userData</p>
+<p>为了后面可以“验明正身”，请在创建轮子的时候加入这行用来标记  <span style="text-decoration: underline;">bodyDef.userData = ‘wheel’</span>  :</p>
+<pre><code>  
+ var bodyDef = new b2BodyDef;  
+ bodyDef.type = b2Body.b2_dynamicBody;  
+ bodyDef.userData = ‘wheel’ // 这行是新加入的哦~  
+ …  
+ …  
+ var wheel1=world.CreateBody(bodyDef);  
+ wheel1.CreateFixture(fixDef);  
+ </code></pre>
+
+<p><strong>步骤 2</strong>, 设置向上跳的功能以及对应的键 :</p>
+<pre><code>  
+ function jump() {  
+ car.SetLinearVelocity(new b2Vec2(0,-10))  
+ }  
+ …  
+ …  
+ //看过上一篇的话你应该知道下面两行该放哪吧~  
+ if (actualkey==”j” && onground )  
+ jump();  
+ </code></pre>
+
+<p><strong>步骤 3</strong>, 设置监听器：</p>
+<pre><code>  
+ var listener = new Box2D.Dynamics.b2ContactListener;  
+ listener. BeginContact = function(contact) {  
+ if (contact.GetFixtureA().GetBody().GetUserData()== ‘wheel’ || contact.GetFixtureB().GetBody().GetUserData()== ‘wheel’ )  // 想想为什么不直接用fixture 的 userData。  
+ onground = true;   // 别加 ‘var’ !  
+ }  
+ listener. EndContact = function(contact) {  
+ if (contact.GetFixtureA().GetBody().GetUserData()== ‘wheel’ || contact.GetFixtureB().GetBody().GetUserData()== ‘wheel’ )  
+ onground = false;  
+ }  
+ </code></pre>
+
+<p><strong>步骤 4</strong>, 把下面这行放进 update() ：</p>
+<p><code>world.SetContactListener(listener);</code></p>
+<p>在第三步中，我们检验了接触物体的 userData，接触总是发生在两个物体间，我们想知道这两个物体其中一个是否就是开始标记过的。 OK，现在只要你在小车的轮子接触着地面的时候按下“j”键，小车就会蹦起来啦！ 撒花<del>~</del></p>
+<center>  
+<iframe height="240" scrolling="no" src="/content/images/project/box2d_example/studynotes7.html" style="width: 600px; height: 330px;" width="320"></iframe></center>
+
+            </article>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+              </div>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" target="_blank" rel="nofollow noopener noopener">CC BY-SA 3.0协议</a> 。转载请注明出处！</p>
+              
+              
+                <div class="post-prevnext row">
+                  <div class="post-prev col-6">
+                    
+                    
+                      <a href="/2012/04/03/208-clicks-on-april-1st/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">208 clicks on April 1st because of google</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </div>
+                  <div class="post-next col-6">
+                    
+                    
+                      <a href="/2012/03/20/villa-savoye-section-box2d/">
+                        <span class="hidden-mobile">Villa Savoye Section | Box2d</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </div>
+                </div>
+              
+            </div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div id="tocbot"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+  </main>
+
+  
+    <a id="scroll-top-button" href="#" role="button">
+      <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  
+
+  
+
+  <footer class="mt-5">
+  <div class="text-center py-3">
+    <div>
+      <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a>
+      <i class="iconfont icon-love"></i>
+      <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener">
+        <span>Fluid</span></a>
+    </div>
+    
+
+    
+
+    
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script  src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js" ></script>
+<script  src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+<script  src="/js/main.js" ></script>
+
+
+  <script  src="/js/lazyload.js" ></script>
+
+
+
+  
+  <script  src="https://cdn.staticfile.org/tocbot/4.10.0/tocbot.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      var boardCtn = $('#board-ctn');
+      var boardTop = boardCtn.offset().top;
+
+      tocbot.init({
+        tocSelector: '#tocbot',
+        contentSelector: '.post-content',
+        headingSelector: 'h1,h2,h3,h4,h5,h6',
+        linkClass: 'tocbot-link',
+        activeLinkClass: 'tocbot-active-link',
+        listClass: 'tocbot-list',
+        isCollapsedClass: 'tocbot-is-collapsed',
+        collapsibleClass: 'tocbot-is-collapsible',
+        collapseDepth: 0,
+        scrollSmooth: true,
+        headingsOffset: -boardTop
+      });
+      if ($('.toc-list-item').length > 0) {
+        $('#toc').css('visibility', 'visible');
+      }
+    });
+  </script>
+
+
+
+
+
+  <script defer src="https://cdn.staticfile.org/clipboard.js/2.0.6/clipboard.min.js" ></script>
+  <script  src="/js/clipboard-use.js" ></script>
+
+
+
+
+
+
+<!-- Plugins -->
+
+
+
+  <script  src="https://cdn.staticfile.org/prettify/188.0.0/prettify.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      $('pre').each(function () {
+        const pre = $(this);
+        if (pre.find('code.mermaid').length > 0) {
+          return;
+        }
+        pre.addClass('prettyprint  linenums');
+      });
+      prettyPrint();
+    })
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "Collision Detection  |  碰撞检测&nbsp;",
+      ],
+      cursorChar: "_",
+      typeSpeed: 70,
+      loop: false,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "hover",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      getSearchFile(path);
+      this.onclick = null
+    }
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <script>
+    $('#post img:not(.no-zoom img, img[no-zoom]), img[zoom]').each(
+      function () {
+        var element = document.createElement('a');
+        $(element).attr('data-fancybox', 'images');
+        $(element).attr('href', $(this).attr('src'));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

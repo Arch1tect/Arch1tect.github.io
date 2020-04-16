@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="David">
+  <meta name="keywords" content="">
+  <title>Biophysics 2nd midterm ╮(╯_╰)╭ - Architech&#39;s blog</title>
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
+<link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/3.0.1/github-markdown.min.css" />
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_9n5xqdrq0nc.css">
+
+
+
+  <link  rel="stylesheet" href="/lib/prettify/tomorrow-night-eighties.min.css" />
+
+
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>Architech's blog</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/">
+              <i class="iconfont icon-home-fill"></i>
+              首页</a>
+          </li>
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/archives/">
+              <i class="iconfont icon-archive-fill"></i>
+              归档</a>
+          </li>
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/categories/">
+              <i class="iconfont icon-category-fill"></i>
+              分类</a>
+          </li>
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/tags/">
+              <i class="iconfont icon-tags-fill"></i>
+              标签</a>
+          </li>
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/about/">
+              <i class="iconfont icon-user-fill"></i>
+              关于</a>
+          </li>
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="view intro-2" id="background" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.7)">
+          <div class="container text-center white-text fadeInUp">
+            <span class="h2" id="subtitle">
+              
+            </span>
+
+            
+              
+                <div class="mt-3 post-meta">
+                  <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+                  <time datetime="2013-03-20 02:33">
+                    星期三, 三月 20日 2013, 2:33 凌晨
+                  </time>
+                </div>
+              
+
+              <div class="mt-1">
+                
+                  
+                  <span class="post-meta mr-2">
+                    <i class="iconfont icon-chart"></i>
+                    744 字
+                  </span>
+                
+
+                
+                  
+                  <span class="post-meta mr-2">
+                      <i class="iconfont icon-clock-fill"></i>
+                    
+                    
+                    14
+                     分钟
+                  </span>
+                
+
+                
+              </div>
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="container nopadding-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <div class="post-content mx-auto" id="post">
+            
+            <article class="markdown-body">
+              <p><strong>Interesting facts</strong><br> Area of interaction between blood and air is ~80m^2<br> The total amount of blood in the lungs at any time 1L = 20% of total blood.<br> The amount of blood in capillaries surrounding alveoli(肺泡) = 70ml.<br> Blood is in pulmonary capillaries for less than 1s.</p>
+<p><a href="/content/images/uploads/2013/03/si55550999_ma.jpg"><img src="/content/images/uploads/2013/03/si55550999_ma-300x236.jpg" srcset="/img/loading.gif" alt="si55550999_ma"></a></p>
+<p>sinus 鼻窦<br> Larynx 喉<br> diaphragm 隔膜<br> platelet 血小板（凝血、止血）</p>
+<p>From a simple mechanical point of view, the lung can be pictured as bag that is connected to an open tube and inside an expandable chamber.</p>
+<p><a href="/content/images/uploads/2013/03/Screen-Shot-2013-03-19-at-10.20.46-PM.png"><img src="/content/images/uploads/2013/03/Screen-Shot-2013-03-19-at-10.20.46-PM-300x191.png" srcset="/img/loading.gif" alt="Screen Shot 2013-03-19 at 10.20.46 PM"></a></p>
+<p><strong>Timescale</strong></p>
+<p><a href="/content/images/uploads/2013/03/Screen-Shot-2013-03-19-at-10.28.28-PM.png"><img src="/content/images/uploads/2013/03/Screen-Shot-2013-03-19-at-10.28.28-PM-300x218.png" srcset="/img/loading.gif" alt="Screen Shot 2013-03-19 at 10.28.28 PM"></a></p>
+<p><strong>Surface Tension</strong></p>
+<p>Water molecules have strong attractive Van-der-Waals interactions between each other, but little interactions with air or other non-polar materials. Creating a water-air surface costs energy. Surface tension: r(gama) = E/A</p>
+<p>For water: 0.075 N/m</p>
+<p>Pressure inside: P = 4r/R</p>
+<p><strong>Surface Tension in Connected Alveoli</strong></p>
+<p>The surface of a sphere scales as V2/3. Thus the surface energy of one large sphere is smaller than the surface energy of multiple small spheres of the same volume.<br> Why are the alveoli not merging?<br> Lung surfactants reduce the surface tension.<br> Surface tension increases when curvature(曲率: 1/radius) is very large.</p>
+<p><a href="/content/images/uploads/2013/03/Screen-Shot-2013-03-19-at-10.53.48-PM.png"><img src="/content/images/uploads/2013/03/Screen-Shot-2013-03-19-at-10.53.48-PM-300x209.png" srcset="/img/loading.gif" alt="Screen Shot 2013-03-19 at 10.53.48 PM"></a></p>
+<p><a href="/content/images/uploads/2013/03/Screen-Shot-2013-03-19-at-11.24.34-PM.png"><img src="/content/images/uploads/2013/03/Screen-Shot-2013-03-19-at-11.24.34-PM-300x204.png" srcset="/img/loading.gif" alt="Screen Shot 2013-03-19 at 11.24.34 PM"></a></p>
+<p><a href="/content/images/uploads/2013/03/Screen-Shot-2013-03-19-at-11.38.39-PM.png"><img src="/content/images/uploads/2013/03/Screen-Shot-2013-03-19-at-11.38.39-PM-300x200.png" srcset="/img/loading.gif" alt="Screen Shot 2013-03-19 at 11.38.39 PM"></a></p>
+<p><strong>Pressure in an Artery Law of Laplace</strong><br> Tension in a cylindrical wall: T = P x r Tension in a spherical wall: T = ½ x P x r</p>
+<p>• High pressure leads to an expansion of the<br> arterial wall.<br> • For small pressure increases, this is<br> accommodated by an increase in the<br> diameter of the blood vessel.<br> • Large pressure increases lead to aneurisms.<br> • The tension on the heart wall increases with<br> increasing pressure and volume.<br> • Hypertension can lead to congestive heart<br> failure.</p>
+<p>Arterioles transport blood TO Capillaries from the HEART<br> Venules transport BLOOD AWAY FROM Capillaries and to the HEART</p>
+<p>• In hydrostatics, the pressure in connected vessels is the same everywhere (Pascal’s Principle).<br> • In hydrodynamics, the pressure depends on the velocity. = &gt; Bernoulli’s Principle</p>
+<p><strong>Viscosity</strong></p>
+<p>Force required to shear a fluid between a stationary and a moving plate:<br><a href="/content/images/uploads/2013/03/Screen-Shot-2013-03-20-at-12.15.42-AM.png"><img src="/content/images/uploads/2013/03/Screen-Shot-2013-03-20-at-12.15.42-AM-300x138.png" srcset="/img/loading.gif" alt="Screen Shot 2013-03-20 at 12.15.42 AM"></a></p>
+<p><a href="/content/images/uploads/2013/03/Screen-Shot-2013-03-20-at-12.24.36-AM.png"><img src="/content/images/uploads/2013/03/Screen-Shot-2013-03-20-at-12.24.36-AM-300x186.png" srcset="/img/loading.gif" alt="Screen Shot 2013-03-20 at 12.24.36 AM"></a></p>
+<p><strong>Blood as a Non-Newtonian Fluid</strong><br> • Blood is a complex fluid.<br> •The viscosity of blood decreases with increasing shear rate.<br> • At low shear rates, red blood cells can aggregate, and increase the viscosity.<br> • At high shear rates, red blood cells can be deformed, decreasing the viscosity。</p>
+<p><strong>Laminar vs. Turbulent flow</strong></p>
+<p><a href="/content/images/uploads/2013/03/Screen-Shot-2013-03-20-at-12.29.02-AM.png"><img src="/content/images/uploads/2013/03/Screen-Shot-2013-03-20-at-12.29.02-AM-300x77.png" srcset="/img/loading.gif" alt="Screen Shot 2013-03-20 at 12.29.02 AM"></a></p>
+<p>• When viscosity dominates, the flow is laminar.<br> • When inertial effects dominate,the flow becomes turbulent.<br> • Ratio of inertia to viscosity: Reynolds number Re=ρvR/η<br> • For a cylindrical tube, crossover at Re≈2300.<br> • Turbulent flow has a larger flow resistance than laminar flow.</p>
+<p><strong>Diffusion – probabilistic approach</strong><br><strong>Gas Pressure</strong><br> Gas pressure is the result of the thermal motion of<br> the gas molecules.<br> • Given by the ideal gas law:<br> where R=Nk is the universal gas constant.<br> • For a mix of different non-interacting gases, the partial pressures of the individual gases add up:<br> P ⋅V = N ⋅R ⋅T<br> P_total= PA + PB<br><strong>Solubility of Gases</strong><br> • Gases can be dissolved in liquids.<br> • Henry’s law:<br> where k is the Henry constant; which is different for each gas / liquid combination and a measure for the solubility.<br> • For gas mixtures, P refers to the partial<br> pressure of the gas of interest.<br> • In the lung, the partial pressure of O2 in the air is higher than in venal veal blood, thus O2<br> enters the bloodstream. Reverse for CO2.</p>
+<p><strong>Osmosis</strong><br> • Osmosis requires a membrane that is permeable for only one species.<br> • All molecules of one species can be trapped in one side of the container, while the other species diffuses equally to both sides.<br> • Osmotic pressure: Π=c ⋅R ⋅T</p>
+<p><strong>The Cell Membrane</strong><br> cytoplasm 细胞质<br><a href="/content/images/uploads/2013/03/Screen-Shot-2013-03-20-at-2.22.47-AM.png"><img src="/content/images/uploads/2013/03/Screen-Shot-2013-03-20-at-2.22.47-AM-300x121.png" srcset="/img/loading.gif" alt="Screen Shot 2013-03-20 at 2.22.47 AM"></a><br> Separates the cytoplasm from the extracellular fluid.<br> • Consists mainly of a lipid bilayer and embedded proteins.<br> • Keeps vital compounds inside the cell.<br> • Keeps detrimental substances out of the cell.</p>
+<p><strong>The Lipid Bilayer</strong><br> The lipid bilayer consists primarily of a mix of<br> phospholipids.<br> • Generally fluid, but attached to some rigid structures.<br> • Polar (hydrophilic) on the outside.<br> • Non-polar (hydrophobic) on the inside.<br> • Approximately 3 nm thick.</p>
+<p><strong>What gets through…and what doesn’t</strong><br> Small hydrophobic molecules:<br> O2, CO2, N2, benzene<br> Small uncharged polar molecules: H2O, ethanol, glycerol<br> Larger uncharged polar molecules: glucose, amino acids, nucleotides<br> Ions: H+, Na+, HCO3-, K+, Ca+, Mg2+, Cl-, etc.</p>
+<p><strong>Other Transport Mechanisms</strong><br> DIFFUSION (small hydrophobic molecules only):<br> FACILITATED DIFFUSION, uniport (e.g. glucose transporters)<br> CO-TRANSPORT: symport(same direction) or antiport (opposite directions<br> CHANNELS, e.g. sodium channel, water channel (aquaporin)<br> ACTIVE TRANSPORTER, against potential energy gradient</p>
+
+            </article>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+              </div>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" target="_blank" rel="nofollow noopener noopener">CC BY-SA 3.0协议</a> 。转载请注明出处！</p>
+              
+              
+                <div class="post-prevnext row">
+                  <div class="post-prev col-6">
+                    
+                    
+                      <a href="/2013/03/20/the-iread-one-read-preliminary/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">iRead壹读初探</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </div>
+                  <div class="post-next col-6">
+                    
+                    
+                      <a href="/2013/03/18/toward-mediocrity-it-is-better-to-perish/">
+                        <span class="hidden-mobile">走向平庸，不如灭亡。</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </div>
+                </div>
+              
+            </div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div id="tocbot"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+  </main>
+
+  
+    <a id="scroll-top-button" href="#" role="button">
+      <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  
+
+  
+
+  <footer class="mt-5">
+  <div class="text-center py-3">
+    <div>
+      <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a>
+      <i class="iconfont icon-love"></i>
+      <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener">
+        <span>Fluid</span></a>
+    </div>
+    
+
+    
+
+    
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script  src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js" ></script>
+<script  src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+<script  src="/js/main.js" ></script>
+
+
+  <script  src="/js/lazyload.js" ></script>
+
+
+
+  
+  <script  src="https://cdn.staticfile.org/tocbot/4.10.0/tocbot.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      var boardCtn = $('#board-ctn');
+      var boardTop = boardCtn.offset().top;
+
+      tocbot.init({
+        tocSelector: '#tocbot',
+        contentSelector: '.post-content',
+        headingSelector: 'h1,h2,h3,h4,h5,h6',
+        linkClass: 'tocbot-link',
+        activeLinkClass: 'tocbot-active-link',
+        listClass: 'tocbot-list',
+        isCollapsedClass: 'tocbot-is-collapsed',
+        collapsibleClass: 'tocbot-is-collapsible',
+        collapseDepth: 0,
+        scrollSmooth: true,
+        headingsOffset: -boardTop
+      });
+      if ($('.toc-list-item').length > 0) {
+        $('#toc').css('visibility', 'visible');
+      }
+    });
+  </script>
+
+
+
+
+
+  <script defer src="https://cdn.staticfile.org/clipboard.js/2.0.6/clipboard.min.js" ></script>
+  <script  src="/js/clipboard-use.js" ></script>
+
+
+
+
+
+
+<!-- Plugins -->
+
+
+
+  <script  src="https://cdn.staticfile.org/prettify/188.0.0/prettify.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      $('pre').each(function () {
+        const pre = $(this);
+        if (pre.find('code.mermaid').length > 0) {
+          return;
+        }
+        pre.addClass('prettyprint  linenums');
+      });
+      prettyPrint();
+    })
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "Biophysics 2nd midterm ╮(╯_╰)╭&nbsp;",
+      ],
+      cursorChar: "_",
+      typeSpeed: 70,
+      loop: false,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "hover",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      getSearchFile(path);
+      this.onclick = null
+    }
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <script>
+    $('#post img:not(.no-zoom img, img[no-zoom]), img[zoom]').each(
+      function () {
+        var element = document.createElement('a');
+        $(element).attr('data-fancybox', 'images');
+        $(element).attr('href', $(this).attr('src'));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

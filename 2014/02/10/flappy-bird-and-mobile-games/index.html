@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="David">
+  <meta name="keywords" content="">
+  <title>Flappy Bird与手机游戏 - Architech&#39;s blog</title>
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
+<link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/3.0.1/github-markdown.min.css" />
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_9n5xqdrq0nc.css">
+
+
+
+  <link  rel="stylesheet" href="/lib/prettify/tomorrow-night-eighties.min.css" />
+
+
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>Architech's blog</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/">
+              <i class="iconfont icon-home-fill"></i>
+              首页</a>
+          </li>
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/archives/">
+              <i class="iconfont icon-archive-fill"></i>
+              归档</a>
+          </li>
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/categories/">
+              <i class="iconfont icon-category-fill"></i>
+              分类</a>
+          </li>
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/tags/">
+              <i class="iconfont icon-tags-fill"></i>
+              标签</a>
+          </li>
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/about/">
+              <i class="iconfont icon-user-fill"></i>
+              关于</a>
+          </li>
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="view intro-2" id="background" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.7)">
+          <div class="container text-center white-text fadeInUp">
+            <span class="h2" id="subtitle">
+              
+            </span>
+
+            
+              
+                <div class="mt-3 post-meta">
+                  <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+                  <time datetime="2014-02-10 01:36">
+                    星期一, 二月 10日 2014, 1:36 凌晨
+                  </time>
+                </div>
+              
+
+              <div class="mt-1">
+                
+                  
+                  <span class="post-meta mr-2">
+                    <i class="iconfont icon-chart"></i>
+                    1.5k 字
+                  </span>
+                
+
+                
+                  
+                  <span class="post-meta mr-2">
+                      <i class="iconfont icon-clock-fill"></i>
+                    
+                    
+                    15
+                     分钟
+                  </span>
+                
+
+                
+              </div>
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="container nopadding-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <div class="post-content mx-auto" id="post">
+            
+            <article class="markdown-body">
+              <p>昨晚偶然看了一篇文章提到一个叫做 Flappy Bird 的手机游戏，好奇之余就下载来玩了。 果然游戏的一大卖点就是虽然简单，但是难度异常的高。 我到今天为止玩了大概有几个小时，尝试了几百次，现在的最高纪录达到了37，但仍然常常会通不过第一个管子。 这样的一款虐待玩家的游戏按理应该是游戏性极差的， 然而它却取得了不可置疑的成功，着实奇怪。</p>
+<p><strong>媒体效应与玩家心理</strong></p>
+<p>我想如果我只是偶然从Google Play下载了这个游戏，玩了几下发现第一个管子就过不去， 我不会这么耐着性子几个小时的反复挑战。事实上看到它在Google Play平平的游戏介绍和截图，我根本就不会想要去下载，加上我本身特别不喜欢classic pixel这种风格。 而正是因为我读了相关的报道，并且看到SNS上很多人发状态提到这个游戏是多么虐心，我才会特别有耐心的去玩这个游戏。 看到有的人说只能过到第三关，有的人说辛苦了一个下午终于过了50关，让我越发好奇自己大概能过多少关。 虽然游戏本身突然撞管的猝死也使得玩家很不甘心，想要继续挑战，但我认为媒体效应在这个游戏的传播中还是占了主要。这个游戏不按常理出牌成为了它最大的卖点。</p>
+<p><a href="/content/images/uploads/2014/02/Screenshot_2014-02-09-22-43-18.png"><img src="/content/images/uploads/2014/02/Screenshot_2014-02-09-22-43-18-168x300.png" srcset="/img/loading.gif" alt="Screenshot_2014-02-09-22-43-18"></a></p>
+<p><strong>一天收入五万美金？</strong></p>
+<p>报道称该游戏的developer一天可以赚到5万美金的广告收入，我觉得这很可能和他极短的游戏周期密切相关。为什么这么说呢， 首先游戏本身是免费的，而游戏运行中，有且仅有在出现Game Over这个画面的时候屏幕最上方会出现广告banner，广告主要有两类：CPC(cost per click)和CPM(cost per impression), 我想这里大概是CPM这个类型，也就是当广告每累计出现一千次，游戏作者能获得多少钱。应该不会是CPC, 因为我玩了几个小时，从来没有想不开去按过那个广告。另外这个banner 的出现丝毫不影响游戏本身的进行，玩家点播放按钮，那个小绿横三角就可以重新挑战；不像有些游戏非要你去点广告上的叉，才能继续，而且叉叉故意放很小让玩家经常一不小心点到广告本身导致页面跳转过去。这样虽然能赚到CPC的钱，但是非常惹人厌。</p>
+<p>至于这个游戏周期短我是这么想的：</p>
+<p>第一个管子过不去以至于游戏失败耗时5秒；</p>
+<p>第十个管子过不去以至于游戏失败耗时15秒；</p>
+<p>第十五个管子过不去以至于游戏失败耗时20秒；</p>
+<p>短短十分钟的游戏时间里，玩家多数时候不能战胜第十个管子，那么他就可以看到这个游戏失败的画面：10×60/15 = 40 次</p>
+<p>事实上刚刚接触的玩家前三关估计都要玩好久才能过去。</p>
+<p>而我又记录了一下我玩其它同类型游戏平均是游戏开始3分钟后才失败的（同类型的主要是指无限挑战，操作极简这样的，这里我玩的是NinJump） 而且是因为游戏后面难度提升导致的失败而不会像Flappy Bird这样难度一直不变。 那么它的游戏周期就只有 10 / 3 = 3 次，和Flappy Bird的40次相差甚远。所以总结来看： 极高下载量 + 极高游戏周期 + 大量游戏时间 构成了这个惊人的纯广告收入。</p>
+<p><strong>游戏本身</strong></p>
+<p>游戏本身的质量其实没有看上去那么糟糕，至少是讲技术而非靠运气的游戏。 我虽然现在仍然有一半的时间在前5关挂掉，不过另外有三成时间是可以挑战到20关以上，说明还是有在进步的~ 只是是它的学习曲线之陡让它有了虐人游戏的称号。 开发者虽然只有一个人，但也是有着丰富开发经验的专业人员，游戏麻雀虽小五脏俱全，简洁到了极致。操作简单、玩法简单这点是这种mini游戏的一个共性，<strong>我觉得玩法的复杂程度就是应该和操作的复杂程度一致，如果一个游戏的玩法并没有多丰富，却有着不对称的复杂操作，那这个游戏即便不失败，也是有进步空间的。 而如果简单的操作可以很舒服的玩下来一个玩法丰富的游戏，那它应该是优于同类作品，易于流行的。</strong></p>
+<p>不扯了，最后我碰巧又看到这个女生的视频：  </p>
+<iframe allowfullscreen="" frameborder="0" height="498" src="http://player.youku.com/embed/XNjcwMTg3NDgw" width="510"></iframe>
+
+
+
+<p>笑一笑然后我意识到这也是这个游戏病毒般传播的一个环节, NYANN 第一天玩了两下被虐然后扔掉不玩，第二天看到朋友的tweet又提到这个游戏，于是重新拾起来玩，最后这个视频本身也会更广泛的吸引人来试玩这个游戏。  再或者有人路过这里看了我的日志也许也会想玩来试试：）</p>
+<p>今天这款游戏已经被开发者下架了。 又读到了不少有意思的相关文章，有些想法就记了下来。 刚好这学期在学一门Mobile Entrepreneurship， 所以对这方面比较有兴趣，教授很有意思，当年据说还教过Larry Page.</p>
+
+            </article>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+              </div>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" target="_blank" rel="nofollow noopener noopener">CC BY-SA 3.0协议</a> 。转载请注明出处！</p>
+              
+              
+                <div class="post-prevnext row">
+                  <div class="post-prev col-6">
+                    
+                    
+                      <a href="/2014/02/13/mobile-entrepreneurship-mobile-terminal-entrepreneurial-class-and-soloway/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">Mobile Entrepreneurship（移动端创业课）and Soloway</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </div>
+                  <div class="post-next col-6">
+                    
+                    
+                      <a href="/2014/02/07/mimic-google-doc-phone-app/">
+                        <span class="hidden-mobile">模仿Google Doc的Mobile App</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </div>
+                </div>
+              
+            </div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div id="tocbot"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+  </main>
+
+  
+    <a id="scroll-top-button" href="#" role="button">
+      <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  
+
+  
+
+  <footer class="mt-5">
+  <div class="text-center py-3">
+    <div>
+      <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a>
+      <i class="iconfont icon-love"></i>
+      <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener">
+        <span>Fluid</span></a>
+    </div>
+    
+
+    
+
+    
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script  src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js" ></script>
+<script  src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+<script  src="/js/main.js" ></script>
+
+
+  <script  src="/js/lazyload.js" ></script>
+
+
+
+  
+  <script  src="https://cdn.staticfile.org/tocbot/4.10.0/tocbot.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      var boardCtn = $('#board-ctn');
+      var boardTop = boardCtn.offset().top;
+
+      tocbot.init({
+        tocSelector: '#tocbot',
+        contentSelector: '.post-content',
+        headingSelector: 'h1,h2,h3,h4,h5,h6',
+        linkClass: 'tocbot-link',
+        activeLinkClass: 'tocbot-active-link',
+        listClass: 'tocbot-list',
+        isCollapsedClass: 'tocbot-is-collapsed',
+        collapsibleClass: 'tocbot-is-collapsible',
+        collapseDepth: 0,
+        scrollSmooth: true,
+        headingsOffset: -boardTop
+      });
+      if ($('.toc-list-item').length > 0) {
+        $('#toc').css('visibility', 'visible');
+      }
+    });
+  </script>
+
+
+
+
+
+  <script defer src="https://cdn.staticfile.org/clipboard.js/2.0.6/clipboard.min.js" ></script>
+  <script  src="/js/clipboard-use.js" ></script>
+
+
+
+
+
+
+<!-- Plugins -->
+
+
+
+  <script  src="https://cdn.staticfile.org/prettify/188.0.0/prettify.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      $('pre').each(function () {
+        const pre = $(this);
+        if (pre.find('code.mermaid').length > 0) {
+          return;
+        }
+        pre.addClass('prettyprint  linenums');
+      });
+      prettyPrint();
+    })
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "Flappy Bird与手机游戏&nbsp;",
+      ],
+      cursorChar: "_",
+      typeSpeed: 70,
+      loop: false,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "hover",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      getSearchFile(path);
+      this.onclick = null
+    }
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <script>
+    $('#post img:not(.no-zoom img, img[no-zoom]), img[zoom]').each(
+      function () {
+        var element = document.createElement('a');
+        $(element).attr('data-fancybox', 'images');
+        $(element).attr('href', $(this).attr('src'));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
