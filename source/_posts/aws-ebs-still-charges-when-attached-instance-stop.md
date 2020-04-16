@@ -1,0 +1,7 @@
+---
+date: '2015-11-01 23:31:09'
+title: AWS EBS still charges after attached instance stop
+---
+I was examining my bills from AWS, it's about $40 monthly which isn't much. But I don't use much of its computing power either. So I looked into it and found that I was charged $10 for about 100GB of EBS usage. That shocked me at first, because I definitely never store that much data on any of my EC2 instances. Soon I remember that this 100GB is based on how much EBS volume I allocated to my EC2 instances when I created them. And I've allocated a total of 80GB to a Windows instance! Normally I only allocate 8-20 GB to my Linux instances, I allocated 80GB for this one because for Windows instance I need to use the remote Desktop way to log into the server, and it's so much slower than using terminal. So back then I just decided to give it more computing power, RAM and storage space. 
+
+I only played with that instance for a month or two while experimenting with ASP.NET, then I stopped the instance not only because I was done with my experiments, also because the charge on that Windows instance is very high. Now apparently, I also need to delete that 80GB EBS volume explicitly in order to stop from being charged. Lesson learned. 
