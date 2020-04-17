@@ -1,16 +1,15 @@
 ---
-banner_img: /content/images/2015/11/PANO_20150305_065917.jpg
-date: '2015-11-08 08:19:24'
-index_img: /content/images/2015/11/PANO_20150305_065917.jpg
+banner_img: https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/2015/11/PANO_20150305_065917.jpg
+date: "2015-11-08 08:19:24"
+index_img: https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/2015/11/PANO_20150305_065917.jpg
 title: Trip to Miami
 ---
-![](/content/images/2015/11/PANO_20150305_065917.jpg)
 
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/2015/11/PANO_20150305_065917.jpg)
 
-![](/content/images/2015/11/IMG_20150305_064847-2.jpg)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/2015/11/IMG_20150305_064847-2.jpg)
 
-
-![](/content/images/2015/11/IMG_20150303_134050-1.jpg)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/2015/11/IMG_20150303_134050-1.jpg)
 
 ---
 

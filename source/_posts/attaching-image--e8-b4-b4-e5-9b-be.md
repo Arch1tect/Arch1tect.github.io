@@ -1,5 +1,5 @@
 ---
-date: '2012-05-01 19:20:47'
+date: "2012-05-01 19:20:47"
 title: "Attaching Image | \u8D34\u56FE"
 ---
 
@@ -51,23 +51,15 @@ context.save();
 }  
  </code></pre>
 
-Basically the above code is attaching *tinywhale.png* to every dynamicBody while attaching *brotherwhale.png* to kinematicBody(there is only one in the demo). Here ‘attach’ actually means using the positions of objects calculated by box2d for the images we have.
+Basically the above code is attaching _tinywhale.png_ to every dynamicBody while attaching _brotherwhale.png_ to kinematicBody(there is only one in the demo). Here ‘attach’ actually means using the positions of objects calculated by box2d for the images we have.
 
 P.S.  
  try pressing T and w a s d j or you can drag with your mouse directly ^ ^
 
- 
-
- 
-
- 
-
-<center><iframe height="480" width = "100%"  scrolling="no" src="/content/images/project/learnBox2d/mywhale/newSquid.html" ></iframe></center>  
+<center><iframe height="480" width = "100%"  scrolling="no" src="https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/project/learnBox2d/mywhale/newSquid.html" ></iframe></center>  
    
 
- 
-
-阅读此篇前你需要了解一定的canvas使用方法。即便你不会使用canvas，也很容易就可以学会它的基本用法。
+阅读此篇前你需要了解一定的 canvas 使用方法。即便你不会使用 canvas，也很容易就可以学会它的基本用法。
 
 贴图前首先准备好要贴的图~
 
@@ -80,7 +72,7 @@ var image2 = new Image();
 
 </code></pre>
 
-然后将update（）中的 world.DrawDebugData() 替换为下面的代码：
+然后将 update（）中的 world.DrawDebugData() 替换为下面的代码：
 
 <pre><code>
 
@@ -113,18 +105,9 @@ context.save();
 }  
  </code></pre>
 
-简单来说上面的代码将图片*tinywhale.png*贴在了每个dynamicBody上，将*brotherwhale.png*贴在了每个kinematicBody上面。其实说‘贴’并不恰当，应该说是在用box2d来计算图片每时每刻具体应该在什么位置。
+简单来说上面的代码将图片*tinywhale.png*贴在了每个 dynamicBody 上，将*brotherwhale.png*贴在了每个 kinematicBody 上面。其实说‘贴’并不恰当，应该说是在用 box2d 来计算图片每时每刻具体应该在什么位置。
 
 P.S.  
  鼠标拖拽之余再试试用键盘操纵它们吧~ （其实只有一只是可以动滴。。）
 
- 
-
- 
-
- 
-<center><iframe height="480" width = "100%"  scrolling="no" src="/content/images/project/learnBox2d/mywhale/newSquid.html" ></iframe></center>  
-
- 
-
-
+<center><iframe height="480" width = "100%"  scrolling="no" src="https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/project/learnBox2d/mywhale/newSquid.html" ></iframe></center>

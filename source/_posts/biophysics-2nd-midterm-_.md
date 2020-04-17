@@ -1,5 +1,5 @@
 ---
-date: '2013-03-20 02:33:32'
+date: "2013-03-20 02:33:32"
 title: "Biophysics 2nd midterm \u256E(\u256F_\u2570)\u256D"
 ---
 
@@ -9,7 +9,7 @@ title: "Biophysics 2nd midterm \u256E(\u256F_\u2570)\u256D"
  The amount of blood in capillaries surrounding alveoli(肺泡) = 70ml.  
  Blood is in pulmonary capillaries for less than 1s.
 
-[![si55550999_ma](/content/images/uploads/2013/03/si55550999_ma-300x236.jpg)](/content/images/uploads/2013/03/si55550999_ma.jpg)
+[![si55550999_ma](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/03/si55550999_ma-300x236.jpg)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/03/si55550999_ma.jpg)
 
 sinus 鼻窦  
  Larynx 喉  
@@ -18,15 +18,11 @@ sinus 鼻窦
 
 From a simple mechanical point of view, the lung can be pictured as bag that is connected to an open tube and inside an expandable chamber.
 
-[![Screen Shot 2013-03-19 at 10.20.46 PM](/content/images/uploads/2013/03/Screen-Shot-2013-03-19-at-10.20.46-PM-300x191.png)](/content/images/uploads/2013/03/Screen-Shot-2013-03-19-at-10.20.46-PM.png)
-
- 
+[![Screen Shot 2013-03-19 at 10.20.46 PM](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/03/Screen-Shot-2013-03-19-at-10.20.46-PM-300x191.png)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/03/Screen-Shot-2013-03-19-at-10.20.46-PM.png)
 
 **Timescale**
 
-[![Screen Shot 2013-03-19 at 10.28.28 PM](/content/images/uploads/2013/03/Screen-Shot-2013-03-19-at-10.28.28-PM-300x218.png)](/content/images/uploads/2013/03/Screen-Shot-2013-03-19-at-10.28.28-PM.png)
-
- 
+[![Screen Shot 2013-03-19 at 10.28.28 PM](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/03/Screen-Shot-2013-03-19-at-10.28.28-PM-300x218.png)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/03/Screen-Shot-2013-03-19-at-10.28.28-PM.png)
 
 **Surface Tension**
 
@@ -43,17 +39,11 @@ The surface of a sphere scales as V2/3. Thus the surface energy of one large sph
  Lung surfactants reduce the surface tension.  
  Surface tension increases when curvature(曲率: 1/radius) is very large.
 
-[![Screen Shot 2013-03-19 at 10.53.48 PM](/content/images/uploads/2013/03/Screen-Shot-2013-03-19-at-10.53.48-PM-300x209.png)](/content/images/uploads/2013/03/Screen-Shot-2013-03-19-at-10.53.48-PM.png)
+[![Screen Shot 2013-03-19 at 10.53.48 PM](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/03/Screen-Shot-2013-03-19-at-10.53.48-PM-300x209.png)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/03/Screen-Shot-2013-03-19-at-10.53.48-PM.png)
 
- 
+[![Screen Shot 2013-03-19 at 11.24.34 PM](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/03/Screen-Shot-2013-03-19-at-11.24.34-PM-300x204.png)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/03/Screen-Shot-2013-03-19-at-11.24.34-PM.png)
 
-[![Screen Shot 2013-03-19 at 11.24.34 PM](/content/images/uploads/2013/03/Screen-Shot-2013-03-19-at-11.24.34-PM-300x204.png)](/content/images/uploads/2013/03/Screen-Shot-2013-03-19-at-11.24.34-PM.png)
-
- 
-
-[![Screen Shot 2013-03-19 at 11.38.39 PM](/content/images/uploads/2013/03/Screen-Shot-2013-03-19-at-11.38.39-PM-300x200.png)](/content/images/uploads/2013/03/Screen-Shot-2013-03-19-at-11.38.39-PM.png)
-
- 
+[![Screen Shot 2013-03-19 at 11.38.39 PM](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/03/Screen-Shot-2013-03-19-at-11.38.39-PM-300x200.png)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/03/Screen-Shot-2013-03-19-at-11.38.39-PM.png)
 
 **Pressure in an Artery Law of Laplace**  
  Tension in a cylindrical wall: T = P x r Tension in a spherical wall: T = ½ x P x r
@@ -75,14 +65,12 @@ Arterioles transport blood TO Capillaries from the HEART
 • In hydrostatics, the pressure in connected vessels is the same everywhere (Pascal’s Principle).  
  • In hydrodynamics, the pressure depends on the velocity. = > Bernoulli’s Principle
 
- 
-
 **Viscosity**
 
 Force required to shear a fluid between a stationary and a moving plate:  
-[![Screen Shot 2013-03-20 at 12.15.42 AM](/content/images/uploads/2013/03/Screen-Shot-2013-03-20-at-12.15.42-AM-300x138.png)](/content/images/uploads/2013/03/Screen-Shot-2013-03-20-at-12.15.42-AM.png)
+[![Screen Shot 2013-03-20 at 12.15.42 AM](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/03/Screen-Shot-2013-03-20-at-12.15.42-AM-300x138.png)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/03/Screen-Shot-2013-03-20-at-12.15.42-AM.png)
 
-[![Screen Shot 2013-03-20 at 12.24.36 AM](/content/images/uploads/2013/03/Screen-Shot-2013-03-20-at-12.24.36-AM-300x186.png)](/content/images/uploads/2013/03/Screen-Shot-2013-03-20-at-12.24.36-AM.png)
+[![Screen Shot 2013-03-20 at 12.24.36 AM](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/03/Screen-Shot-2013-03-20-at-12.24.36-AM-300x186.png)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/03/Screen-Shot-2013-03-20-at-12.24.36-AM.png)
 
 **Blood as a Non-Newtonian Fluid**  
  • Blood is a complex fluid.  
@@ -92,9 +80,7 @@ Force required to shear a fluid between a stationary and a moving plate:
 
 **Laminar vs. Turbulent flow**
 
-[![Screen Shot 2013-03-20 at 12.29.02 AM](/content/images/uploads/2013/03/Screen-Shot-2013-03-20-at-12.29.02-AM-300x77.png)](/content/images/uploads/2013/03/Screen-Shot-2013-03-20-at-12.29.02-AM.png)
-
- 
+[![Screen Shot 2013-03-20 at 12.29.02 AM](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/03/Screen-Shot-2013-03-20-at-12.29.02-AM-300x77.png)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/03/Screen-Shot-2013-03-20-at-12.29.02-AM.png)
 
 • When viscosity dominates, the flow is laminar.  
  • When inertial effects dominate,the flow becomes turbulent.  
@@ -127,7 +113,7 @@ Force required to shear a fluid between a stationary and a moving plate:
 
 **The Cell Membrane**  
  cytoplasm 细胞质  
-[![Screen Shot 2013-03-20 at 2.22.47 AM](/content/images/uploads/2013/03/Screen-Shot-2013-03-20-at-2.22.47-AM-300x121.png)](/content/images/uploads/2013/03/Screen-Shot-2013-03-20-at-2.22.47-AM.png)  
+[![Screen Shot 2013-03-20 at 2.22.47 AM](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/03/Screen-Shot-2013-03-20-at-2.22.47-AM-300x121.png)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/03/Screen-Shot-2013-03-20-at-2.22.47-AM.png)  
  Separates the cytoplasm from the extracellular fluid.  
  • Consists mainly of a lipid bilayer and embedded proteins.  
  • Keeps vital compounds inside the cell.  
@@ -154,5 +140,3 @@ Force required to shear a fluid between a stationary and a moving plate:
  CO-TRANSPORT: symport(same direction) or antiport (opposite directions  
  CHANNELS, e.g. sodium channel, water channel (aquaporin)  
  ACTIVE TRANSPORTER, against potential energy gradient
-
-

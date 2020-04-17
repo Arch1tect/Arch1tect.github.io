@@ -82,7 +82,7 @@ function update() {
 Done! I added a temple just for fun~ ^ \_ ^
 
 <center>  
-<iframe height="240" scrolling="no" src="/content/images/project/box2d_example/studynotes5.html" style="width: 610px; height: 330px;" width="320"></iframe></center>      Press different keys (f, i, v, t) to test these different methods. Notice that <span style="text-decoration: underline;">force</span> will need to be applied for some time in order to show the effect. And the effects of both applying force and impulse depend on the mass of an object while applying velocity has nothing to do with the mass of an object. Please google Newton’s Laws if you don’t know why.
+<iframe height="240" scrolling="no" src="https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/project/box2d_example/studynotes5.html" style="width: 610px; height: 330px;" width="320"></iframe></center>      Press different keys (f, i, v, t) to test these different methods. Notice that <span style="text-decoration: underline;">force</span> will need to be applied for some time in order to show the effect. And the effects of both applying force and impulse depend on the mass of an object while applying velocity has nothing to do with the mass of an object. Please google Newton’s Laws if you don’t know why.
 
 ---
 
@@ -161,4 +161,4 @@ function update() {
 大功告成，我顺便放了个神庙让小车撞着玩~ ^ \_ ^
 
 <center>  
-<iframe height="240" scrolling="no" src="/content/images/project/box2d_example/studynotes5.html" style="width: 610px; height: 330px;" width="320"></iframe></center>     试试按不同按键 (f, i, v, t) 来理解上面介绍的四种操纵方式。 注意作用力 f 需要按住一段时间才能看到效果。（一直按着小车就能爬上山坡了呢。） 作用力和冲量产生的效果和物体本身的质量有关，速度则不然。 如果您不解请百度牛顿定律什么的。
+<iframe height="240" scrolling="no" src="https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/project/box2d_example/studynotes5.html" style="width: 610px; height: 330px;" width="320"></iframe></center>     试试按不同按键 (f, i, v, t) 来理解上面介绍的四种操纵方式。 注意作用力 f 需要按住一段时间才能看到效果。（一直按着小车就能爬上山坡了呢。） 作用力和冲量产生的效果和物体本身的质量有关，速度则不然。 如果您不解请百度牛顿定律什么的。

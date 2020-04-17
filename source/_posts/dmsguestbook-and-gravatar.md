@@ -1,5 +1,5 @@
 ---
-date: '2012-09-16 16:23:24'
+date: "2012-09-16 16:23:24"
 title: DMSGuestbook and Gravatar
 ---
 
@@ -11,10 +11,6 @@ Since it’s nothing urgent so I just post what I want to accomplish at wordpres
 
 And that’s why I love WordPress!
 
-[![](/content/images/uploads/2012/09/Screen-Shot-2012-09-16-at-4.20.55-PM-300x253.png "Screen Shot 2012-09-16 at 4.20.55 PM")](/content/images/uploads/2012/09/Screen-Shot-2012-09-16-at-4.20.55-PM.png)
+[![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/09/Screen-Shot-2012-09-16-at-4.20.55-PM-300x253.png "Screen Shot 2012-09-16 at 4.20.55 PM")](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/09/Screen-Shot-2012-09-16-at-4.20.55-PM.png)
 
- 
-
-[Download the script here](/content/images/uploads/2012/09/dmsguestbook_for_BlueWhale.zip "download the file") (FYI: you only need to replace dmsguestbook.php, don’t touch anything else)
-
-
+[Download the script here](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/09/dmsguestbook_for_BlueWhale.zip "download the file") (FYI: you only need to replace dmsguestbook.php, don’t touch anything else)

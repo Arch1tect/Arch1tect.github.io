@@ -69,7 +69,7 @@ For later referring, just add this line <span style="text-decoration: underline;
 In step 3, it’s basically checking whether one of the two fixtures that are involved in contact is ‘wheel’. Alright, now if  you press ‘j’ when the wheel is contacting the ground, the car below should be able to jump!
 
 <center>  
-<iframe height="240" scrolling="no" src="/content/images/project/box2d_example/studynotes7.html" style="width: 600px; height: 330px;" width="320"></iframe></center> －－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+<iframe height="240" scrolling="no" src="https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/project/box2d_example/studynotes7.html" style="width: 600px; height: 330px;" width="320"></iframe></center> －－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
 
 窃以为碰撞检测最基本的用途是用来判定一个物体是否可以“往上跳”（当物体正在空中下坠的时候，一般来说是不允许跳的对吧）。具体要如何判定是问题的关键！ 在寡人学会用碰撞检测之前，本王是这么解决这个问题的：
 
@@ -132,4 +132,4 @@ In step 3, it’s basically checking whether one of the two fixtures that are in
 在第三步中，我们检验了接触物体的 userData，接触总是发生在两个物体间，我们想知道这两个物体其中一个是否就是开始标记过的。 OK，现在只要你在小车的轮子接触着地面的时候按下“j”键，小车就会蹦起来啦！ 撒花~~~
 
 <center>  
-<iframe height="240" scrolling="no" src="/content/images/project/box2d_example/studynotes7.html" style="width: 600px; height: 330px;" width="320"></iframe></center>
+<iframe height="240" scrolling="no" src="https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/project/box2d_example/studynotes7.html" style="width: 600px; height: 330px;" width="320"></iframe></center>

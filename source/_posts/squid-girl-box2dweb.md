@@ -1,5 +1,5 @@
 ---
-date: '2012-09-14 19:38:02'
+date: "2012-09-14 19:38:02"
 title: Squid Girl | Box2dweb
 ---
 
@@ -9,18 +9,8 @@ While browsing my previous posts, I found my interest in Box2dweb again. Since i
 
 But I then switch my interest to building social network using Wordpress mu etc., and haven’t looked into box2dweb for a while. I should definitely design and code a tiny game with box2dweb in the near future. For this post, I’ll just revise one of my old project to recall my happy memories with Box2dweb. ^ ^
 
-<iframe height="480" width = "100%"  scrolling="no" src="/content/images/project/learnBox2d/mywhale/newSquid.html" ></iframe>
+<iframe height="480" width = "100%"  scrolling="no" src="https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/project/learnBox2d/mywhale/newSquid.html" ></iframe>
 
 Tips:
 
 Click on the canvas then use W A S D to control direction; J, K to drift; T to teleport and R to restart. Also, try some number keys and you’ll meet some other characters. ^ ^
-
-
-
-
-
-
-
- 
-
-

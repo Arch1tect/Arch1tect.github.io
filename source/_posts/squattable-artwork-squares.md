@@ -1,7 +1,7 @@
 ---
-banner_img: /content/images/uploads/2012/08/p_large_o01s_518d0001de555c741.jpeg
-date: '2011-06-15 20:03:03'
-index_img: /content/images/uploads/2012/08/p_large_o01s_518d0001de555c741.jpeg
+banner_img: https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/08/p_large_o01s_518d0001de555c741.jpeg
+date: "2011-06-15 20:03:03"
+index_img: https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/08/p_large_o01s_518d0001de555c741.jpeg
 title: Squattable Artwork & Squares
 ---
 
@@ -12,22 +12,14 @@ Station Blaak has vast open space and there is a lively market every Tuesday and
 
 The third sculpture is a fantasy-like proposal for Moerkeke Square. In all, these squattable artworks are experimental and modular. They can be moved or transformed easily when their mission is completed or when they no longer suit the square.
 
- 
+[![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/08/p_large_nZok_42f1000049925c74.jpeg "p_large_nZok_42f1000049925c74")](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/08/p_large_nZok_42f1000049925c74.jpeg)
 
- 
+[![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/08/3.47.13-AM.jpeg "; 3.47.13 AM")](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/08/3.47.13-AM.jpeg)
 
-[![](/content/images/uploads/2012/08/p_large_nZok_42f1000049925c74.jpeg "p_large_nZok_42f1000049925c74")](/content/images/uploads/2012/08/p_large_nZok_42f1000049925c74.jpeg)
+[![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/08/31.jpeg ";-3")](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/08/31.jpeg)
 
-[![](/content/images/uploads/2012/08/3.47.13-AM.jpeg "; 3.47.13 AM")](/content/images/uploads/2012/08/3.47.13-AM.jpeg)
+[![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/08/41.jpeg ";-4")](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/08/41.jpeg)
 
- 
+[![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/08/p_large_Buko_66260001e0935c42.jpeg "p_large_Buko_66260001e0935c42")](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/08/p_large_Buko_66260001e0935c42.jpeg)
 
-[![](/content/images/uploads/2012/08/31.jpeg ";-3")](/content/images/uploads/2012/08/31.jpeg)
-
-[![](/content/images/uploads/2012/08/41.jpeg ";-4")](/content/images/uploads/2012/08/41.jpeg)
-
-[![](/content/images/uploads/2012/08/p_large_Buko_66260001e0935c42.jpeg "p_large_Buko_66260001e0935c42")](/content/images/uploads/2012/08/p_large_Buko_66260001e0935c42.jpeg)
-
-[![](/content/images/uploads/2012/08/p_large_o01s_518d0001de555c741.jpeg "p_large_o01s_518d0001de555c74")](/content/images/uploads/2012/08/p_large_o01s_518d0001de555c741.jpeg)
-
-
+[![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/08/p_large_o01s_518d0001de555c741.jpeg "p_large_o01s_518d0001de555c74")](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/08/p_large_o01s_518d0001de555c741.jpeg)

@@ -24,7 +24,7 @@ Following is the code of how an object with polygon shape is created, instead of
  </code></pre>
 
 <center>  
-<iframe height="240" scrolling="no" src="/content/images/project/box2d_example/studynotes2.html" style="width: 610px; height: 500px;" width="320"></iframe></center>     You know what? Since I never like rules, I’m determined to make concave polygons. Now you can see how they are behaving weirdly above, the concave polygon sometimes goes into the ground and walls when it’s bouncing. See the body of that car on the right is also concave polygon? Now you know you should always stick to convex polygon.
+<iframe height="240" scrolling="no" src="https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/project/box2d_example/studynotes2.html" style="width: 610px; height: 500px;" width="320"></iframe></center>     You know what? Since I never like rules, I’m determined to make concave polygons. Now you can see how they are behaving weirdly above, the concave polygon sometimes goes into the ground and walls when it’s bouncing. See the body of that car on the right is also concave polygon? Now you know you should always stick to convex polygon.
 
 About the car, did I mention that **one object can have multiple fixtures**?
 
@@ -95,7 +95,7 @@ Btw don’t  worry too much about how they look aesthetically now, DebugDraw 
  </code></pre>
 
 <center>  
-<iframe height="240" scrolling="no" src="/content/images/project/box2d_example/studynotes2.html" style="width: 610px; height: 500px;" width="320"></iframe></center>     突然想到了鲁鲁修的叛逆，于是我故意违规创建了一个样子奇怪的凹多边形。你可以看见它在上面蹦跳的时候经常会一头扎进墙壁里或者窜到地下，完全无视碰撞的规矩。发现右边的小车车身也是凹多边形了吗？ 现在你应该看到创建凹多边形的不良后果了。
+<iframe height="240" scrolling="no" src="https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/project/box2d_example/studynotes2.html" style="width: 610px; height: 500px;" width="320"></iframe></center>     突然想到了鲁鲁修的叛逆，于是我故意违规创建了一个样子奇怪的凹多边形。你可以看见它在上面蹦跳的时候经常会一头扎进墙壁里或者窜到地下，完全无视碰撞的规矩。发现右边的小车车身也是凹多边形了吗？ 现在你应该看到创建凹多边形的不良后果了。
 
 那个小车是怎么创建的？我好像忘了告诉大家**一个物体可以由多个形状组成**了。 ＝ ＝
 

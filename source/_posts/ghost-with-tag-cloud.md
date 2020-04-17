@@ -1,19 +1,19 @@
 ---
-banner_img: /content/images/2015/11/Screenshot--4-.png
-date: '2015-11-07 21:13:05'
-index_img: /content/images/2015/11/Screenshot--4-.png
+banner_img: https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/2015/11/Screenshot--4-.png
+date: "2015-11-07 21:13:05"
+index_img: https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/2015/11/Screenshot--4-.png
 title: Ghost with Tag Cloud
 ---
+
 Ghost is great, lightning fast and doesn't over complicate anything. However, to me there are three crucial parts missing:
 
-1. Search 
+1. Search
 2. Comment
 3. Tag Cloud
 
-It seems the Ghost development team has been looking for help with  implementing the search functionality eagerly and they suggest Ghost users to use disqus for comment system. But I don't see any news about adding the tag cloud any time soon, so I found myself the following code to add this functionality.
+It seems the Ghost development team has been looking for help with implementing the search functionality eagerly and they suggest Ghost users to use disqus for comment system. But I don't see any news about adding the tag cloud any time soon, so I found myself the following code to add this functionality.
 
 Create `core/server/helpers/tag_cloud.js` with content below:
-
 
 <pre><code>
 // # Tag cloud helper
@@ -60,6 +60,7 @@ module.exports = tag_cloud;
 </code></pre>
 
 Create `core/server/helpers/tpl/tag_cloud.hbs` with content below:
+
 <pre><code>
 &lt;ul class="tag-cloud">  
     (#foreach tags)
@@ -72,16 +73,9 @@ Add `coreHelpers.tag_cloud = require('./tag_cloud');` and `registerAsyncThemeHel
 
 Check [here](https://github.com/ghostchina/Ghost-zh/blob/master/core/server/helpers/index.js) to see the right place to add these two lines.
 
-
-Finally place `(tag_cloud limit=10)` in the theme you are using. (10 is the number of tags you want to show)  
+Finally place `(tag_cloud limit=10)` in the theme you are using. (10 is the number of tags you want to show)
 
 This is how my tag cloud look, you can style it the way you want.
-![](/content/images/2015/11/Screenshot--4-.png)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/2015/11/Screenshot--4-.png)
 
-
-The code in this post is all taken from [GhostChina](http://www.ghostchina.com/output-tag-cloud/). 
-
-
-
-
- 
+The code in this post is all taken from [GhostChina](http://www.ghostchina.com/output-tag-cloud/).

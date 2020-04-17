@@ -1,18 +1,20 @@
 ---
-banner_img: /content/images/uploads/2013/02/Screen-Shot-2013-02-02-at-1.41.23-AM.png
-date: '2013-02-02 03:16:11'
-index_img: /content/images/uploads/2013/02/Screen-Shot-2013-02-02-at-1.41.23-AM.png
-title: "Wordpress \u540C\u4E00\u9875\u9762\u5B9E\u73B0\u591A\u4E2A\u677F\u5757\u72EC\
-  \u7ACB\u5FAA\u73AF\u7684\u65B9\u6CD5\uFF08\u542B\u7FFB\u9875\u529F\u80FD\uFF1A\uFF09"
+banner_img: https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/02/Screen-Shot-2013-02-02-at-1.41.23-AM.png
+date: "2013-02-02 03:16:11"
+index_img: https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/02/Screen-Shot-2013-02-02-at-1.41.23-AM.png
+title:
+    "Wordpress \u540C\u4E00\u9875\u9762\u5B9E\u73B0\u591A\u4E2A\u677F\u5757\u72EC\
+    \u7ACB\u5FAA\u73AF\u7684\u65B9\u6CD5\uFF08\u542B\u7FFB\u9875\u529F\u80FD\uFF1A\uFF09"
 ---
 
-这周给StarryStory的网站更新，将首页划分成了三个板块,（case, story, observation)  每个板块显示的文章通过tags来过滤，同时各板块都有翻页功能，并且“记忆”其他板块所在页面，效果如下图：
+这周给 StarryStory 的网站更新，将首页划分成了三个板块,（case, story, observation)   每个板块显示的文章通过 tags 来过滤，同时各板块都有翻页功能，并且“记忆”其他板块所在页面，效果如下图：
 
-[![Screen Shot 2013-02-02 at 1.41.23 AM](/content/images/uploads/2013/02/Screen-Shot-2013-02-02-at-1.41.23-AM-293x300.png)](/content/images/uploads/2013/02/Screen-Shot-2013-02-02-at-1.41.23-AM.png)
+[![Screen Shot 2013-02-02 at 1.41.23 AM](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/02/Screen-Shot-2013-02-02-at-1.41.23-AM-293x300.png)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/02/Screen-Shot-2013-02-02-at-1.41.23-AM.png)
 
 （图片里应该可以看到三个灰色/蓝色的翻页部分吧？ 不清楚的话可以直接去[StarryStory](http://starrystory.org)那里体验。）
 
-下面的代码实现这三个板块的独立循环和翻页功能：  
+下面的代码实现这三个板块的独立循环和翻页功能：
+
 <pre><code>  
 $paged1 = isset( $_GET['paged1'] ) ? (int) $_GET['paged1'] : 1; //paged1 是中间Story板块  $paged2 = isset( $_GET['paged2'] ) ? (int) $_GET['paged2'] : 1; //paged2 是中间下方Observation板块  
 $paged3 = isset( $_GET['paged3'] ) ? (int) $_GET['paged3'] : 1; //paged3 是左边Case板块
@@ -69,16 +71,10 @@ $pag_args2 = array(
 
 虽然上面的代码是生成三个板块的，如果要更多板块只要按照这个结构增加就好了~
 
-另外这个功能用ajax实现就更好了。
+另外这个功能用 ajax 实现就更好了。
 
 参考资料：
 
-这个分版块的功能还是很有用的，网上似乎没有好的教程，我是在stackexchange某人的回答里找到了上面的实现方法：
+这个分版块的功能还是很有用的，网上似乎没有好的教程，我是在 stackexchange 某人的回答里找到了上面的实现方法：
 
 [http://wordpress.stackexchange.com/questions/47259/multiple-wp-query-loops-with-pagination](http://wordpress.stackexchange.com/questions/47259/multiple-wp-query-loops-with-pagination)
-
- 
-
- 
-
-

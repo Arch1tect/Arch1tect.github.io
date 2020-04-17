@@ -1,5 +1,5 @@
 ---
-date: '2013-01-10 00:28:02'
+date: "2013-01-10 00:28:02"
 title: New Semester
 ---
 
@@ -21,9 +21,7 @@ Robot back end:
 
 [http://swotong.com/chat/](http://swotong.com/chat/)
 
-[![Screen Shot 2013-01-07 at 11.03.36 PM](/content/images/uploads/2013/01/Screen-Shot-2013-01-07-at-11.03.36-PM-300x160.png)](/content/images/uploads/2013/01/Screen-Shot-2013-01-07-at-11.03.36-PM.png)
-
- 
+[![Screen Shot 2013-01-07 at 11.03.36 PM](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/01/Screen-Shot-2013-01-07-at-11.03.36-PM-300x160.png)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/01/Screen-Shot-2013-01-07-at-11.03.36-PM.png)
 
 However, I guess I won’t have much spare time to develop any extra-curriculum project this semester, (seriously? you think you still have spare time? = =)
 
@@ -32,5 +30,3 @@ I had this idea about working in interdisciplinary fields that need both archit
 What I also need to keep in mind is, besides being a key to the future, this learning process should be exhaustive yet enjoyable, since life isn’t all about destination.
 
 And enjoyable it will be. I have faith in it.
-
-

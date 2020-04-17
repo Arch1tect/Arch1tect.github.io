@@ -30,7 +30,7 @@ The second line in the above code is quite important, I’ll explain it a littl
 Sweet! Now we can put everything together and finally see the output on the screen:
 
 <center>  
-<iframe height="240" scrolling="no" src="/content/images/project/box2d_example/studynotes1.html" style="width: 200px; height: 400px;" width="320"></iframe></center>  
+<iframe height="240" scrolling="no" src="https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/project/box2d_example/studynotes1.html" style="width: 200px; height: 400px;" width="320"></iframe></center>  
 
 The pink box is our happyBox, I add the green box as a holder because otherwise, by the time you read here, happyBox must have already fallen out of the screen and you won’t see what happened at all. I also change happyBox’s restitution attribute to 1 (which means it’s perfectly elastic while 0 would mean the opposite) so it will keep bouncing forever! Following is the complete code:
 
@@ -119,7 +119,7 @@ Scale 用来把单位从米转化成像素，一般设置为 30 左右（1 米�
 好了，现在我们把这些代码放到一起，就可以看到下面的效果了：
 
 <center>  
-<iframe height="240" scrolling="no" src="/content/images/project/box2d_example/studynotes1.html" style="width: 200px; height: 400px;" width="320"></iframe></center>  
+<iframe height="240" scrolling="no" src="https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/project/box2d_example/studynotes1.html" style="width: 200px; height: 400px;" width="320"></iframe></center>  
 
 这粉色的盒子是 happyBox 童鞋，下面的绿色盒子是我后来加上去用来 hold 住 happyBox 用的，不然当你读到这里时 happyBox 童鞋必然早已落到屏幕之外了。我还将它的恢复系数改成了 1， 这表示物体发生的碰撞是完全弹性碰撞，没有能量损失，所以他可以一直欢乐地蹦蹦跳跳下去。下面是完整的代码：
 
@@ -183,4 +183,4 @@ window.setInterval(update, 1000 / 60);
 最后放一个好玩的超弹金箍棒。
 
 <center>  
-<iframe height="240" scrolling="no" src="/content/images/project/box2d_example/monkeykingbar.html" style="width: 610px; height: 480px;" width="320"></iframe></center>
+<iframe height="240" scrolling="no" src="https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/project/box2d_example/monkeykingbar.html" style="width: 610px; height: 480px;" width="320"></iframe></center>

@@ -67,7 +67,7 @@ myjoint.bodyA = car;
 Let’s look at the joint part starting from line 39, one joint usually connects two bodies, and you can use ‘<span style="text-decoration: underline;">localAnchor</span>‘ to specify where the joint is on that object. **Motor **is an interesting feature of joint, motorSpeed is in radian and clockwise direction. Notice that the car below isn’t able to climb to the top of the hill? That’s because the maxMotorTorque isn’t big enough. Btw don’t forget to add ‘ b2RevoluteJointDef = Box2D. Dynamics. Joints. b2RevoluteJointDef ‘ at the beginning.
 
 <center>  
-<iframe height="240" scrolling="no" src="/content/images/project/box2d_example/studynotes3.5.html" style="width: 600px; height: 330px;" width="320"></iframe></center> **Mouse Joint**
+<iframe height="240" scrolling="no" src="https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/project/box2d_example/studynotes3.5.html" style="width: 600px; height: 330px;" width="320"></iframe></center> **Mouse Joint**
 
 If you click on the car above, you can drag it and throw it anywhere. Isn’t it fun? Thanks to Mouse joint that makes it possible. But the way it’s set up is quite complex and requires deeper understanding of Box2d. Therefore I’ll just show you how to apply it for now and explain how it functions in the future.
 
@@ -261,7 +261,7 @@ myjoint.bodyA = car;
 我们来看看从 39 行开始的连接器部分吧，一个连接器通常连接着两个物体。连接后你可以用 <span style="text-decoration: underline;">localAnchor</span>  来定义节点在各物体的具体什么位置。 马达是连接器中一个非常有趣的功能，马达速度是以弧度为单位并且顺时针为正。 看到下面的小车无法爬上陡峭的“山坡”了吗？ 这是因为马达的  <span style="text-decoration: underline;">maxMotorTorque</span>  设置的不够大。大家使用的时候别忘了在代码开头加上  b2RevoluteJointDef = Box2D. Dynamics. Joints. b2RevoluteJointDef  哦。
 
 <center>  
-<iframe height="240" scrolling="no" src="/content/images/project/box2d_example/studynotes3.5.html" style="width: 600px; height: 330px;" width="320"></iframe></center>**鼠标连接器** 
+<iframe height="240" scrolling="no" src="https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/project/box2d_example/studynotes3.5.html" style="width: 600px; height: 330px;" width="320"></iframe></center>**鼠标连接器** 
 
 也许你还没发现，其实你完全可以用鼠标任意拖拽上面的小车哦！这都要归功于强大的鼠标连接器，不过它的创建方法如果现在就介绍还是过于复杂了，所以这里我只把它的使用代码贴一下，大家就勉为其难先知其然，迟些再知其所以然吧：
 
@@ -396,4 +396,4 @@ return {x: x, y: y};
 放一个无关紧要的有趣例子吧（没有节操的童鞋是看不到的哦）：
 
 <center>  
-<iframe height="240" scrolling="no" src="/content/images/project/box2d_example/temple(big).html" style="width: 600px; height: 450px;" width="320"></iframe></center>
+<iframe height="240" scrolling="no" src="https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/project/box2d_example/temple(big).html" style="width: 600px; height: 450px;" width="320"></iframe></center>

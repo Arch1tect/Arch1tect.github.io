@@ -1,7 +1,8 @@
 ---
-date: '2012-10-01 00:28:35'
-title: "\u7F51\u9875\u8DF3\u8F6C\u540E\u3010\u65E0\u4E2D\u65AD\u3011\u64AD\u653E\u8C46\
-  \u74E3\u7535\u53F0\u63D2\u4EF6"
+date: "2012-10-01 00:28:35"
+title:
+    "\u7F51\u9875\u8DF3\u8F6C\u540E\u3010\u65E0\u4E2D\u65AD\u3011\u64AD\u653E\u8C46\
+    \u74E3\u7535\u53F0\u63D2\u4EF6"
 ---
 
 周末短暂，马上又要期中考了，上一篇说的【无中断】播放器插件不知道什么时候才能正式完成，草草写的试用版又似乎过于简陋，于是今天又抽了点时间，写了一个比较完整的无中断播放豆瓣电台的插件。
@@ -10,11 +11,7 @@ title: "\u7F51\u9875\u8DF3\u8F6C\u540E\u3010\u65E0\u4E2D\u65AD\u3011\u64AD\u653E
 
 点击本博客左边的豆瓣收音机图标，进入无中断播放豆瓣电台模式，页面刷新后看到页面左下角原来收音机的位置出现了“显示豆瓣”的按钮，点击之就可以看到豆瓣电台播放器了，然后你会发现在本博客随便点击任何页面或者发表评论也不会中断当前的播放。
 
- 
-
-[点此下载该插件！](/content/images/uploads/2012/10/playnonstopdouban3.zip "下载豆瓣电台【无中断】播放插件")
-
- 
+[点此下载该插件！](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/10/playnonstopdouban3.zip "下载豆瓣电台【无中断】播放插件")
 
 **使用方法：**
 
@@ -26,13 +23,11 @@ title: "\u7F51\u9875\u8DF3\u8F6C\u540E\u3010\u65E0\u4E2D\u65AD\u3011\u64AD\u653E
 
 以后在地址栏输入`http://你的站点地址/playnonstop`，打开的页面就应该可以看到"无中断"豆瓣电台播放器了。
 
-为了地址美观可以用二级域名指向这个playnonstop地址，比如像我用的”douban.mysite.com”。
-
- 
+为了地址美观可以用二级域名指向这个 playnonstop 地址，比如像我用的”douban.mysite.com”。
 
 ---
 
-另外还有一个背景无中断播放豆瓣电台的版本，电台是完全被隐藏的（奇葩的设计,应该没什么人会用到吧- -），也欢迎来[下载](/content/images/uploads/2012/09/playnonstopdouban.zip "豆瓣电台背景播放")尝试。
+另外还有一个背景无中断播放豆瓣电台的版本，电台是完全被隐藏的（奇葩的设计,应该没什么人会用到吧- -），也欢迎来[下载](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/09/playnonstopdouban.zip "豆瓣电台背景播放")尝试。
 
 注意这两个版本不能同时装，除非你改掉文件夹的名字“nonstop”。
 
