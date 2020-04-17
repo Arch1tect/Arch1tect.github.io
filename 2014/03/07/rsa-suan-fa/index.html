@@ -139,7 +139,7 @@
                   
                   <span class="post-meta mr-2">
                     <i class="iconfont icon-chart"></i>
-                    735 字
+                    741 字
                   </span>
                 
 
@@ -178,26 +178,26 @@
           <div class="post-content mx-auto" id="post">
             
             <article class="markdown-body">
-              <p>今天复习密码学看到了RSA的部分，我无意搜到了几篇阮一峰前辈的相关博文，发现大神文笔真是好，写什么都能写的特别清楚明白，完整可靠。我把三篇博文链接贴在这里，以后再复习也许会用到。（我最早知道他是看了他翻译的Paul Graham的文集《黑客与画家》）</p>
+              <p>今天复习密码学看到了 RSA 的部分，我无意搜到了几篇阮一峰前辈的相关博文，发现大神文笔真是好，写什么都能写的特别清楚明白，完整可靠。我把三篇博文链接贴在这里，以后再复习也许会用到。（我最早知道他是看了他翻译的 Paul Graham 的文集《黑客与画家》）</p>
 <p>————————————–阮一峰日志—————————————————————</p>
 <h4 id="密码学笔记"><a href="#密码学笔记" class="headerlink" title="密码学笔记"></a>密码学笔记</h4><p><a href="http://www.ruanyifeng.com/blog/2006/12/notes_on_cryptography.html" target="_blank" rel="noopener">http://www.ruanyifeng.com/blog/2006/12/notes_on_cryptography.html</a></p>
-<h4 id="RSA算法原理（一）"><a href="#RSA算法原理（一）" class="headerlink" title="RSA算法原理（一）"></a>RSA算法原理（一）</h4><p><a href="http://www.ruanyifeng.com/blog/2013/06/rsa_algorithm_part_one.html" target="_blank" rel="noopener">http://www.ruanyifeng.com/blog/2013/06/rsa_algorithm_part_one.html</a></p>
-<h4 id="RSA算法原理（二）"><a href="#RSA算法原理（二）" class="headerlink" title="RSA算法原理（二）"></a>RSA算法原理（二）</h4><p><a href="http://www.ruanyifeng.com/blog/2013/07/rsa_algorithm_part_two.html" target="_blank" rel="noopener">http://www.ruanyifeng.com/blog/2013/07/rsa_algorithm_part_two.html</a></p>
+<h4 id="RSA-算法原理（一）"><a href="#RSA-算法原理（一）" class="headerlink" title="RSA 算法原理（一）"></a>RSA 算法原理（一）</h4><p><a href="http://www.ruanyifeng.com/blog/2013/06/rsa_algorithm_part_one.html" target="_blank" rel="noopener">http://www.ruanyifeng.com/blog/2013/06/rsa_algorithm_part_one.html</a></p>
+<h4 id="RSA-算法原理（二）"><a href="#RSA-算法原理（二）" class="headerlink" title="RSA 算法原理（二）"></a>RSA 算法原理（二）</h4><p><a href="http://www.ruanyifeng.com/blog/2013/07/rsa_algorithm_part_two.html" target="_blank" rel="noopener">http://www.ruanyifeng.com/blog/2013/07/rsa_algorithm_part_two.html</a></p>
 <p>—————————————————————————————————–</p>
-<h6 id="我之前的误解"><a href="#我之前的误解" class="headerlink" title="我之前的误解"></a>我之前的误解</h6><p>我之前学的时候知道RSA安全的关键是已知公匙e， 要计算私匙d 难度巨大，d通过下面的公式计算</p>
+<h6 id="我之前的误解"><a href="#我之前的误解" class="headerlink" title="我之前的误解"></a>我之前的误解</h6><p>我之前学的时候知道 RSA 安全的关键是已知公匙 e， 要计算私匙 d 难度巨大，d 通过下面的公式计算</p>
 <p>ed ≡ 1 (mod φ(n))</p>
-<p>这个等价于求下面方程x,y的整数解</p>
+<p>这个等价于求下面方程 x,y 的整数解</p>
 <p>ex + φ(n)y = 1</p>
-<p>但我搞错了一点，我以为计算 ex + by = 1 是困难所在， 事实上该方程只要log(n)的时间就可以解出来，用辗转相除法即可。而真正的难处还是在计算φ(n)这儿。<strong>n = pq</strong>, 最初制造公钥私钥的人知道p和q, 所以可以轻易的用φ(n) =（p-1）(q-1)计算，而外人不知道p,q是多少， 就只看到一个巨大的n(一般是1024位二进制的大数)， 想要因式分解则难上加难。算不出φ(n)，便也算不出私钥是多少了。</p>
+<p>但我搞错了一点，我以为计算 ex + by = 1 是困难所在， 事实上该方程只要 log(n)的时间就可以解出来，用辗转相除法即可。而真正的难处还是在计算 φ(n)这儿。<strong>n = pq</strong>, 最初制造公钥私钥的人知道 p 和 q, 所以可以轻易的用 φ(n) =（p-1）(q-1)计算，而外人不知道 p,q 是多少， 就只看到一个巨大的 n(一般是 1024 位二进制的大数)， 想要因式分解则难上加难。算不出 φ(n)，便也算不出私钥是多少了。</p>
 <p>————————————–小例子————————————————————–</p>
 <p>看完了阮大神的文章可以试试解我下面这个简单的秘密～</p>
-<p><a href="/content/images/uploads/2014/03/Letters-and-number-code.jpg"><img src="/content/images/uploads/2014/03/Letters-and-number-code.jpg" srcset="/img/loading.gif" alt="Letters-and-number-code"></a></p>
+<p><a href="https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2014/03/Letters-and-number-code.jpg" target="_blank" rel="noopener"><img src="https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2014/03/Letters-and-number-code.jpg" srcset="/img/loading.gif" alt="Letters-and-number-code"></a></p>
 <p>首先让字母对应数字， A-1 B-2 C-3 D-4 …. Z-26</p>
 <p>用公钥加密后的信息： 17  67  59  59  69</p>
 <p>公钥： {23, 77}  （公钥是加密用的，解密者不需要知道）</p>
 <p>私钥： {47, 77}</p>
 <p>解密后的信息： ？？？？？</p>
-<p>这个密匙长度只有7位（2^7 = 128, 77 &lt; 128），所以我们完全可以脑算破解之，但是我刚刚提到过一般RSA的密匙长度有1024位甚至2048位那么大。O(∩_∩)O</p>
+<p>这个密匙长度只有 7 位（2^7 = 128, 77 &lt; 128），所以我们完全可以脑算破解之，但是我刚刚提到过一般 RSA 的密匙长度有 1024 位甚至 2048 位那么大。O(∩_∩)O</p>
 <h6 id="简单示范一下怎么破解私钥："><a href="#简单示范一下怎么破解私钥：" class="headerlink" title="简单示范一下怎么破解私钥："></a>简单示范一下怎么破解私钥：</h6><p><strong>φ(n) = φ(77) = φ(7×11) = φ(7) x φ(11) = 6 x 10 = 60    （关键步骤）</strong></p>
 <p>根据</p>
 <p>ed ≡ 1 (mod φ(n))</p>
@@ -205,7 +205,7 @@
 <p>ed ≡ 1 (mod 60)</p>
 <p>即</p>
 <p>23x + 60y = 1</p>
-<p>已知x,y皆为整数，用辗转相除法很快可以求得一对解：<br> x = -13, y = 5<br> x即为前面式子里的d也就是私钥，我们知道x是相对于60循环的，所以{-13, 77}， {47， 77},  {107， 77}， {167， 77}  等等都是对的私钥，我们用哪个去解密都没问题。</p>
+<p>已知 x,y 皆为整数，用辗转相除法很快可以求得一对解：<br> x = -13, y = 5<br> x 即为前面式子里的 d 也就是私钥，我们知道 x 是相对于 60 循环的，所以{-13, 77}， {47， 77},  {107， 77}， {167， 77}   等等都是对的私钥，我们用哪个去解密都没问题。</p>
 <p>小结： 我们之所以能成功破解在于看出了 n = 77 = 7 * 11, 而对于十分巨大的数字，这个步骤就非常难，需要计算机算个好几百年了。</p>
 <p>路过有兴趣的朋友把原信息算出来留言我吧！是五个字母的英文单词哦～</p>
 

@@ -115,7 +115,7 @@
 </nav>
 
     <div class="view intro-2" id="background" parallax=true
-         style="background: url('/content/images/2015/11/Screenshot--4-.png') no-repeat center center;
+         style="background: url('https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/2015/11/Screenshot--4-.png') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.7)">
@@ -180,11 +180,11 @@
             <article class="markdown-body">
               <p>Ghost is great, lightning fast and doesn’t over complicate anything. However, to me there are three crucial parts missing:</p>
 <ol>
-<li>Search </li>
+<li>Search</li>
 <li>Comment</li>
 <li>Tag Cloud</li>
 </ol>
-<p>It seems the Ghost development team has been looking for help with  implementing the search functionality eagerly and they suggest Ghost users to use disqus for comment system. But I don’t see any news about adding the tag cloud any time soon, so I found myself the following code to add this functionality.</p>
+<p>It seems the Ghost development team has been looking for help with implementing the search functionality eagerly and they suggest Ghost users to use disqus for comment system. But I don’t see any news about adding the tag cloud any time soon, so I found myself the following code to add this functionality.</p>
 <p>Create <code>core/server/helpers/tag_cloud.js</code> with content below:</p>
 <pre><code>
 // # Tag cloud helper
@@ -241,9 +241,9 @@ module.exports = tag_cloud;
 
 <p>Add <code>coreHelpers.tag_cloud = require(&#39;./tag_cloud&#39;);</code> and <code>registerAsyncThemeHelper(&#39;tag_cloud&#39;, coreHelpers.tag_cloud);</code> to <code>core/server/helpers/index.js</code></p>
 <p>Check <a href="https://github.com/ghostchina/Ghost-zh/blob/master/core/server/helpers/index.js" target="_blank" rel="noopener">here</a> to see the right place to add these two lines.</p>
-<p>Finally place <code>(tag_cloud limit=10)</code> in the theme you are using. (10 is the number of tags you want to show)  </p>
-<p>This is how my tag cloud look, you can style it the way you want.<br><img src="/content/images/2015/11/Screenshot--4-.png" srcset="/img/loading.gif" alt=""></p>
-<p>The code in this post is all taken from <a href="http://www.ghostchina.com/output-tag-cloud/" target="_blank" rel="noopener">GhostChina</a>. </p>
+<p>Finally place <code>(tag_cloud limit=10)</code> in the theme you are using. (10 is the number of tags you want to show)</p>
+<p>This is how my tag cloud look, you can style it the way you want.<br><img src="https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/2015/11/Screenshot--4-.png" srcset="/img/loading.gif" alt=""></p>
+<p>The code in this post is all taken from <a href="http://www.ghostchina.com/output-tag-cloud/" target="_blank" rel="noopener">GhostChina</a>.</p>
 
             </article>
             <hr>

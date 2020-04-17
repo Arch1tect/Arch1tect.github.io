@@ -139,7 +139,7 @@
                   
                   <span class="post-meta mr-2">
                     <i class="iconfont icon-chart"></i>
-                    265 字
+                    309 字
                   </span>
                 
 
@@ -149,7 +149,7 @@
                       <i class="iconfont icon-clock-fill"></i>
                     
                     
-                    5
+                    6
                      分钟
                   </span>
                 
@@ -179,18 +179,18 @@
             
             <article class="markdown-body">
               <p>Ghost made it easy to migrate posts from Wordpress through some json import/export, however, the images can’t be migrated that way. I found some tutorials about uploading images to 3rd party like Cloudinary and AWS S3. But I don’t want to go to 3rd party at all. This is how I managed to migrate my images to Ghost:</p>
-<p>I copied my images from my Wordpress site at <code>/wp-content/uploads</code> and pasted to Ghost at <code>/content/images</code>, now the entire <code>uploads</code> folder is sitting at <code>/content/images/uploads</code> under Ghost folder.</p>
-<p>Because the image links in the posts were migrated as they were, they still point to the location at Wordpress site, i.e.<br><code>http://oldWPSite.com/wp-content/uploads/2001/01/abc.jpg</code><br>, and the new address I want it to point to is<br><code>http://newGhostSite.com/content/images/uploads/2001/01/abc.jpg</code></p>
+<p>I copied my images from my Wordpress site at <code>/wp-content/uploads</code> and pasted to Ghost at <code>/content/images</code>, now the entire <code>uploads</code> folder is sitting at <code>https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads</code> under Ghost folder.</p>
+<p>Because the image links in the posts were migrated as they were, they still point to the location at Wordpress site, i.e.<br><code>http://oldWPSite.com/wp-content/uploads/2001/01/abc.jpg</code><br>, and the new address I want it to point to is<br><code>http://newGhostSite.comhttps://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2001/01/abc.jpg</code></p>
 <p>Therefore, the solution is very clear now. I just need to replace the old links with new links. This can be done by running some simple SQL queries. I did it with the code below:</p>
 <pre><code>
 update posts 
-set markdown= replace(markdown, 'http://oldWPSite.com/wp-content/', '/content/images/');
+set markdown= replace(markdown, 'http://oldWPSite.com/wp-content/', 'https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/');
 
 update posts 
-set html= replace(html, 'http://oldWPSite.com/wp-content/', '/content/images/');
+set html= replace(html, 'http://oldWPSite.com/wp-content/', 'https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/');
 
 update posts 
-set image= replace(image, 'http://oldWPSite.com/wp-content/', '/content/images/');
+set image= replace(image, 'http://oldWPSite.com/wp-content/', 'https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/');
 
 </code></pre>
 

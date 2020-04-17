@@ -115,7 +115,7 @@
 </nav>
 
     <div class="view intro-2" id="background" parallax=true
-         style="background: url('/content/images/uploads/2013/06/new_image.png') no-repeat center center;
+         style="background: url('https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/new_image.png') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.7)">
@@ -139,7 +139,7 @@
                   
                   <span class="post-meta mr-2">
                     <i class="iconfont icon-chart"></i>
-                    621 字
+                    614 字
                   </span>
                 
 
@@ -178,55 +178,67 @@
           <div class="post-content mx-auto" id="post">
             
             <article class="markdown-body">
-              <p>PHP 我过去一向是用到什么就查那部分的代码，改改直接用，一直未曾认真学习过。最近的project需要我在服务器端做一个小小的图片处理，于是这次我决定要好好搞懂用的代码！</p>
-<p>But 结果发现其实就只是学会如何用Imagick库里的几个method而已，没什么算法需要自己想的。。╮(╯_╰)╭</p>
-<p>其实想想用photoshop整天要抠图，自己写一个特别精准的抠图算法应该既有挑战性又很具实际意义，有空就写这个试试吧~</p>
-<p>In short, 下面代码拿到45度角的阴影，半透明顺带模糊图片。<br> <pre><code><br> $imgFile = ‘medium_squid.png’;//原图片<br> getShadow($imgFile);</p>
-<p> function getShadow($imgPath){<br>     $im = new Imagick($imgPath);<br>     $width = $im->getImageWidth();<br>     $height = $im->getImageHeight();</p>
-<pre><code> /* Set the image format to png */  
- $im-&gt;setImageFormat(‘png’);
+              <p>PHP 我过去一向是用到什么就查那部分的代码，改改直接用，一直未曾认真学习过。最近的 project 需要我在服务器端做一个小小的图片处理，于是这次我决定要好好搞懂用的代码！</p>
+<p>But 结果发现其实就只是学会如何用 Imagick 库里的几个 method 而已，没什么算法需要自己想的。。╮(╯_╰)╭</p>
+<p>其实想想用 photoshop 整天要抠图，自己写一个特别精准的抠图算法应该既有挑战性又很具实际意义，有空就写这个试试吧~</p>
+<p>In short, 下面代码拿到 45 度角的阴影，半透明顺带模糊图片。</p>
+ <pre><code>
+ $imgFile = ‘medium_squid.png’;//原图片  
+ getShadow($imgFile);
 
- /* Fill new visible areas with transparent */  
- $im-&gt;setImageVirtualPixelMethod(Imagick::VIRTUALPIXELMETHOD_TRANSPARENT);
+ function getShadow($imgPath){  
+     $im = new Imagick($imgPath);  
+     $width = $im->getImageWidth();  
+     $height = $im->getImageHeight();
 
- /* Activate matte */  
- $im-&gt;setImageMatte(true);
+     /* Set the image format to png */  
+     $im->setImageFormat(‘png’);
 
- /* Control points for the distortion */  
- //图片四个顶点原来和改变后的位置  
- //下面的.7和.3使用45°对应的二分之根号二 约等于 0.707 约等于 0.7得到的  
- //想用其他的角度自己画个图算下就知道乘什么系数了。  
- $controlPoints = array( 0, 0,  
- $height*0.7, $height*0.3, 0, 
- $height, 0, $height, $width, 0,  
- $height*0.7+$width, $height*0.3,
- $width, $height,  
- $width, $height);
+     /* Fill new visible areas with transparent */  
+     $im->setImageVirtualPixelMethod(Imagick::VIRTUALPIXELMETHOD_TRANSPARENT);
 
- /* Perform the distortion */  
- $im-&gt;distortImage(Imagick::DISTORTION_PERSPECTIVE, $controlPoints, true);
+     /* Activate matte */  
+     $im->setImageMatte(true);
 
- $im-&gt;setImageBackgroundColor( new ImagickPixel( ‘black’ ) );
+     /* Control points for the distortion */  
+     //图片四个顶点原来和改变后的位置  
+     //下面的.7和.3使用45°对应的二分之根号二 约等于 0.707 约等于 0.7得到的  
+     //想用其他的角度自己画个图算下就知道乘什么系数了。  
+     $controlPoints = array( 0, 0,  
+     $height*0.7, $height*0.3, 0, 
+     $height, 0, $height, $width, 0,  
+     $height*0.7+$width, $height*0.3,
+     $width, $height,  
+     $width, $height);
 
- /* Create the shadow */  
-  //第一个参数是透明度  
- $im-&gt;shadowImage( 50, 30, 0, 0 );
+     /* Perform the distortion */  
+     $im->distortImage(Imagick::DISTORTION_PERSPECTIVE, $controlPoints, true);
 
- /* Ouput the image */  
- //被comment掉的是直接在网页上显示图片的方法  
- //header(“Content-Type: image/png”);  
- //echo $im;
+     $im->setImageBackgroundColor( new ImagickPixel( ‘black’ ) );
 
-//这是保存这个影子图片的方法。  
- $im-&gt;writeImage(‘new_image.png’);
+     /* Create the shadow */  
+      //第一个参数是透明度  
+     $im->shadowImage( 50, 30, 0, 0 );
 
- $im-&gt;destroy();  </code></pre><p> }</p>
-<p></code></pre><br> 效果如下：</p>
-<p><a href="/content/images/uploads/2013/06/medium.png"><img src="/content/images/uploads/2013/06/medium-181x300.png" srcset="/img/loading.gif" alt="medium"></a>没注意乌贼酱的原图已经有影子了= =<a href="/content/images/uploads/2013/06/new_image.png"><img src="/content/images/uploads/2013/06/new_image-300x168.png" srcset="/img/loading.gif" alt="new_image"></a></p>
-<p><a href="/content/images/uploads/2013/06/m_00000000-0b82-726a-2a63-1fff00000000-1.png"><img src="/content/images/uploads/2013/06/m_00000000-0b82-726a-2a63-1fff00000000-1.png" srcset="/img/loading.gif" alt="m_00000000-0b82-726a-2a63-1fff00000000-1"></a> <a href="/content/images/uploads/2013/06/m_00000000-0b82-726a-2a63-1fff00000000shd.png"><img src="/content/images/uploads/2013/06/m_00000000-0b82-726a-2a63-1fff00000000shd.png" srcset="/img/loading.gif" alt="m_00000000-0b82-726a-2a63-1fff00000000shd"></a> <a href="/content/images/uploads/2013/06/m_00000000-0b82-726a-2a63-1fff00000000-2.png"><img src="/content/images/uploads/2013/06/m_00000000-0b82-726a-2a63-1fff00000000-2.png" srcset="/img/loading.gif" alt="m_00000000-0b82-726a-2a63-1fff00000000-2"></a> <a href="/content/images/uploads/2013/06/m_00000000-0b82-726a-2a63-1fff00000000shd-1.png"><img src="/content/images/uploads/2013/06/m_00000000-0b82-726a-2a63-1fff00000000shd-1.png" srcset="/img/loading.gif" alt="m_00000000-0b82-726a-2a63-1fff00000000shd-1"></a> <a href="/content/images/uploads/2013/06/m_00000000-0b82-726a-2a63-1fff00000000.png"><img src="/content/images/uploads/2013/06/m_00000000-0b82-726a-2a63-1fff00000000.png" srcset="/img/loading.gif" alt="m_00000000-0b82-726a-2a63-1fff00000000"></a> <a href="/content/images/uploads/2013/06/shd.png"><img src="/content/images/uploads/2013/06/shd.png" srcset="/img/loading.gif" alt="shd"></a></p>
+     /* Ouput the image */  
+     //被comment掉的是直接在网页上显示图片的方法  
+     //header(“Content-Type: image/png”);  
+     //echo $im;
+
+    //这是保存这个影子图片的方法。  
+     $im->writeImage(‘new_image.png’);
+
+     $im->destroy();  
+ }
+
+</code></pre>
+
+<p>效果如下：</p>
+<p><a href="https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/medium.png" target="_blank" rel="noopener"><img src="https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/medium-181x300.png" srcset="/img/loading.gif" alt="medium"></a>没注意乌贼酱的原图已经有影子了= =<a href="https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/new_image.png" target="_blank" rel="noopener"><img src="https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/new_image-300x168.png" srcset="/img/loading.gif" alt="new_image"></a></p>
+<p><a href="https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/m_00000000-0b82-726a-2a63-1fff00000000-1.png" target="_blank" rel="noopener"><img src="https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/m_00000000-0b82-726a-2a63-1fff00000000-1.png" srcset="/img/loading.gif" alt="m_00000000-0b82-726a-2a63-1fff00000000-1"></a> <a href="https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/m_00000000-0b82-726a-2a63-1fff00000000shd.png" target="_blank" rel="noopener"><img src="https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/m_00000000-0b82-726a-2a63-1fff00000000shd.png" srcset="/img/loading.gif" alt="m_00000000-0b82-726a-2a63-1fff00000000shd"></a> <a href="https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/m_00000000-0b82-726a-2a63-1fff00000000-2.png" target="_blank" rel="noopener"><img src="https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/m_00000000-0b82-726a-2a63-1fff00000000-2.png" srcset="/img/loading.gif" alt="m_00000000-0b82-726a-2a63-1fff00000000-2"></a> <a href="https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/m_00000000-0b82-726a-2a63-1fff00000000shd-1.png" target="_blank" rel="noopener"><img src="https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/m_00000000-0b82-726a-2a63-1fff00000000shd-1.png" srcset="/img/loading.gif" alt="m_00000000-0b82-726a-2a63-1fff00000000shd-1"></a> <a href="https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/m_00000000-0b82-726a-2a63-1fff00000000.png" target="_blank" rel="noopener"><img src="https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/m_00000000-0b82-726a-2a63-1fff00000000.png" srcset="/img/loading.gif" alt="m_00000000-0b82-726a-2a63-1fff00000000"></a> <a href="https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/shd.png" target="_blank" rel="noopener"><img src="https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/shd.png" srcset="/img/loading.gif" alt="shd"></a></p>
 <p>后记：</p>
-<p>虽然上面的代码没问题，但在我需要用它的project–FaceMap里，影子相对于实体的定位比较麻烦，要设置一个anchor point, 需要预先得到影子的尺寸还不太难，但png图片里的人物形象未必脚的位置正好可以碰到图片最低端, 不一定偏上了多少。 这个应该也是可以写代码解决的，找到有色块的位置然后crop生成新图片。</p>
-<p>不过google map android api 并没有提供影子这个功能，现在弄出来也只有浏览器上能显示，手机上还得手动想办法解决。。 所以最后我决定加影子这个美好愿望还是先放一放好了。╮(╯_╰)╭</p>
+<p>虽然上面的代码没问题，但在我需要用它的 project–FaceMap 里，影子相对于实体的定位比较麻烦，要设置一个 anchor point, 需要预先得到影子的尺寸还不太难，但 png 图片里的人物形象未必脚的位置正好可以碰到图片最低端, 不一定偏上了多少。 这个应该也是可以写代码解决的，找到有色块的位置然后 crop 生成新图片。</p>
+<p>不过 google map android api 并没有提供影子这个功能，现在弄出来也只有浏览器上能显示，手机上还得手动想办法解决。。 所以最后我决定加影子这个美好愿望还是先放一放好了。╮(╯_╰)╭</p>
 
             </article>
             <hr>

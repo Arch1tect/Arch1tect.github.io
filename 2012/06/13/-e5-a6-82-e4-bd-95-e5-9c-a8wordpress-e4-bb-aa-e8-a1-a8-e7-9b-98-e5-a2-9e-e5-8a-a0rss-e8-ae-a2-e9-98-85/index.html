@@ -139,7 +139,7 @@
                   
                   <span class="post-meta mr-2">
                     <i class="iconfont icon-chart"></i>
-                    167 字
+                    171 字
                   </span>
                 
 
@@ -178,8 +178,8 @@
           <div class="post-content mx-auto" id="post">
             
             <article class="markdown-body">
-              <p>首先，仪表盘里默认的这几个RSS是在wp-admin/includes/dashboard.php里面设定好了的，由wp-admin/index.php这个文件来调用。可以直接在那个文件处修改.</p>
-<p>增加rss需要用到这两个function： custom_dashboard_widget() 和 add_custom_dashboard_widget()</p>
+              <p>首先，仪表盘里默认的这几个 RSS 是在 wp-admin/includes/dashboard.php 里面设定好了的，由 wp-admin/index.php 这个文件来调用。可以直接在那个文件处修改.</p>
+<p>增加 rss 需要用到这两个 function： custom_dashboard_widget() 和 add_custom_dashboard_widget()</p>
 <p>例：</p>
 <pre><code>  
  //下方代码添加一个名为“我订阅的RSS”的RSS栏目~  
@@ -198,9 +198,9 @@ wp_add_dashboard_widget(‘custom_dashboard_widget’, ‘我订阅的RSS’, �
 
 </code></pre>
 
-<p>就这么简单~ 用0或者1控制是否显示作者、日期、简要。。。</p>
-<p>这个段代码可以放在主题的fuctions.php里也可以随便放在一个常用的插件的php文件里~</p>
-<p><a href="/content/images/uploads/2012/09/6a63f6246b600c33c055e9621a4c510fd9f9a16f-1.png"><img src="/content/images/uploads/2012/09/6a63f6246b600c33c055e9621a4c510fd9f9a16f-1-300x157.png" srcset="/img/loading.gif" alt="" title="6a63f6246b600c33c055e9621a4c510fd9f9a16f-1"></a></p>
+<p>就这么简单~ 用 0 或者 1 控制是否显示作者、日期、简要。。。</p>
+<p>这个段代码可以放在主题的 fuctions.php 里也可以随便放在一个常用的插件的 php 文件里~</p>
+<p><a href="https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/09/6a63f6246b600c33c055e9621a4c510fd9f9a16f-1.png" target="_blank" rel="noopener"><img src="https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/09/6a63f6246b600c33c055e9621a4c510fd9f9a16f-1-300x157.png" srcset="/img/loading.gif" alt="" title="6a63f6246b600c33c055e9621a4c510fd9f9a16f-1"></a></p>
 
             </article>
             <hr>

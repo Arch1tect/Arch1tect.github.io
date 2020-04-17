@@ -201,7 +201,7 @@
 <p>The second line in the above code is quite important, I’ll explain it a little bit: 1/60 means 60 FPS; the following 10, 10 are for velocity iterations and position iterations. And they both control the accuracy of the physics in your game. If you set them too high, though you can get more perfect physics, the performance/speed of your game will be affected.</p>
 <p>Sweet! Now we can put everything together and finally see the output on the screen:</p>
 <center>  
-<iframe height="240" scrolling="no" src="/content/images/project/box2d_example/studynotes1.html" style="width: 200px; height: 400px;" width="320"></iframe></center>  
+<iframe height="240" scrolling="no" src="https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/project/box2d_example/studynotes1.html" style="width: 200px; height: 400px;" width="320"></iframe></center>  
 
 <p>The pink box is our happyBox, I add the green box as a holder because otherwise, by the time you read here, happyBox must have already fallen out of the screen and you won’t see what happened at all. I also change happyBox’s restitution attribute to 1 (which means it’s perfectly elastic while 0 would mean the opposite) so it will keep bouncing forever! Following is the complete code:</p>
 <pre><code>
@@ -284,7 +284,7 @@ window.setInterval(update, 1000 / 60);
 <p>上面第二行比较重要，简单来说 1／60 是 60 帧每秒的意思， 后面的两个 10 分别掌管速度计算和位置计算的精确度。如果定得太高，固然精确，游戏的性能也会受到影响。</p>
 <p>好了，现在我们把这些代码放到一起，就可以看到下面的效果了：</p>
 <center>  
-<iframe height="240" scrolling="no" src="/content/images/project/box2d_example/studynotes1.html" style="width: 200px; height: 400px;" width="320"></iframe></center>  
+<iframe height="240" scrolling="no" src="https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/project/box2d_example/studynotes1.html" style="width: 200px; height: 400px;" width="320"></iframe></center>  
 
 <p>这粉色的盒子是 happyBox 童鞋，下面的绿色盒子是我后来加上去用来 hold 住 happyBox 用的，不然当你读到这里时 happyBox 童鞋必然早已落到屏幕之外了。我还将它的恢复系数改成了 1， 这表示物体发生的碰撞是完全弹性碰撞，没有能量损失，所以他可以一直欢乐地蹦蹦跳跳下去。下面是完整的代码：</p>
 <pre><code>
@@ -345,7 +345,7 @@ window.setInterval(update, 1000 / 60);
 <p>第 37－43 行，当我定义 Holder 的时候，我只定义了他的 bodyDef 部分（这次叫做 holderDef），至于 fixDef 部分我直接再次调用了 happyBox 的 fixDef 来节约代码。第 11－17 行同样是为了便利，比如将原红头文件中的 Box2D. Dynamics. b2FixtureDef 用 b2FixtureDef 代替。</p>
 <p>最后放一个好玩的超弹金箍棒。</p>
 <center>  
-<iframe height="240" scrolling="no" src="/content/images/project/box2d_example/monkeykingbar.html" style="width: 610px; height: 480px;" width="320"></iframe></center>
+<iframe height="240" scrolling="no" src="https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/project/box2d_example/monkeykingbar.html" style="width: 610px; height: 480px;" width="320"></iframe></center>
 
             </article>
             <hr>

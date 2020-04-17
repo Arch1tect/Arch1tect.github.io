@@ -139,7 +139,7 @@
                   
                   <span class="post-meta mr-2">
                     <i class="iconfont icon-chart"></i>
-                    128 字
+                    133 字
                   </span>
                 
 
@@ -178,16 +178,16 @@
           <div class="post-content mx-auto" id="post">
             
             <article class="markdown-body">
-              <p>Ghost默认的数据库是sqlite3，也支持MySQL。</p>
-<p>在/var/www/ghost/content/data， 可以看到前面提到过的两个数据库文件：ghost.db和ghost-dev.db 。</p>
-<p>.db文件可以下载到本地然后用<a href="http://sqlitebrowser.org/" target="_blank" rel="noopener">sqlitebrowser</a>来浏览，截图如下：</p>
+              <p>Ghost 默认的数据库是 sqlite3，也支持 MySQL。</p>
+<p>在/var/www/ghost/content/data， 可以看到前面提到过的两个数据库文件：ghost.db 和 ghost-dev.db 。</p>
+<p>.db 文件可以下载到本地然后用<a href="http://sqlitebrowser.org/" target="_blank" rel="noopener">sqlitebrowser</a>来浏览，截图如下：</p>
 <br />
 
-<p><img src="/content/images/2015/10/ghostTables.png" srcset="/img/loading.gif" alt="ghost sqlite tables"></p>
-<p>也可以直接在shell里用sqlite3操作，比如：</p>
-<p>打开ghost-dev.db数据库文件<br><code>$ sqlite3 ghost-dev.db</code></p>
+<p><img src="https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/2015/10/ghostTables.png" srcset="/img/loading.gif" alt="ghost sqlite tables"></p>
+<p>也可以直接在 shell 里用 sqlite3 操作，比如：</p>
+<p>打开 ghost-dev.db 数据库文件<br><code>$ sqlite3 ghost-dev.db</code></p>
 <p>查看所有的表<br><code>sqlite&gt; .tables</code></p>
-<p>查看一个表的结构，比如posts这个表<br><code>sqlite&gt; .schema posts</code></p>
+<p>查看一个表的结构，比如 posts 这个表<br><code>sqlite&gt; .schema posts</code></p>
 <p>选择所有文章的标题<br><code>sqlite&gt; select title from posts;</code></p>
 
             </article>
