@@ -1,13 +1,18 @@
 ---
 date: "2012-12-22 05:19:29"
 title: "\u673A\u5668\u4EBA\u7248\u4E00\u5361\u7267\u5E08\u59B9\uFF08AIML & Program-O\uFF09"
+category: project
 ---
 
 最近一个星期在研究人工智能，或者应该叫 NLP（Natural Language Processing）自然语言处理，因为它与真正的“智能”距离还很远。
 
-[![88d16d81800a19d808aa05d733fa828ba71e4621](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/12/88d16d81800a19d808aa05d733fa828ba71e4621-300x175.png)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/12/88d16d81800a19d808aa05d733fa828ba71e4621.png) [![62f958ee3d6d55fb8f29f7f46d224f4a22a4dde7](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/12/62f958ee3d6d55fb8f29f7f46d224f4a22a4dde7-300x174.png)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/12/62f958ee3d6d55fb8f29f7f46d224f4a22a4dde7.png)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/12/88d16d81800a19d808aa05d733fa828ba71e4621.png)
 
-[![dancer](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/12/dancer-300x174.png)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/12/dancer.png) [![chinese](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/12/chinese-300x177.png)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/12/chinese.png)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/12/62f958ee3d6d55fb8f29f7f46d224f4a22a4dde7.png)
+
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/12/dancer.png)
+
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/12/chinese.png)
 
 吹牛，其实是一点中文也看不懂。。。
 
@@ -15,19 +20,19 @@ title: "\u673A\u5668\u4EBA\u7248\u4E00\u5361\u7267\u5E08\u59B9\uFF08AIML & Progr
 
 (推荐 Chrome…)
 
-[![Screen Shot 2012-12-22 at 4.54.45 AM](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/12/Screen-Shot-2012-12-22-at-4.54.45-AM-300x163.png)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/12/Screen-Shot-2012-12-22-at-4.54.45-AM.png)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/12/Screen-Shot-2012-12-22-at-4.54.45-AM.png)
 
-[![Screen Shot 2012-12-25 at 1.17.15 AM](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/12/Screen-Shot-2012-12-25-at-1.17.15-AM-300x197.png)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/12/Screen-Shot-2012-12-25-at-1.17.15-AM.png)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/12/Screen-Shot-2012-12-25-at-1.17.15-AM.png)
 
-[![hongkong](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/12/hongkong-300x171.png)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/12/hongkong.png)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/12/hongkong.png)
 
-[![tokyo](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/12/tokyo-300x171.png)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/12/tokyo.png)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/12/tokyo.png)
 
-[![mars](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/12/mars-300x151.png)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/12/mars.png)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/12/mars.png)
 
 说脏话会被喷一脸墨水，请自重！
 
-[![b86d9345d688d43f504710207d1ed21b0cf43be0](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/12/b86d9345d688d43f504710207d1ed21b0cf43be0-296x300.png)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/12/b86d9345d688d43f504710207d1ed21b0cf43be0.png)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/12/b86d9345d688d43f504710207d1ed21b0cf43be0.png)
 
 ————————————-AIML 与 Program O———————————————-
 
