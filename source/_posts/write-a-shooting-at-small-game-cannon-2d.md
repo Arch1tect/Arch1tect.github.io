@@ -21,7 +21,7 @@ title: "\u5199\u4E86\u4E00\u4E2A\u4E92\u5C04\u7684\u5C0F\u6E38\u620F - Cannon 2D
 Google Play 上面的一些好评：
 ![nice comments](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/2015/11/cannon2dreview.png)
 
-[电脑版下载](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/project/Cannon2D/cannon2d.zip)
+[电脑版下载](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/project/cannon2d/cannon2d.zip)
 
 Youtube 放的 Demo: [https://www.youtube.com/watch?v=8WOwP7KWlkE](https://www.youtube.com/watch?v=8WOwP7KWlkE)
 
