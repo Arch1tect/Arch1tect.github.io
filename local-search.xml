@@ -5,8 +5,8 @@
   
   <entry>
     <title>一个小仙女</title>
-    <link href="/2020/04/19/%E5%B0%8F%E4%BB%99%E5%A5%B3/"/>
-    <url>/2020/04/19/%E5%B0%8F%E4%BB%99%E5%A5%B3/</url>
+    <link href="/2020/04/19/xiaoxiannv/"/>
+    <url>/2020/04/19/xiaoxiannv/</url>
     
     <content type="html"><![CDATA[<p>最近因为新冠肺炎疫情，一直宅在家里，我新安装了两款手机 app - 撕歌和玩吧，撕歌的好玩游戏有男女合唱，多人聊天室抢唱等；玩吧的游戏非常多，我比较喜欢玩“谁是卧底”，“你画我猜”。</p><p>这两款软件都有很强的社交属性，也难怪我会在疫情期间，人们社交受阻之时得知它们。</p><p>我唱歌不太在行，当时下载撕歌 skr 是因为在抖音上看到它的广告，广告里是两个五音不全的用户在 pk，我一听顿时来了信心，心想终于找到了属于自己的组织，结果真的去了才发现这里卧虎藏龙，高手如云。</p><p>小仙女是我在男女合唱游戏里面认识的，她的用户名叫小仙女，不记得是合唱了哪首歌，我们唱完之后聊了两句，发现我们都有用玩吧 app，于是又去到玩吧加了好友。她很喜欢玩五子棋，就像我时不时玩一盘 Clash Royal 一样。</p><p>和她玩游戏聊天的时候，我偶然提到我用 soul 这个 app 和陌生人聊天这件事，小仙女对于我在 soul 上面能听到很多人的故事感到很神奇，她说她自己是话题终结者，而我说我随便和陌生人匹配聊天都很容易聊通宵，于是有一天半夜我们换着不同的游戏玩了几个小时后，开始了语音聊天。</p><p>我轻松终结了她这个所谓的话题终结者，我们一直聊到早上七点多，到了后面实在是没力气讲话了。期间我通过不懈努力的旁敲侧击以及智慧的推理得知了小仙女原本不想透露的身高和年龄，小仙女的声音挺好听，所以聊天很舒服，而且她的性格也非常随和，温温柔柔的，生气的时候来来回回只会说一句话“哼，你过分了哦~”。她确实不是特别爱说话的类型，和我一样更习惯听别人讲，但在我引导之下（其实很多时候是交换，我用自己的故事或者我在 soul 上面听到的故事），她也讲出了自己的一些故事，她的恋爱经历不多，似乎运气很差，大学时候交往过的男朋友对她并不好，甚至有的还有暴力倾向。毕业以后就没什么机会接触异性了，她说现在身边只剩下一个偶尔能一起喝奶茶的男生朋友，之前还有几个因为莫名其妙的对她表白而逐渐疏远了。之所以需要很多喝奶茶的朋友还是因为闺蜜们会觉得喝奶茶容易胖，所以她想经常去喝就要换不同的人陪，我听了发现女生真是好喜欢喝奶茶哦。</p><p>我们还聊了关于人生的话题，我问她觉得人生的意义是什么，她说觉得自己是在为了别人而活，不知道她的人生还有什么其他意义，我也说了我的想法，不过就不在这篇文章里赘述了。</p><p>早上七点左右我睡着了，下午一点半才醒来，醒来发现我们的手机通话一直没有结束，小仙女说她 11 点就醒了，她好奇连麦睡觉是什么体验，所以一直没有挂，她睡觉浅，据她说我电话这边翻个身她都能听到，她醒来以后也不挂电话，因为想看看我这头猪能睡到几点才起。。。</p><p>每每新认识一个人，了解到她的性格特点和过往经历后，我都很好奇她之后的人生走向，最后会和什么样的人在一起，过上什么样的生活，其实说白了这就是八卦吧，不同之处是我只好奇我亲身接触过的人，而对于遥远的演员明星毫无兴趣。可是小仙女不愿意加微信，所以我恐怕不能知道她故事的发展了。</p><p>也不一定，我下次再拿别人的故事和她交换试试。</p>]]></content>
     
@@ -24,8 +24,8 @@
   
   <entry>
     <title>重开博客</title>
-    <link href="/2020/04/17/%E9%87%8D%E5%BC%80%E5%8D%9A%E5%AE%A2/"/>
-    <url>/2020/04/17/%E9%87%8D%E5%BC%80%E5%8D%9A%E5%AE%A2/</url>
+    <link href="/2020/04/17/chongkaiboke/"/>
+    <url>/2020/04/17/chongkaiboke/</url>
     
     <content type="html"><![CDATA[<p>真不容易，花了两天时间把博客重新开起来了。</p><p>从之前的 Ghost 博客中导出了 200 多篇文章到 Hexo 并把图片传到了 AWS S3。</p><p>其中，挑选博客新的背景图片花了得有五个小时，最后定了一个非常简洁的。。。每次挑背景图片都这样，我也真是无语了！</p><p>选择 Hexo 而不是 Jekyll 是因为我更熟悉 Node.js，不会用 Ruby。</p><p>好了，试试看静态博客怎么样吧！</p>]]></content>
     
@@ -72,7 +72,7 @@
     <link href="/2019/09/28/kai-yuan-yi-xie/"/>
     <url>/2019/09/28/kai-yuan-yi-xie/</url>
     
-    <content type="html"><![CDATA[<p>最近终于把一叶开源了，这个项目也陆陆续续做了几年了，不过多介绍了，官网网站有介绍。</p><p><a href="https://yiyechat.com" target="_blank" rel="noopener">https://yiyechat.com</a></p><!--kg-card-begin: image--><figure class="kg-card kg-image-card"><img src="https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/2019/09/sunday-morning-1.png" srcset="/img/loading.gif" class="kg-image"></figure><!--kg-card-end: image--><!--kg-card-begin: markdown--><h3 id="">为什么开源？</h3><p>自己长期个人维护这个项目也是有些疲惫，而且希望能多听取一下别人的意见，这样进步的也更快一些。</p><p>而且和写代码相比，更头疼的还是功能的取舍，怎样设计合理。如果对设计不自信的话，便完全没有动力去写代码实现功能，因为很有可能是白费功夫。</p><!--kg-card-end: markdown--><!--kg-card-begin: hr--><hr><!--kg-card-end: hr--><h2 id="b2b-vs-b2c">B2B vs B2C</h2><!--kg-card-begin: markdown--><p>我最近把重心重新放在了支持站长的使用，浏览器拓展在国内的市场比较小，用的人很少，推广工作进行起来很困难。如果一些网站本身就有了一定的流量，然后装上一叶，那么可能效果会好很多，因为用户不用额外装什么软件，只要打开常去的网站，就会发现突然多了聊天的功能，看到右下角的数字知道有多少其他游客在线，或者看到飘过的弹幕后决定一起聊天。</p><p>站长如果要自己增加留言和实时聊天的功能，还需要一定的开发和维护的成本，一叶的引入则简单得多，站长只需要引入两行代码：</p><pre><code>&lt;link href=&quot;https://yiyechat.com/open-source/build/content-static/css/main.css&quot; rel=&quot;stylesheet&quot;&gt;<p>&lt;script src=&quot;<a href="https://yiyechat.com/open-source/build/content-static/js/main.js" target="_blank" rel="noopener">https://yiyechat.com/open-source/build/content-static/js/main.js</a>&quot; &gt;&lt;/script&gt;<br></code></pre></p><p>完成。</p><p>站长也可以进行各种设置，通过在自己的网站定义一个spConfig对象，如下所示：</p><pre><code>window.spConfig = {    tabList:['discover','chat','comment','profile','close'],     defaultTab: 'chat',    chatModes:['room','site','page']}</code></pre><p>如果还有其他需求，自己修改对应的源代码也很容易，后端可以直接托管，也可以运行在自己的服务器上。</p><!--kg-card-end: markdown--><p></p>]]></content>
+    <content type="html"><![CDATA[<p>最近终于把一叶开源了，这个项目也陆陆续续做了几年了，不过多介绍了，官网网站有介绍。</p><p><a href="https://yiyechat.com" target="_blank" rel="noopener">https://yiyechat.com</a></p><!--kg-card-begin: image--><figure class="kg-card kg-image-card"><img width="300px" src="https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/2019/09/sunday-morning-1.png" srcset="/img/loading.gif" class="kg-image"></figure><!--kg-card-end: image--><!--kg-card-begin: markdown--><h3 id="">为什么开源？</h3><p>自己长期个人维护这个项目也是有些疲惫，而且希望能多听取一下别人的意见，这样进步的也更快一些。</p><p>而且和写代码相比，更头疼的还是功能的取舍，怎样设计合理。如果对设计不自信的话，便完全没有动力去写代码实现功能，因为很有可能是白费功夫。</p><!--kg-card-end: markdown--><!--kg-card-begin: hr--><hr><!--kg-card-end: hr--><h2 id="b2b-vs-b2c">B2B vs B2C</h2><!--kg-card-begin: markdown--><p>我最近把重心重新放在了支持站长的使用，浏览器拓展在国内的市场比较小，用的人很少，推广工作进行起来很困难。如果一些网站本身就有了一定的流量，然后装上一叶，那么可能效果会好很多，因为用户不用额外装什么软件，只要打开常去的网站，就会发现突然多了聊天的功能，看到右下角的数字知道有多少其他游客在线，或者看到飘过的弹幕后决定一起聊天。</p><p>站长如果要自己增加留言和实时聊天的功能，还需要一定的开发和维护的成本，一叶的引入则简单得多，站长只需要引入两行代码：</p><pre><code>&lt;link href=&quot;https://yiyechat.com/open-source/build/content-static/css/main.css&quot; rel=&quot;stylesheet&quot;&gt;<p>&lt;script src=&quot;<a href="https://yiyechat.com/open-source/build/content-static/js/main.js" target="_blank" rel="noopener">https://yiyechat.com/open-source/build/content-static/js/main.js</a>&quot; &gt;&lt;/script&gt;<br></code></pre></p><p>完成。</p><p>站长也可以进行各种设置，通过在自己的网站定义一个spConfig对象，如下所示：</p><pre><code>window.spConfig = {    tabList:['discover','chat','comment','profile','close'],     defaultTab: 'chat',    chatModes:['room','site','page']}</code></pre><p>如果还有其他需求，自己修改对应的源代码也很容易，后端可以直接托管，也可以运行在自己的服务器上。</p><!--kg-card-end: markdown--><p></p>]]></content>
     
     
     
@@ -254,7 +254,7 @@
     <link href="/2015/11/08/cloud-gate/"/>
     <url>/2015/11/08/cloud-gate/</url>
     
-    <content type="html"><![CDATA[<p>Visited my favorite public art - Could Gate in Chicago!</p><p><img src="https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/2015/11/IMG_20140613_043736.jpg" srcset="/img/loading.gif" alt=""></p><p><img src="https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/2015/11/IMG_20140613_043842.jpg" srcset="/img/loading.gif" alt=""></p><br/><iframe width="800" height="450" src="https://www.youtube.com/embed/4IuXre8NuYY?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe><br/><iframe width="800" height="450" src="https://www.youtube.com/embed/9FuRx6IrjFk?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe><br/>I feel I'm pretty good at taking photos and videos.]]></content>
+    <content type="html"><![CDATA[<p>Visited my favorite public art - Could Gate in Chicago!</p><p><img src="https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/2015/11/IMG_20140613_043736.jpg" srcset="/img/loading.gif" alt=""></p><p><img src="https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/2015/11/IMG_20140613_043842.jpg" srcset="/img/loading.gif" alt=""></p><br/><iframe width="100%" height="450" src="https://www.youtube.com/embed/4IuXre8NuYY?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe><br/><iframe width="100%" height="450" src="https://www.youtube.com/embed/9FuRx6IrjFk?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe><br/><p>I feel I’m pretty good at taking photos and videos.</p>]]></content>
     
     
     
