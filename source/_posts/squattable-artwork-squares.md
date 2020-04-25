@@ -3,6 +3,7 @@ banner_img: https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/image
 date: "2011-06-15 20:03:03"
 index_img: https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/08/p_large_o01s_518d0001de555c741.jpeg
 title: Squattable Artwork & Squares
+category: architecture
 ---
 
 Empty space keeps a city flexible but too much empty space becomes an issue. This project is about activating empty squares in Rotterdam by placing a series of public artworks. Taking the idea from squatting, the artwork is designed completely open-ended for anyone with different purposes. Meanwhile the activated squares will attract people to occupy nearby buildings so that the vacancy problem of the area can also be alleviated.  

@@ -5,6 +5,8 @@ index_img: https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images
 title:
     "\u8377\u5170\u6E38\u8BB0 & \u8377\u5170\u7684\u540E\u4E1D\u74DC\u7279\u73B0\
     \u8C61 \uFF08Post-Squat NL\uFF09"
+category: life
+tag: architecture
 ---
 
 今儿心情甚好，作文以记之～   游记部分看到第二个分割线就好了，后面是关于在荷兰做的 project，有点长

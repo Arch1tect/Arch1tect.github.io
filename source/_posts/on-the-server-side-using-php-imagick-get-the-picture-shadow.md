@@ -5,6 +5,7 @@ index_img: https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images
 title:
     "\u7528PHP Imagick\u5728\u670D\u52A1\u5668\u7AEF\u5F97\u5230\u56FE\u7247\u5F71\
     \u5B50"
+category: project
 ---
 
 PHP 我过去一向是用到什么就查那部分的代码，改改直接用，一直未曾认真学习过。最近的 project 需要我在服务器端做一个小小的图片处理，于是这次我决定要好好搞懂用的代码！
@@ -68,7 +69,7 @@ In short, 下面代码拿到 45 度角的阴影，半透明顺带模糊图片。
 
 效果如下：
 
-[![medium](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/medium-181x300.png)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/medium.png)没注意乌贼酱的原图已经有影子了= =[![new_image](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/new_image-300x168.png)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/new_image.png)
+[![medium](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/medium-181x300.png)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/medium.png)[![new_image](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/new_image-300x168.png)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/new_image.png)
 
 [![m_00000000-0b82-726a-2a63-1fff00000000-1](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/m_00000000-0b82-726a-2a63-1fff00000000-1.png)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/m_00000000-0b82-726a-2a63-1fff00000000-1.png) [![m_00000000-0b82-726a-2a63-1fff00000000shd](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/m_00000000-0b82-726a-2a63-1fff00000000shd.png)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/m_00000000-0b82-726a-2a63-1fff00000000shd.png) [![m_00000000-0b82-726a-2a63-1fff00000000-2](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/m_00000000-0b82-726a-2a63-1fff00000000-2.png)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/m_00000000-0b82-726a-2a63-1fff00000000-2.png) [![m_00000000-0b82-726a-2a63-1fff00000000shd-1](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/m_00000000-0b82-726a-2a63-1fff00000000shd-1.png)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/m_00000000-0b82-726a-2a63-1fff00000000shd-1.png) [![m_00000000-0b82-726a-2a63-1fff00000000](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/m_00000000-0b82-726a-2a63-1fff00000000.png)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/m_00000000-0b82-726a-2a63-1fff00000000.png) [![shd](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/shd.png)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/shd.png)
 

@@ -3,6 +3,7 @@ banner_img: https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/image
 date: "2019-09-08 09:28:22"
 index_img: https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/2019/09/918KkftCUFL-1.jpg
 title: "13 Reasons Why \u7B2C\u4E09\u5B63\u5B8C\u7ED3"
+category: review
 ---
 
 <!--kg-card-begin: image--><figure class="kg-card kg-image-card"><img src="https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/2019/09/918KkftCUFL.jpg" class="kg-image"></figure><!--kg-card-end: image--><!--kg-card-begin: markdown--><p>刚刚看完第三季，虽然一季不如一季，我还是非常非常爱这个剧，情感把握的太到位了，第一季实在是让人心碎。</p>

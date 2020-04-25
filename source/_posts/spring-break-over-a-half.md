@@ -1,11 +1,10 @@
 ---
 date: "2013-03-10 03:26:56"
 title: "\u6625\u5047\u8FC7\u7684\u771F\u662F\u5FEB\u6781\u4E86\uFF01"
+category: life
 ---
 
 不知道是不是真的快乐的日子总是过的比较快，但过的很没节操就是了，昼夜颠倒。今晚 laundry + gym + 收拾房间 吧！（文章是三天前开始写的，一直没写完，结果到现在也只完成了两样，一直没能去 GYM… what a loser > <）
-
-###
 
 ### 动漫
 
@@ -15,9 +14,9 @@ title: "\u6625\u5047\u8FC7\u7684\u771F\u662F\u5FEB\u6781\u4E86\uFF01"
 
 另外这部动漫给我很像在看一部电影的感觉，于是我特意选了张像电影海报的图。：）
 
-[![pic_293550](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/03/pic_293550-300x187.jpeg)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/03/pic_293550.jpeg)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/03/pic_293550.jpeg)
 
-[![5656649320110424000132065](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/03/5656649320110424000132065-300x168.jpg)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/03/5656649320110424000132065.jpg)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/03/5656649320110424000132065.jpg)
 
 （蛮好奇为什么“助手”（女主）穿的外衣看上去总是要掉要掉的样子。。 潮流趋势抑或是个性使然？）
 
@@ -27,15 +26,15 @@ p.s. 后来有人告诉我原来那其实不是外衣，是一件校服改的衣
 
 恩。。然后我春假里终于看了最新的《大话西游之除魔传奇》，还可以，只是黄渤演的孙悟空变身后样子过于吓人了点。很多人觉得不如原来的经典，我也同意。但是我把原来的两部又重新看了一遍后，原作在我心中的高度却动摇了。 我想应该是物是人非的缘故，即便经典，仍免不了有年代的因素，大话西游是 95 年的作品，18 年前的评价标准和今天自然有了变化。 再加上我已经对剧情很熟悉了，失去了当年的那份新鲜感 — 第一次接触无厘头文化，第一次认识啰嗦版的唐僧。。
 
-[![518981](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/03/518981-300x160.jpg)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/03/518981.jpg)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/03/518981.jpg)
 
-[![p1840152350](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/03/p1840152350-300x128.jpg)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/03/p1840152350.jpg)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/03/p1840152350.jpg)
 
 （小猪演的也不错，有趣的是我觉得他演的角色和他本人性格蛮接近诶！）
 
 Anyway, 西游一直是我最喜欢的一个故事之一，记得小学时候还看过一本叫《悟空传》的书，作者叫今何在，当时让我喜欢得不由自主的去背诵里面的句子。后来我还把高中（喜欢？）的一个女生 QQ 备注改成了紫霞仙子 = = 。。。
 
-[![2_201008271833291rVVc](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/03/2_201008271833291rVVc-189x300.jpg)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/03/2_201008271833291rVVc.jpg)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/03/2_201008271833291rVVc.jpg)
 
 （哈~ 找到了这个令人怀念的封面！）
 
@@ -49,7 +48,7 @@ Anyway, 西游一直是我最喜欢的一个故事之一，记得小学时候还
 
 玩了好几天的 Jelly Defense, 塔防类型游戏。虽然只是个小游戏，但画面好看极了，果冻们生动的细节设计得也非常到位。 游戏难度不小，因为不像《植物大战僵尸》那样有清晰的格子，所以要尝试好几次才能设计出最佳布局。最后我终于拿到了全部关卡的宝石，记得其中有一关非常之难，我不停的试，结果就试到了第二天早上 9 点，悲剧。。 总之，这是一个让人又爱又恨的游戏~
 
-[![jelly_screen3](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/03/jelly_screen3-300x187.jpg)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/03/jelly_screen3.jpg)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/03/jelly_screen3.jpg)
 
 ### 朋友
 
@@ -57,7 +56,7 @@ Anyway, 西游一直是我最喜欢的一个故事之一，记得小学时候还
 
 ### WordPress
 
-[![internalcomm2](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/03/internalcomm2-300x225.jpg)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/03/internalcomm2.jpg)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/03/internalcomm2.jpg)
 
 “
 

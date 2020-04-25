@@ -3,6 +3,7 @@ banner_img: https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/image
 date: "2010-07-21 18:46:47"
 index_img: https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/08/p_large_Ulmq_528b0002f8885c42.jpeg
 title: "\u521D\u62B5\u7F8E\u56FD\uFF0C\u5C0F\u8BB0\u4E00\u4E0B"
+category: life
 ---
 
 这两天比较忙，但还是写篇东西吧。毕竟是来美国最初的几天，以后看看估计会很有趣吧

@@ -1,6 +1,7 @@
 ---
 date: "2013-04-30 02:05:20"
 title: "Minimum Spanning Tree Animation | \u6700\u5C0F\u751F\u6210\u6A39\u52D5\u756B"
+category: project
 ---
 
 Finished my Data Structure and Algorithm final exam today, I decided to code a small project just for fun!
