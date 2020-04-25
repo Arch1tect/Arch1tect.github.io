@@ -1,6 +1,8 @@
 ---
 date: "2012-03-20 23:43:50"
 title: Villa Savoye Section | Box2d
+category: project
+tags: physics engine
 ---
 
 An idea of using the section of  Villa Savoye as the platform for a Box2dweb game (well..the game is not there yet)    ^ ^

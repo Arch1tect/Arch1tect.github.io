@@ -3,6 +3,7 @@ banner_img: https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/image
 date: "2015-11-08 08:19:24"
 index_img: https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/2015/11/PANO_20150305_065917.jpg
 title: Trip to Miami
+category: life
 ---
 
 ![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/2015/11/PANO_20150305_065917.jpg)

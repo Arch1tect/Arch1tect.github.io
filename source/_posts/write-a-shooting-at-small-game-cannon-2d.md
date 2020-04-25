@@ -3,6 +3,7 @@ banner_img: https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/image
 date: "2014-01-24 07:33:08"
 index_img: https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/2015/11/Screenshot_2014-06-06-04-27-03.png
 title: "\u5199\u4E86\u4E00\u4E2A\u4E92\u5C04\u7684\u5C0F\u6E38\u620F - Cannon 2D"
+category: project
 ---
 
 假期做了个安卓小游戏，AI 还没完全做好。 这两天赶了赶放到了 Google Play 里，开学太忙，以后有空再做修改吧。

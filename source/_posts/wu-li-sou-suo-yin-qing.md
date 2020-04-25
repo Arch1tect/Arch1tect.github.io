@@ -3,6 +3,7 @@ banner_img: https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/image
 date: "2015-11-04 04:54:50"
 index_img: https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/11/Screen-Shot-2012-11-26-at-2.39.58-AM.png
 title: "\u7269\u7406\u641C\u7D22\u5F15\u64CE"
+category: project
 ---
 
 这两天放假一直在改进我的物理搜索引擎，基本上眼睛睁开就写代码，到睡前也是在写代码。图片搜索已经算是基本完工了，完工是因为我想不到还可以增加什么功能了（除了 AJAX）, 有两个很好玩的隐藏功能还在完善。四秒之内应该可以打开，加了 AJAX 后还可以缩短一半时间~
