@@ -3,6 +3,7 @@ banner_img: https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/image
 date: "2013-06-23 00:32:40"
 index_img: https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/device-2013-06-22-204230.png
 title: FaceMap v8.0
+category: project
 ---
 
 周一期末考，加上近期用眼过度，我决定暂停两天左右的 FaceMap 应用开发。刚好基本功能已经完成的七七八八了。

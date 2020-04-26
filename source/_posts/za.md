@@ -1,8 +1,8 @@
 ---
 date: "2019-10-07 07:32:22"
 title: "\u5C0F\u4E11"
-index_img: https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/2019/10/p2552654890.jpg
-category: life
+index_img: /post_img/joker.jpeg
+category: review
 ---
 
 看了刚刚上映的小丑，非常喜欢，不枉我对 DC 的偏爱。
