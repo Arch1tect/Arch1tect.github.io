@@ -157,6 +157,102 @@
     
     
     <div class="col-12 col-md-12 mx-auto index-info">
+      <a class="index-header" href="/2015/10/24/an-zhuang-ghost/">安装Ghost （AWS EC2）</a>
+
+      <a href="/2015/10/24/an-zhuang-ghost/" class="index-excerpt">
+        
+        
+          
+        
+        <div>终于成功装好了Ghost,昨晚试了好久一直不成功今天才发现明明端口是2368，但我一直在试2386。。。 
+具体步骤
+
+安装Node 0.10.40版本
+下载安装Ghost:
+
+下载Ghost
+$ curl -L https://ghost.org/zip/ghost-latest.zip -o ghost.zip
+解压缩到特定文件夹
+$ unzip -uo ghost.zip -d /var/w</div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>&nbsp;2015-10-24
+          </div>
+        
+        
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <div class="col-12 col-md-12 mx-auto index-info">
+      <a class="index-header" href="/2014/05/08/amazon-ec2-rds/">Amazon EC2 + RDS</a>
+
+      <a href="/2014/05/08/amazon-ec2-rds/" class="index-excerpt">
+        
+        
+          
+        
+        <div>用了亚马逊 EC2 作服务器后发现数据库 mysql 总是崩溃，因为内存不够，参考一些文章优化了配置，设置 swap space 也解决不了问题。 网上很多人都建议用亚马逊的 RDS 来放置数据库，通过 EC2 去连接 RDS 读取数据。没有看到特别好的教程，我研究了半天才设置成功。 以下几点要注意：
+
+RDS 的 security group 要和 EC2 的 instance 一致
+
+EC2 </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>&nbsp;2014-05-08
+          </div>
+        
+        
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <div class="col-12 col-md-12 mx-auto index-info">
+      <a class="index-header" href="/2014/05/04/amazon-ec2-wordpress-permalink-changes/">Amazon ec2 wordpress 固定链接修改问题</a>
+
+      <a href="/2014/05/04/amazon-ec2-wordpress-permalink-changes/" class="index-excerpt">
+        
+        
+          
+        
+        <div>转到ec2后发觉wordpress建的网站不能修改固定链接了，以往是要修改.htaccess文件，但ec2默认是没有这个.htaccess文件的，所以要修改 /etc/httpd/conf目录下的httpd.conf文件，找到改成下面这样：
+Options FollowSymLinks AllowOverride All
+最后
+sudo apachectl -k restart
+完
+</div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>&nbsp;2014-05-04
+          </div>
+        
+        
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <div class="col-12 col-md-12 mx-auto index-info">
       <a class="index-header" href="/2014/04/30/-e5-8d-9a-e5-ae-a2-e7-8e-b0-e5-9c-a8-e8-bd-ac-e5-88-b0amazon-ec2-e4-ba-86/">博客现在转到Amazon ec2了</a>
 
       <a href="/2014/04/30/-e5-8d-9a-e5-ae-a2-e7-8e-b0-e5-9c-a8-e8-bd-ac-e5-88-b0amazon-ec2-e4-ba-86/" class="index-excerpt">
@@ -344,88 +440,12 @@ export PATH=$PATH:/your/target/dir
           </div>
         
         
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <div class="col-12 col-md-12 mx-auto index-info">
-      <a class="index-header" href="/2014/02/17/i-m-so-out/">I&#39;m so out &gt; &lt;</a>
-
-      <a href="/2014/02/17/i-m-so-out/" class="index-excerpt">
-        
-        
-          
-        
-        <div>我发现我和国内有些脱节 = =。。。   是这么发现的：
-最近写的一个小游戏Cannon 2D, 每秒 60 帧，因为很多地方写法效率低，没有针对手机做专门优化，在电脑上跑起来没问题，在我自己的手机 Samsung Mega 6.3″上跑起来没问题， 但是在我从室友那借来的三星 Note 1 和我另外一个小手机上跑起来就会掉帧。最后我估计了一下，游戏在 RAM 1GB 以下的设备上跑会掉帧。
-前两</div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
           <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>&nbsp;2014-02-17
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/life/">life</a>
+            
           </div>
-        
-        
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <div class="col-12 col-md-12 mx-auto index-info">
-      <a class="index-header" href="/2014/02/13/mobile-entrepreneurship-mobile-terminal-entrepreneurial-class-and-soloway/">Mobile Entrepreneurship（移动端创业课）and Soloway</a>
-
-      <a href="/2014/02/13/mobile-entrepreneurship-mobile-terminal-entrepreneurial-class-and-soloway/" class="index-excerpt">
-        
-        
-          
-        
-        <div>这学期上的最重要的一门课就是Mobile Entrepreneurship，这课是计算机系毕业设计课程中的一门，我一直觉得移动端很有前景而且之前自己也有尝试做app，感觉挺有趣的就选了它。
-这课的教授是还蛮有名的Elliot Soloway, 他告诉我们自己当年教过Google创始人Larry Page。 “你们的这位学长当年也像你们一样坐在这里听我吹牛。 Larry设计的产品被我狠批过，我甚至直</div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>&nbsp;2014-02-13
-          </div>
-        
-        
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <div class="col-12 col-md-12 mx-auto index-info">
-      <a class="index-header" href="/2014/02/10/flappy-bird-and-mobile-games/">Flappy Bird与手机游戏</a>
-
-      <a href="/2014/02/10/flappy-bird-and-mobile-games/" class="index-excerpt">
-        
-        
-          
-        
-        <div>昨晚偶然看了一篇文章提到一个叫做 Flappy Bird 的手机游戏，好奇之余就下载来玩了。 果然游戏的一大卖点就是虽然简单，但是难度异常的高。 我到今天为止玩了大概有几个小时，尝试了几百次，现在的最高纪录达到了 37，但仍然常常会通不过第一个管子。 这样的一款虐待玩家的游戏按理应该是游戏性极差的， 然而它却取得了不可置疑的成功，着实奇怪。
-媒体效应与玩家心理
-我想如果我只是偶然从 Google </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>&nbsp;2014-02-10
-          </div>
-        
         
         
       </div>
@@ -539,6 +559,37 @@ export PATH=$PATH:/your/target/dir
 
 
 <!-- Plugins -->
+
+
+  
+
+  
+    <!-- Google Analytics -->
+    <script defer>
+      (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+          (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+      ga('create', 'UA-59780139-2', 'auto');
+      ga('send', 'pageview');
+    </script>
+  
+
+  
+
+  
+
+  
+
+  
 
 
 
