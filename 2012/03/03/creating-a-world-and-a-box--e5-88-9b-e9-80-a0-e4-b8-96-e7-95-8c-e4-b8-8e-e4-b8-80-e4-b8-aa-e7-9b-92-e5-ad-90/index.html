@@ -212,7 +212,7 @@ fixDef.shape = new b2PolygonShape; //define shape
 <p><code>var happyBox = world.CreateBody(bodyDef); happyBox.CreateFixture(fixDef);</code></p>
 <p>Sweet, we have finished everything for now. Mr happyBox should be happy falling in our Box2d world, and you’ll be able to see how he’s doing in the following article. ^ ^</p>
 <hr>
-<p><a href="http://box2dweb.com/blog/2012/03/03/core-concepts-%e6%a0%b8%e5%bf%83%e6%a6%82%e5%bf%b5/box2ddiagramnew/" target="_blank" rel="noopener"><img src="https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/03/box2ddiagramnew-1024x1024.jpg" srcset="/img/loading.gif" alt="" title="box2ddiagramnew"></a></p>
+<p><img src="http://box2dweb.com/blog/2012/03/03/core-concepts-%e6%a0%b8%e5%bf%83%e6%a6%82%e5%bf%b5/box2ddiagramnew/" srcset="/img/loading.gif" alt=""></p>
 <p><strong>创造 Box2d 世界</strong></p>
 <p>还记得上面的图表吧？ 它告诉我们世界的定义主要包含重力与休眠两个参数。 重力毋需多说， “休眠”是指 Box2d 世界中的某物体如果超过 0.5 秒没有做物理运动，同时也没有别的运动物体与之接触， 它就会无聊得“睡着”（但是它不会变胖）。。。 0.5 秒是默认时间，你可以随意修改。多数情况下我们允许物体休眠，因为当它们休眠时， Box2d 会停止对它们的运算， 从而降低机器的负担。 而且即便睡着了，它们也灵敏不减。</p>
 <p><code>var world = new b2World(new b2Vec2(0,10), true);</code></p>

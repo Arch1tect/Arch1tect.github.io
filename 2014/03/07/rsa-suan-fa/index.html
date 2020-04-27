@@ -199,7 +199,7 @@
 <p>但我搞错了一点，我以为计算 ex + by = 1 是困难所在， 事实上该方程只要 log(n)的时间就可以解出来，用辗转相除法即可。而真正的难处还是在计算 φ(n)这儿。<strong>n = pq</strong>, 最初制造公钥私钥的人知道 p 和 q, 所以可以轻易的用 φ(n) =（p-1）(q-1)计算，而外人不知道 p,q 是多少， 就只看到一个巨大的 n(一般是 1024 位二进制的大数)， 想要因式分解则难上加难。算不出 φ(n)，便也算不出私钥是多少了。</p>
 <p>————————————–小例子————————————————————–</p>
 <p>看完了阮大神的文章可以试试解我下面这个简单的秘密～</p>
-<p><a href="https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2014/03/Letters-and-number-code.jpg" target="_blank" rel="noopener"><img src="https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2014/03/Letters-and-number-code.jpg" srcset="/img/loading.gif" alt="Letters-and-number-code"></a></p>
+<p><img src="https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2014/03/Letters-and-number-code.jpg" srcset="/img/loading.gif" alt=""></p>
 <p>首先让字母对应数字， A-1 B-2 C-3 D-4 …. Z-26</p>
 <p>用公钥加密后的信息： 17  67  59  59  69</p>
 <p>公钥： {23, 77}  （公钥是加密用的，解密者不需要知道）</p>
