@@ -10,7 +10,7 @@ category: project
 
 总的来说我非常享受该 project, 既喜欢项目本身的概念，也喜欢这个设计与实现的过程，同时也因为有三个方面的程序要写，让我能持续有新鲜感~
 
-Project 取名叫 FaceMap （暂定）， [初衷其实是记录人的运动轨迹](http://swotong.com/three-weeks-is-updated-once-a-real-man/)，侧重于大量收集数据来做好看的 data visualization, 然后听了 TY 的建议想再加入收藏地点的功能, 当然还有我一直最感兴趣的社交功能。 但是后来做的时候我逐渐意识到记录运动轨迹早有一些专业团队做了，而且我所希望做到的记录日常详尽轨迹的想法，实现起来有大量消耗用户的电量和流量等弊端。至于记录地点的功能，Google， 百度地图本身就提供了这个功能，而且它们和自己的社交平台已经有了很好的联系。 加上我势单力薄，功能越多，对我就越不利， 于是我有了做减法的想法， 整个 app 最好全是 UGC, 不用我发布任何实际的内容，所以现在的核心功能自然就在社交上了，特色则是地图与人物形象的结合。
+Project 取名叫 FaceMap （暂定）， 初衷其实是记录人的运动轨迹，侧重于大量收集数据来做好看的 data visualization, 然后听了 TY 的建议想再加入收藏地点的功能, 当然还有我一直最感兴趣的社交功能。 但是后来做的时候我逐渐意识到记录运动轨迹早有一些专业团队做了，而且我所希望做到的记录日常详尽轨迹的想法，实现起来有大量消耗用户的电量和流量等弊端。至于记录地点的功能，Google， 百度地图本身就提供了这个功能，而且它们和自己的社交平台已经有了很好的联系。 加上我势单力薄，功能越多，对我就越不利， 于是我有了做减法的想法， 整个 app 最好全是 UGC, 不用我发布任何实际的内容，所以现在的核心功能自然就在社交上了，特色则是地图与人物形象的结合。
 
 （又想起了建筑设计，两者都是不断 back and forth, 有时直接把概念换掉。 但换掉并不等于重来，每次的 research 都是可以积累的。。）
 
@@ -36,12 +36,14 @@ Project 取名叫 FaceMap （暂定）， [初衷其实是记录人的运动轨�
 
 为了方便 Debug, 我加了个显示进程用的功能，既容易发现问题，用户也可以看到数据传输的动态，自行控制。
 
-![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/processing.png) [  
-![show_process](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/show_process-200x300.png)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/show_process.png)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/processing.png)
+
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/show_process.png)
 
 <span style="text-decoration: underline;">  
-</span>  [  
-](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/show_process.png)
+</span>
+    
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/show_process.png)
 
 按钮在 V5.0 里都换了风格，不会这么吓人了。。。但我懒得截新图了。
 
