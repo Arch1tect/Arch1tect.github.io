@@ -9,7 +9,7 @@ Diffie Hellman 算法要早于 RSA, 事实上它是最早的加密算法之一�
 
 Alice 和 Bob 想有一个全世界只有他俩知道的小秘密，但是大坏蛋 Eve 从始至终一直监听他们之间说的每句话， 那么请问 Alice 和 Bob 还能通过传达消息来得到这个只有他俩知道的小秘密么？
 
-[![problem](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2014/03/problem.gif)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2014/03/problem.gif)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2014/03/problem.gif)
 
 在知道 Diffie Hellman 算法前，我以为这是不可能的，因为 Eve 除了本身不能发布信息，A 和 B 之间的所有信息他全部都能窃听的到。
 

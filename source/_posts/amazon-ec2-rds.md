@@ -9,7 +9,7 @@ title: Amazon EC2 + RDS
 
 2. EC2 的 IP Permission 设置如下：
 
-[![Selection_010](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2014/05/Selection_010.png)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2014/05/Selection_010.png)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2014/05/Selection_010.png)
 
 inbound rule 要加上 mysql 类型， 其中 Source 处我选择的是 Custom IP， 填入 EC2 的 Private IP (不是你的 Public IP, 两者不同！)   这里填的 IP 地址是允许访问数据库的地址，如果选择 anywhere 那么任何地址都可以访问; 如果选 My IP 那就是你现在浏览网页所用的电脑的 IP 地址; 所以如果填了 EC2 的 Private IP，就只有通过你自己的 EC2 instance 才可以访问数据库。
 

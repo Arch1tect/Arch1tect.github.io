@@ -11,7 +11,7 @@ Press ‘ R ‘ to restart game.
 
 The screenshots below from left to right :  beginner, intermediate, advanced. The more stars you put in the building, the clearer the background will be.
 
-[![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/10/Screen-Shot-2012-10-29-at-8.07.24-PM-300x204.png "Screen Shot 2012-10-29 at 8.07.24 PM")](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/10/Screen-Shot-2012-10-29-at-8.07.24-PM.png)       [![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/10/54007512-6F08-4073-8101-4A5EDA63885C-300x204.jpg "54007512-6F08-4073-8101-4A5EDA63885C")](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/10/54007512-6F08-4073-8101-4A5EDA63885C.jpg)       [![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/10/50-stars-300x207.jpg "50 stars")](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/10/50-stars.jpg)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/10/50-stars.jpg)
 
 <br/><center>
 

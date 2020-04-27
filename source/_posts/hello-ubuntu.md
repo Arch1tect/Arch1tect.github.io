@@ -9,7 +9,7 @@ title: Hello Ubuntu
 
 没办法，Linux 用户确实目前来说远远少于 Windows 和 Mac, 从下面 2014 第一季度的操作系统市场份额我们可以看到所有 Linux 版本加起来只有 1.48%
 
-[![Selection_005](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2014/03/Selection_005.png)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2014/03/Selection_005.png)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2014/03/Selection_005.png)
 
 资料来源：[http://en.wikipedia.org/wiki/Usage_share_of_operating_systems](http://en.wikipedia.org/wiki/Usage_share_of_operating_systems)
 

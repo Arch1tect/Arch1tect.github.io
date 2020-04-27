@@ -5,4 +5,4 @@ index_img: https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images
 title: GIF Making
 ---
 
-[![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/08/smallgif.gif "smallgif")](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/08/smallgif.gif)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/08/smallgif.gif)

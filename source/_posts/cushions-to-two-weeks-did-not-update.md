@@ -35,21 +35,21 @@ title: "\u5495~~(\u256F\uFE4F\u2570)~~\u4E24\u5468\u6CA1\u66F4\u65B0\uFF01"
 
 还有玫瑰家族的老太太吐槽三个家族的 house motto: Growing strong, Winter is coming, We do not sow 的那段戏也给我留下了很深的印象。
 
-[![got-game-of-thrones-27766517-1280-1024](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/05/got-game-of-thrones-27766517-1280-1024-300x240.jpg)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/05/got-game-of-thrones-27766517-1280-1024.jpg)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/05/got-game-of-thrones-27766517-1280-1024.jpg)
 
-[![144539](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/05/144539-300x225.jpg)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/05/144539.jpg)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/05/144539.jpg)
 
-[![game-of-thrones](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/05/game-of-thrones-300x78.jpg)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/05/game-of-thrones.jpg)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/05/game-of-thrones.jpg)
 
 另外还看了一季的 Walking Dead, 美国人挺爱看的，但我的兴趣只维持到了第一季, 一般般的说。
 
 前天和同学去电影院看了 The Great Gatsby, 考 SAT 的时候总是看到来着。可惜许多背景知识不了解，以后有时间再把小说好好读一下吧。
 
-[![Great-Gatsby-wallpaper_03](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/05/Great-Gatsby-wallpaper_03-300x187.jpg)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/05/Great-Gatsby-wallpaper_03.jpg)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/05/Great-Gatsby-wallpaper_03.jpg)
 
 还看了致青春，比想象中好，主要是我之前看到太多差评和吐槽了所以以为很糟糕。这次的男主又是建筑师诶，比较新奇的是土木系这次也中枪了 = = 。。。
 
-[![53f6e3303eb6b93d48e19f16278_p1_mk1](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/05/53f6e3303eb6b93d48e19f16278_p1_mk1-300x168.jpg)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/05/53f6e3303eb6b93d48e19f16278_p1_mk1.jpg)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/05/53f6e3303eb6b93d48e19f16278_p1_mk1.jpg)
 
 #####Career
 

@@ -49,6 +49,6 @@ G 最後決定的是 Cornell，雖然要讀三年半之久，但常春藤還是�
 
 我想我還是忘了很多想要記的東西，所以以後還是要寫的更勤一點才是。對了，最後一點，博客背景加了木頭材質的選項，如果路過請試試然後告訴我喜歡哪一種謝謝！方法： 在頂部的菜單處點擊“Wood is Good..”即可。 截圖留念：
 
-[![Screen Shot 2013-04-10 at 6.10.49 AM](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/04/Screen-Shot-2013-04-10-at-6.10.49-AM-300x216.png)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/04/Screen-Shot-2013-04-10-at-6.10.49-AM.png "求評價~")
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/04/Screen-Shot-2013-04-10-at-6.10.49-AM.png "求評價~")
 
 <div id="notes">註：為了不被吐槽不知所雲，解釋一下 priority_queue， 大概意思就是以某種標準來安排優先要做什麼的一個隊列。比如隊列裡有三件事：呼吸、吃飯、看球賽， 一般人的話呼吸總是被放在最前，然後是吃飯，最後是看球賽。每次執行隊列里最top的一件事，每次完成一件，就從隊列里pop出來，然後做隊列裡新的最top的一件事，在這個例子里的話，呼吸完成之後就是吃飯了。 而隊列除了完成任務可以pop，也可以有新的任務被push進去，所以呼吸每隔幾秒就會被push進去，吃飯則每隔幾個小時。 ( 每次push進新的任務要重新排序O(lgN)，pop則不用重新排O(1) ) <div></div></div>

@@ -13,11 +13,11 @@ title: "Merry~ Merry Christmas\uFF01 Hello Android"
 
 放一张照片留念吧，毕竟它陪伴了我这么久。 A great sense of attachment…
 
-[![Exif_JPEG_PICTURE](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/12/R0015571-300x225.jpg)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/12/R0015571.jpg)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/12/R0015571.jpg)
 
 下面是新买的便宜 Android，本来后背无比丑，不过买了个 1 刀的绿色壳立刻就好看多了~
 
-[![Exif_JPEG_PICTURE](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/12/R0015584-300x225.jpg)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/12/R0015584.jpg) [![Exif_JPEG_PICTURE](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/12/R0015586-300x225.jpg)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/12/R0015586.jpg) [![Exif_JPEG_PICTURE](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/12/R0015585-300x225.jpg)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/12/R0015585.jpg) [![Exif_JPEG_PICTURE](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/12/R0015587-300x225.jpg)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/12/R0015587.jpg)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/12/R0015587.jpg)
 
 (新奥尔良好暖和的样子~)
 

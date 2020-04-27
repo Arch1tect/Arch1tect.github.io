@@ -46,9 +46,9 @@
 如下修改 Hexo 博客目录中的 `_config.yml`：
 
 ```yaml
-theme: fluid  # 指定主题
+theme: fluid # 指定主题
 
-language: zh-CN  # 指定语言，可不改
+language: zh-CN # 指定语言，可不改
 ```
 
 #### 4. 创建「关于页」
@@ -68,7 +68,6 @@ title: about
 date: 2020-02-23 19:20:33
 layout: about
 ---
-
 这里写正文，支持 Markdown, HTML
 ```
 
@@ -80,23 +79,23 @@ layout: about
 
 ## 功能特性
 
-- [x] 图片懒加载
-- [x] 自定义代码高亮方案
-- [x] 内置多语言
-- [x] 支持多款评论插件
-- [x] 支持使用[数据文件](https://hexo.io/zh-cn/docs/data-files)存放配置
-- [x] 自定义静态资源 CDN
-- [x] 无比详实的[用户文档](https://hexo.fluid-dev.com/docs/)
-- [x] 内置文章搜索
-- [x] 页脚备案信息
-- [x] 网页访问统计
-- [x] 支持 LaTeX 数学公式
-- [x] 支持 mermaid 流程图
-- [x] 音乐播放器
+-   [x] 图片懒加载
+-   [x] 自定义代码高亮方案
+-   [x] 内置多语言
+-   [x] 支持多款评论插件
+-   [x] 支持使用[数据文件](https://hexo.io/zh-cn/docs/data-files)存放配置
+-   [x] 自定义静态资源 CDN
+-   [x] 无比详实的[用户文档](https://hexo.fluid-dev.com/docs/)
+-   [x] 内置文章搜索
+-   [x] 页脚备案信息
+-   [x] 网页访问统计
+-   [x] 支持 LaTeX 数学公式
+-   [x] 支持 mermaid 流程图
+-   [x] 音乐播放器
 
 ## 贡献者
 
-[![contributors](https://opencollective.com/hexo-theme-fluid/contributors.svg?width=890&button=false)](https://github.com/fluid-dev/hexo-theme-fluid/graphs/contributors)
+![](https://github.com/fluid-dev/hexo-theme-fluid/graphs/contributors)
 
 英文文档翻译：[@EatRice](https://eatrice.top/) [@橙子杀手](https://ruru.eatrice.top)
 
@@ -106,8 +105,8 @@ layout: about
 
 ## 反馈
 
-- 微信群：扫描后添加好友，**回复「fluid」**（在聊天回复，不是加好友验证）自动拉群<details> <summary>二维码</summary><img width="250" src="https://cdn.jsdelivr.net/gh/fluid-dev/static@master/hexo-theme-fluid/wechat.jpeg"></details>
+-   微信群：扫描后添加好友，**回复「fluid」**（在聊天回复，不是加好友验证）自动拉群<details> <summary>二维码</summary><img width="250" src="https://cdn.jsdelivr.net/gh/fluid-dev/static@master/hexo-theme-fluid/wechat.jpeg"></details>
 
 ## Star 趋势
 
-[![Stargazers over time](https://starchart.cc/fluid-dev/hexo-theme-fluid.svg)](https://starchart.cc/fluid-dev/hexo-theme-fluid)
+![](https://starchart.cc/fluid-dev/hexo-theme-fluid)

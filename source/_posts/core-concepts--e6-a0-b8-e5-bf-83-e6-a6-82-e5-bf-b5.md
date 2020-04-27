@@ -26,7 +26,7 @@ title: "Core Concepts | \u6838\u5FC3\u6982\u5FF5"
 
 It’s pretty easy to understand right? The relation between these concepts can be tricky though. Therefore I made the diagram below to illustrate how a box is defined in a box2d world. Please take a careful look at it and I’ll further explain this in my next article.
 
-[![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/03/box2ddiagramnew-1024x1024.jpg "box2ddiagramnew")](http://box2dweb.com/core-concepts-%e6%a0%b8%e5%bf%83%e6%a6%82%e5%bf%b5/box2ddiagramnew/)
+![](http://box2dweb.com/core-concepts-%e6%a0%b8%e5%bf%83%e6%a6%82%e5%bf%b5/box2ddiagramnew/)
 
 －－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
 
@@ -49,4 +49,4 @@ It’s pretty easy to understand right? The relation between these concepts can 
 
 我想这几个概念应该都不难理解。不过这些概念之间的关系估计对于刚接触 Box2d 的朋友则没有那么容易理清。因此我画了下面这个简单的图表，它大概阐释了一个最基本的盒子是如何被定义在 Box2d 的物理世界中的。请狠狠看它几眼，我会在下文继续详细地介绍它。
 
-[![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/03/box2ddiagramnew-1024x1024.jpg "box2ddiagramnew")](http://box2dweb.com/core-concepts-%e6%a0%b8%e5%bf%83%e6%a6%82%e5%bf%b5/box2ddiagramnew/)
+![](http://box2dweb.com/core-concepts-%e6%a0%b8%e5%bf%83%e6%a6%82%e5%bf%b5/box2ddiagramnew/)

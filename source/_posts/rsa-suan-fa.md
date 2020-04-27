@@ -37,7 +37,7 @@ ex + φ(n)y = 1
 
 看完了阮大神的文章可以试试解我下面这个简单的秘密～
 
-[![Letters-and-number-code](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2014/03/Letters-and-number-code.jpg)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2014/03/Letters-and-number-code.jpg)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2014/03/Letters-and-number-code.jpg)
 
 首先让字母对应数字， A-1 B-2 C-3 D-4 …. Z-26
 

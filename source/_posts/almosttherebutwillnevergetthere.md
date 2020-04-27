@@ -13,7 +13,7 @@ Simply wanna kill some time, and this game is decent for killing time.
 
 It took me an hour, but I had to give up in the end, below is the best I got:
 
-[![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/10/Screen-Shot-2012-10-23-at-2.57.52-AM-300x215.png "Screen Shot 2012-10-23 at 2.57.52 AM")](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/10/Screen-Shot-2012-10-23-at-2.57.52-AM.png)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/10/Screen-Shot-2012-10-23-at-2.57.52-AM.png)
 
 I just need to make the radius of the gravity field 1 cm smaller to win the game with the best record so far.
 

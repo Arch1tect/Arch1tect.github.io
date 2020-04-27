@@ -16,7 +16,7 @@ category: life
 
 而这次的微信小组带给我的震撼比比刚刚注册人人网那时更为强烈，如果说人人网把老朋友的资料，主页，日志，相册在“可能认识的人”一栏提示，在每天的 “好友新鲜事” 里呈现，还只是静悄悄的给别离加上了引号；微信小组里十年前的老同学们你一言我一语，文字一行接着一行的从微信里跳出来，则让我感觉仿若猛然被扔进了时光机器，转眼间又坐在了当年的初中教室里，老同学们的一颦一簇和记忆里的丝毫不差。初中毕业时的别离之愁记忆里已经模糊不清，此时此刻突如其来的重逢微信上却再真切不过了。
 
-[![wechat](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2014/02/wechat-300x225.png)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2014/02/wechat.png) [![renren_icon](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2014/02/renren_icon-300x300.png)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2014/02/renren_icon.png)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2014/02/renren_icon.png)
 
 btw 微信这个开机画面我觉得意境特别好。
 
@@ -24,7 +24,7 @@ btw 微信这个开机画面我觉得意境特别好。
 
 今晚还很巧的相继碰到了两个学建筑的老同学，很萌很温柔很认真的 Jen 和 Dan. (为什么 Dan 身上就没有形容词？呃，因为是男的) 于是又勾起了我许多学建筑时的回忆。。
 
-[![mearchgoku](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2014/02/mearchgoku.jpg)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2014/02/mearchgoku.jpg)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2014/02/mearchgoku.jpg)
 
 啊，右下角的日期提醒着我来美国就快四年了。。
 

@@ -25,11 +25,11 @@ The big-O symbol is sometimes called a Landau symbol after the German mathematic
 
 </div>
 
-[![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/12/Screen-Shot-2012-12-05-at-4.54.55-PM-300x93.png "Screen Shot 2012-12-05 at 4.54.55 PM")](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/12/Screen-Shot-2012-12-05-at-4.54.55-PM.png)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/12/Screen-Shot-2012-12-05-at-4.54.55-PM.png)
 
 <div> 
 
-[![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/12/Screen-Shot-2012-12-05-at-4.55.45-PM-300x40.png "Screen Shot 2012-12-05 at 4.55.45 PM")](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/12/Screen-Shot-2012-12-05-at-4.55.45-PM.png)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/12/Screen-Shot-2012-12-05-at-4.55.45-PM.png)
 
 </div> 
 
@@ -39,7 +39,7 @@ Suppose that f1(x) and f2(x) are both O(g(x)). Then (f1 + f2)(x) is O(g(x)).
 
 Suppose that f1(x) is O(g1(x)) and f2(x) is O(g2(x)). Then (f1f2)(x) is O(g1(x)g2(x)).
 
-[![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/12/Screen-Shot-2012-12-05-at-5.25.04-PM-300x32.png "Screen Shot 2012-12-05 at 5.25.04 PM")](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/12/Screen-Shot-2012-12-05-at-5.25.04-PM.png)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/12/Screen-Shot-2012-12-05-at-5.25.04-PM.png)
 
 All materials are from
 

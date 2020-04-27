@@ -9,8 +9,8 @@ title: "\u4F20\u6559\u58EB"
 
 我发现 Google 街景 太强了，一下子就从地图上找到了我现在眼前的景色， 还有我现在坐的位置（二楼）， 这样还要相机做神马？
 
-[![Screen Shot 2013-06-16 at 4.11.38 PM](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/Screen-Shot-2013-06-16-at-4.11.38-PM-300x189.png "眼前景")](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/Screen-Shot-2013-06-16-at-4.11.38-PM.png)  
-[![Screen Shot 2013-06-16 at 4.12.38 PM](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/Screen-Shot-2013-06-16-at-4.12.38-PM-300x190.png "我位置")](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/Screen-Shot-2013-06-16-at-4.12.38-PM.png)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/Screen-Shot-2013-06-16-at-4.11.38-PM.png)  
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/Screen-Shot-2013-06-16-at-4.12.38-PM.png)
 
 但没多久 cafe 里竟然来了一对白人男女， 我开始没理会，但他们却径直朝我走来，原来是想问我能不能做个小 survey。 我其实挺闲的，就同意了。结果一听问题便发觉原来是传教的。。 首先问我有没有特定宗教信仰，然后问我对于上帝的理解和看法。我实话实说我并不信奉哪个具体的宗教的神为上帝，但我愿意相信存在一个 higher power， 也希望人有肉体之外的灵魂存在。 这个答案似乎让他们有点意外，于是又问我是否相信上帝创造人类，上帝爱人等等。我意识到他们可能没理解我的意思，于是再次强调我相信的 higher power 不是 Christian 的上帝耶和华、三位一体什么的。 这时他们的好奇心反而上来了，问我那我说的这个 higher power 有木有创造人类，是否开天辟地，创造宇宙之初。。。 囧， 我哪里知道这位 higher power 的这些，他对我而言只是一种模糊的感觉而已，于是继续实话实说告诉他们我认同科学对这些问题的解释，达尔文和 big bang 妥妥的， 他们终于没在这个问题上深究。。。
 

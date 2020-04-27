@@ -7,9 +7,9 @@ title: "\u6A21\u4EFFGoogle Doc\u7684Mobile App"
 
 留篇日志记一下。
 
-[![Screenshot_2014-02-08-15-29-47](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2014/02/Screenshot_2014-02-08-15-29-47-576x1024.png)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2014/02/Screenshot_2014-02-08-15-29-47.png)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2014/02/Screenshot_2014-02-08-15-29-47.png)
 
-[![Screenshot_2014-02-06-17-59-29](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2014/02/Screenshot_2014-02-06-17-59-29-576x1024.png)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2014/02/Screenshot_2014-02-06-17-59-29.png)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2014/02/Screenshot_2014-02-06-17-59-29.png)
 
 用了 Google Protocol Buffer 这种格式来传输数据， 以前只用过 xml 和 json, 这个据说快好多倍，不过我自己没有测试比较过。
 

@@ -30,4 +30,4 @@ wp_add_dashboard_widget(‘custom_dashboard_widget’, ‘我订阅的RSS’, �
 
 这个段代码可以放在主题的 fuctions.php 里也可以随便放在一个常用的插件的 php 文件里~
 
-[![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/09/6a63f6246b600c33c055e9621a4c510fd9f9a16f-1-300x157.png "6a63f6246b600c33c055e9621a4c510fd9f9a16f-1")](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/09/6a63f6246b600c33c055e9621a4c510fd9f9a16f-1.png)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/09/6a63f6246b600c33c055e9621a4c510fd9f9a16f-1.png)

@@ -21,7 +21,7 @@ Robot back end:
 
 [http://swotong.com/chat/](http://swotong.com/chat/)
 
-[![Screen Shot 2013-01-07 at 11.03.36 PM](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/01/Screen-Shot-2013-01-07-at-11.03.36-PM-300x160.png)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/01/Screen-Shot-2013-01-07-at-11.03.36-PM.png)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/01/Screen-Shot-2013-01-07-at-11.03.36-PM.png)
 
 However, I guess I won’t have much spare time to develop any extra-curriculum project this semester, (seriously? you think you still have spare time? = =)
 

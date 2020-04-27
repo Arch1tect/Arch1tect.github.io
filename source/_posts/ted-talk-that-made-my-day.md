@@ -5,7 +5,7 @@ title: Ted talk that made my day
 
 睡前上了下优酷，赫然看到首页居然是一个 Ted talk，在我印象里虽然 Ted talk 优酷里资源不少，但优酷官方把它放在首页最显眼的位置似乎比较少见（而且后来我发现该视频在 TED 官网上也才发布了几个小时而已，国内信息的滞后性这里完全看不到 0 0）。 看完后我发现该视频对于提高国人自信心大有裨益，也有利于改善我党在国人心中的形象。 于是这个疑惑就立刻解开了。
 
-[![Screen Shot 2013-07-02 at 4.19.09 AM](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/07/Screen-Shot-2013-07-02-at-4.19.09-AM-300x238.png)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/07/Screen-Shot-2013-07-02-at-4.19.09-AM.png)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/07/Screen-Shot-2013-07-02-at-4.19.09-AM.png)
 
 演讲本身很精彩，包括观点的提出和论证过程都能吸引观众的兴趣。不过我觉得观点本身其实并不是听上去那么新鲜，李驳斥”Linear Progression” 和 其他人驳斥 “Modernization equals Westernization” 不是很像么。我很喜欢李演讲时不卑不吭的态度，虽然他的目光有点奇怪。
 

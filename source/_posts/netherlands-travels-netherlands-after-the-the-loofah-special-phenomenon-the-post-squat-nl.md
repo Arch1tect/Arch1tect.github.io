@@ -15,13 +15,13 @@ tag: architecture
 
 上周的同一天坐上了前往荷兰的飞机，看到茫茫云海，某[video](http://www.youtube.com/watch?v=jYGKuwqksz0)说荷兰一年只有 25 天天空明净。。。
 
-[![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/08/p_large_76Bv_43ae0007dd2e5c732.jpeg "p_large_76Bv_43ae0007dd2e5c73")](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/08/p_large_76Bv_43ae0007dd2e5c732.jpeg)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/08/p_large_76Bv_43ae0007dd2e5c732.jpeg)
 
 密歇根和国内时差 12h，荷兰是 6h，刚好可以分段调时差 ＝ ＝
 
 在飞机上小睡一会儿，醒来便到了荷兰上空：
 
-[![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2011/05/b_large_MJcR_3e4a0002a23b5c71.jpeg "b_large_MJcR_3e4a0002a23b5c71")](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2011/05/b_large_MJcR_3e4a0002a23b5c71.jpeg)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2011/05/b_large_MJcR_3e4a0002a23b5c71.jpeg)
 
 转眼现在已经到荷兰一周了，一切都好，这里有漫天的海鸥和鸽子，还有缤纷的色彩～
 
@@ -29,37 +29,37 @@ tag: architecture
 
 刚到这里的前两天很轻松，自由活动，基本上和旅游差不多～：
 
-[![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2011/05/b_large_jnYZ_64f5000b66315c40.jpeg "b_large_jnYZ_64f5000b66315c40")](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2011/05/b_large_jnYZ_64f5000b66315c40.jpeg)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2011/05/b_large_jnYZ_64f5000b66315c40.jpeg)
 
 _(Amsterdam centraal station)_
 
-[![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2011/05/b_large_xBiW_24e600050a665c74.jpeg "b_large_xBiW_24e600050a665c74")](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2011/05/b_large_xBiW_24e600050a665c74.jpeg)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2011/05/b_large_xBiW_24e600050a665c74.jpeg)
 
 （_鸟_）
 
-[![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2011/05/b_large_wHBV_383d00005a3f5c721.jpeg "b_large_wHBV_383d00005a3f5c72")](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2011/05/b_large_wHBV_383d00005a3f5c721.jpeg)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2011/05/b_large_wHBV_383d00005a3f5c721.jpeg)
 
 _（建筑里的楼梯和门多很狭窄，大型家具之类的都是通过 facade 上面这个突出的横梁吊进房间里大型家具，见下图 detail）_
 
-[![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2011/05/b_large_Zk4D_3865000452e25c721.jpeg "b_large_Zk4D_3865000452e25c72")](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2011/05/b_large_Zk4D_3865000452e25c721.jpeg)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2011/05/b_large_Zk4D_3865000452e25c721.jpeg)
 
-[![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2011/05/b_large_I7yt_25bf0001f0ab5c3f.jpeg "b_large_I7yt_25bf0001f0ab5c3f")](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2011/05/b_large_I7yt_25bf0001f0ab5c3f.jpeg)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2011/05/b_large_I7yt_25bf0001f0ab5c3f.jpeg)
 
 _（自行车是该地重要代步工具）_
 
-[![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2011/05/b_large_skyW_1f9d0002ab645c431.jpeg "b_large_skyW_1f9d0002ab645c43")](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2011/05/b_large_skyW_1f9d0002ab645c431.jpeg)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2011/05/b_large_skyW_1f9d0002ab645c431.jpeg)
 
 (_Amsterdam 像威尼斯一样被运河贯穿，在这买条小舟只要每年交 70 欧元就可以在任何地方 park，比停车便宜且方便多了_)
 
-[![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2011/05/b_large_XplU_24dc000379885c741.jpeg "b_large_XplU_24dc000379885c74")](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2011/05/b_large_XplU_24dc000379885c741.jpeg)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2011/05/b_large_XplU_24dc000379885c741.jpeg)
 
 _（卖冰淇淋的船）_
 
-[![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2011/05/b_large_L2mH_3e5c00064b035c711.jpeg "b_large_L2mH_3e5c00064b035c71")](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2011/05/b_large_L2mH_3e5c00064b035c711.jpeg)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2011/05/b_large_L2mH_3e5c00064b035c711.jpeg)
 
 _（up：NEMO Museum Amsterdam）_
 
-[![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2011/05/b_large_vzo8_64cd0001ebd95c401.jpeg "b_large_vzo8_64cd0001ebd95c40")](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2011/05/b_large_vzo8_64cd0001ebd95c401.jpeg)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2011/05/b_large_vzo8_64cd0001ebd95c401.jpeg)
 
 _这里晚上快十点天才黑。。＝ ＝_
 
@@ -75,7 +75,7 @@ John”???……..”
 
 。。。cultural gap = =
 
-[![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2011/05/b_large_u3w9_64f5000bbd235c401.jpeg "b_large_u3w9_64f5000bbd235c40")](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2011/05/b_large_u3w9_64f5000bbd235c401.jpeg)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2011/05/b_large_u3w9_64f5000bbd235c401.jpeg)
 
 （_空拍这张显然不是我拍的。。http://wallpaperswide.com/aerial_view_of_tulip_flower_fields_amsterdam_the_netherlands-wallpapers.html_）
 
@@ -93,7 +93,7 @@ _“身高 1.90 米的美国广播公司记者置身于荷兰首都阿姆斯特�
 
 **Project**
 
-[![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2011/05/b_large_OQ9P_3b4b000882685c41-225x300.jpeg "b_large_OQ9P_3b4b000882685c41")](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2011/05/b_large_OQ9P_3b4b000882685c41.jpeg)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2011/05/b_large_OQ9P_3b4b000882685c41.jpeg)
 
 (Art Squatters House http://jasonwatterson.files.wordpress.com/2011/02/dsc01628.jpg)
 
@@ -121,23 +121,23 @@ Squatting 在荷兰已有数十年的历史，被认为是一种独特的自发�
 
 OT301 的前身是一个废弃的电影学院，自从 1999 年起被 squatters 占据并使用着。主要对象是艺术家，提供 studio 以及展览用的空间。
 
-[![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2011/05/b_large_naAe_378f0004334c5c73.jpeg "b_large_naAe_378f0004334c5c73")](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2011/05/b_large_naAe_378f0004334c5c73.jpeg)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2011/05/b_large_naAe_378f0004334c5c73.jpeg)
 
 _（入口处合影 左手绿衣服为 squatter）_
 
-[![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2011/05/b_large_ZaiZ_487c000520015c6f.jpeg "b_large_ZaiZ_487c000520015c6f")](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2011/05/b_large_ZaiZ_487c000520015c6f.jpeg)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2011/05/b_large_ZaiZ_487c000520015c6f.jpeg)
 
 _（squatters 经营的小酒吧，收益用于活动经费）_
 
-[![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2011/05/b_large_EiW9_378f0004301e5c73.jpeg "b_large_EiW9_378f0004301e5c73")](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2011/05/b_large_EiW9_378f0004301e5c73.jpeg)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2011/05/b_large_EiW9_378f0004301e5c73.jpeg)
 
 _ （party 或者表演专用的房间）_
 
-[![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2011/05/b_large_B9bK_24e60005fbe45c74.jpeg "b_large_B9bK_24e60005fbe45c74")](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2011/05/b_large_B9bK_24e60005fbe45c74.jpeg)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2011/05/b_large_B9bK_24e60005fbe45c74.jpeg)
 
 _（廉价出租的 studio，有时会办一些 workshop）_
 
-[![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2011/05/b_large_caXM_1fa70004d94a5c43.jpeg "b_large_caXM_1fa70004d94a5c43")](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2011/05/b_large_caXM_1fa70004d94a5c43.jpeg)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2011/05/b_large_caXM_1fa70004d94a5c43.jpeg)
 
 _他们甚至还经营着一个小规模的电影院，收益也用于活动经费_
 
@@ -151,17 +151,17 @@ schijnheilig 相对于 OT301 则年轻的多，是去年一月份才被 squatter
 
 接待我们的 squatter 是一个大学教授，从事 squatting 活动十余年了，一般将 squat 得来的房屋免费提供给无处居住的学生或者用于办展览等非商业活动。我们在自我介绍时告诉他这个 project 题目叫“post－squat”，他听了假装很生气“what do u mean by post, we have just started this one!![生气]” 。。。哈哈
 
-[![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2011/05/b_large_C2tC_2dd5000d86185c42.jpeg "b_large_C2tC_2dd5000d86185c42")](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2011/05/b_large_C2tC_2dd5000d86185c42.jpeg)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2011/05/b_large_C2tC_2dd5000d86185c42.jpeg)
 
 _(格子衫为 squatter)_
 
-[![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2011/05/b_large_9bCP_25dd00084d7a5c3f.jpeg "b_large_9bCP_25dd00084d7a5c3f")](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2011/05/b_large_9bCP_25dd00084d7a5c3f.jpeg)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2011/05/b_large_9bCP_25dd00084d7a5c3f.jpeg)
 
-[![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2011/05/b_large_q4UP_3b4b000878605c41.jpeg "b_large_q4UP_3b4b000878605c41")](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2011/05/b_large_q4UP_3b4b000878605c41.jpeg)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2011/05/b_large_q4UP_3b4b000878605c41.jpeg)
 
 _这里可以放映电影，也可以办讲座什么的，目前借给一些学校上化学课的 lecture 用。。。_
 
-[![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2011/05/b_large_dg4o_3b4b0008781b5c41.jpeg "b_large_dg4o_3b4b0008781b5c41")](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2011/05/b_large_dg4o_3b4b0008781b5c41.jpeg)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2011/05/b_large_dg4o_3b4b0008781b5c41.jpeg)
 
 _这个房间不久后会布置成一个小型图书馆，电脑网络与其它 squatter 相连，合力打造属于 squatter 自己的数字图书馆_
 
@@ -185,4 +185,4 @@ youtube 有些相关视频，vimeo 貌似国内还没封吧，贴个 vimeo 的�
 
 btw…想起之前看的一部叫《空房间》的电影，男女主角也可以算是 squatter ～ lol
 
-[![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2011/05/b_large_18r4_64f5000be4d55c40.jpeg "b_large_18r4_64f5000be4d55c40")](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2011/05/b_large_18r4_64f5000be4d55c40.jpeg)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2011/05/b_large_18r4_64f5000be4d55c40.jpeg)

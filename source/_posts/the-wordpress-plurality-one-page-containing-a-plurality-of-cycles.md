@@ -9,7 +9,7 @@ title:
 
 这周给 StarryStory 的网站更新，将首页划分成了三个板块,（case, story, observation)   每个板块显示的文章通过 tags 来过滤，同时各板块都有翻页功能，并且“记忆”其他板块所在页面，效果如下图：
 
-[![Screen Shot 2013-02-02 at 1.41.23 AM](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/02/Screen-Shot-2013-02-02-at-1.41.23-AM-293x300.png)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/02/Screen-Shot-2013-02-02-at-1.41.23-AM.png)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/02/Screen-Shot-2013-02-02-at-1.41.23-AM.png)
 
 （图片里应该可以看到三个灰色/蓝色的翻页部分吧？ 不清楚的话可以直接去[StarryStory](http://starrystory.org)那里体验。）
 

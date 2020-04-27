@@ -16,27 +16,27 @@ Project 取名叫 FaceMap （暂定）， [初衷其实是记录人的运动轨�
 
 人类是视觉动物，千言万语难敌一张 JPEG，不想写了，传截图。。
 
-[![conversation](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/conversation-200x300.png)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/conversation.png)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/conversation.png)
 
 尝试中我情不自禁地把一些喜欢的动漫角色加了进去。
 
-[![device-2013-06-16-080506](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/device-2013-06-16-080506-200x300.png)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/device-2013-06-16-080506.png)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/device-2013-06-16-080506.png)
 
 然后瞬间觉得这个 app 有爱了 – -。。。
 
-[![device-2013-06-16-075039](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/device-2013-06-16-075039-300x200.png)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/device-2013-06-16-075039.png)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/device-2013-06-16-075039.png)
 
 现实与梦幻的界限渐渐模糊了的感觉。。。
 
-[![device-2013-06-17-132255](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/device-2013-06-17-132255-200x300.png)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/device-2013-06-17-132255.png)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/device-2013-06-17-132255.png)
 
 人物的 Avatar 在街景里也能看到，下图藏了“胸针”~
 
-[![Screen Shot 2013-06-18 at 1.42.23 AM](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/Screen-Shot-2013-06-18-at-1.42.23-AM-300x177.png)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/Screen-Shot-2013-06-18-at-1.42.23-AM.png)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/Screen-Shot-2013-06-18-at-1.42.23-AM.png)
 
 为了方便 Debug, 我加了个显示进程用的功能，既容易发现问题，用户也可以看到数据传输的动态，自行控制。
 
-[![processing](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/processing-200x300.png)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/processing.png) [  
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/processing.png) [  
 ![show_process](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/show_process-200x300.png)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/show_process.png)
 
 <span style="text-decoration: underline;">  

@@ -5,7 +5,7 @@ title: EECS376 Foundations of Computer Science Midterm Review
 
 A post about *Foundations of Computer Science* midterm review. Finite automata and Turing machines are the two major parts of this exam.
 
-[![Screen Shot 2013-03-11 at 8.27.48 PM](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/03/Screen-Shot-2013-03-11-at-8.27.48-PM.png)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/03/Screen-Shot-2013-03-11-at-8.27.48-PM.png)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/03/Screen-Shot-2013-03-11-at-8.27.48-PM.png)
 
 # Closure
 
@@ -57,7 +57,7 @@ Given any q-state DFA, there is an equivalent NFA with at most 2^q states.
 When building a DFA for a single language, sometimes the number of states should depend on the length of the input.  
  False. The denition of DFA requires that \there exists a machine such that, for all input…”
 
-[![Screen Shot 2013-03-12 at 4.26.17 AM](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/03/Screen-Shot-2013-03-12-at-4.26.17-AM.png)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/03/Screen-Shot-2013-03-12-at-4.26.17-AM.png) [![Screen Shot 2013-03-12 at 4.14.20 AM](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/03/Screen-Shot-2013-03-12-at-4.14.20-AM.png)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/03/Screen-Shot-2013-03-12-at-4.14.20-AM.png) [![Screen Shot 2013-03-12 at 4.12.47 AM](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/03/Screen-Shot-2013-03-12-at-4.12.47-AM.png)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/03/Screen-Shot-2013-03-12-at-4.12.47-AM.png) [![Screen Shot 2013-03-12 at 4.32.03 AM](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/03/Screen-Shot-2013-03-12-at-4.32.03-AM.png)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/03/Screen-Shot-2013-03-12-at-4.32.03-AM.png)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/03/Screen-Shot-2013-03-12-at-4.32.03-AM.png)
 
 When simulating a two-tape TM M by an ordinary TM M′, for any M, one can always arrange that the head positions of M can be determined from the head position of M′ and the state of M′.  
  False. There are innitely many possible head positions for M′, which cannot be recorded in the nite state space of M. The head of M must be free to move and cannot code anything.

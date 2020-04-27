@@ -64,7 +64,6 @@ title: about
 date: 2020-02-23 19:20:33
 layout: about
 ---
-
 You can write the content here
 Support Markdown, HTML
 ```
@@ -75,33 +74,33 @@ Support Markdown, HTML
 
 ## Features
 
-- [x] Image lazyload
-- [x] Custom code highlighting scheme
-- [x] Internationalization
-- [x] Support for multiple comment plugins
-- [x] Support for storing configuration in [Data Files](https://hexo.io/docs/data-files.html)
-- [x] Custom static resource CDN
-- [x] Detailed [documents](https://hexo.fluid-dev.com/docs/en/)
-- [x] Built-in search plugin
-- [x] Website analysis
-- [x] Support for LaTeX
-- [x] Support for mermaid
-- [x] Music player
+-   [x] Image lazyload
+-   [x] Custom code highlighting scheme
+-   [x] Internationalization
+-   [x] Support for multiple comment plugins
+-   [x] Support for storing configuration in [Data Files](https://hexo.io/docs/data-files.html)
+-   [x] Custom static resource CDN
+-   [x] Detailed [documents](https://hexo.fluid-dev.com/docs/en/)
+-   [x] Built-in search plugin
+-   [x] Website analysis
+-   [x] Support for LaTeX
+-   [x] Support for mermaid
+-   [x] Music player
 
 ## FAQ
 
 #### Code highlighting exception
 
-- Please confirm that the above "Turn off default highlighting" step has been completed.
-- Try "clean" command: `hexo clean && hexo g` `hexo clean && hexo g`
+-   Please confirm that the above "Turn off default highlighting" step has been completed.
+-   Try "clean" command: `hexo clean && hexo g` `hexo clean && hexo g`
 
 #### Configuration cannot take effect
 
-- Please check if the configuration file conforms to the yml syntax, such as spaces after the colon, 2 spaces for indentation, etc.
+-   Please check if the configuration file conforms to the yml syntax, such as spaces after the colon, 2 spaces for indentation, etc.
 
 ## Contributors
 
-[![contributors](https://opencollective.com/hexo-theme-fluid/contributors.svg?width=890&button=false)](https://github.com/fluid-dev/hexo-theme-fluid/graphs/contributors)
+![](https://github.com/fluid-dev/hexo-theme-fluid/graphs/contributors)
 
 English docs translator：[@EatRice](https://eatrice.top/) [@橙子杀手](https://ruru.eatrice.top)
 
@@ -109,4 +108,4 @@ Contributors outside PR：[@zhugaoqi](https://github.com/zhugaoqi) [@julydate](h
 
 ## Star trending
 
-[![Stargazers over time](https://starchart.cc/fluid-dev/hexo-theme-fluid.svg)](https://starchart.cc/fluid-dev/hexo-theme-fluid)
+![](https://starchart.cc/fluid-dev/hexo-theme-fluid)

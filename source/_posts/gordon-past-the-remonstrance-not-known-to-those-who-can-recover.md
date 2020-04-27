@@ -5,7 +5,7 @@ title: "\u609F\u5DF2\u5F80\u4E4B\u4E0D\u8C0F,\u77E5\u6765\u8005\u4E4B\u53EF\u8FF
 
 Panda Express 每次去吃会有 Fortune Cookie 拿～
 
-[![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2011/01/b_large_JcBe_11b10007f23a5c40.jpg)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2011/01/b_large_JcBe_11b10007f23a5c40.jpg)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2011/01/b_large_JcBe_11b10007f23a5c40.jpg)
 
 Yesterday is a history, tomorrow is a mystery, but today is a gift, that is why it is called Present.
 

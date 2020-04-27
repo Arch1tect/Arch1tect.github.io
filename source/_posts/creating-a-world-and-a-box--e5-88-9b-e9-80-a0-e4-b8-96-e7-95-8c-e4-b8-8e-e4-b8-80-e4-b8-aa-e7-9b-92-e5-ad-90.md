@@ -46,7 +46,7 @@ Sweet, we have finished everything for now. Mr happyBox should be happy falling 
 
 ---
 
-[![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/03/box2ddiagramnew-1024x1024.jpg "box2ddiagramnew")](http://box2dweb.com/blog/2012/03/03/core-concepts-%e6%a0%b8%e5%bf%83%e6%a6%82%e5%bf%b5/box2ddiagramnew/)
+![](http://box2dweb.com/blog/2012/03/03/core-concepts-%e6%a0%b8%e5%bf%83%e6%a6%82%e5%bf%b5/box2ddiagramnew/)
 
 **创造 Box2d 世界**
 

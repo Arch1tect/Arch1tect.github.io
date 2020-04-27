@@ -9,7 +9,7 @@ title: "Flappy Bird\u4E0E\u624B\u673A\u6E38\u620F"
 
 我想如果我只是偶然从 Google Play 下载了这个游戏，玩了几下发现第一个管子就过不去， 我不会这么耐着性子几个小时的反复挑战。事实上看到它在 Google Play 平平的游戏介绍和截图，我根本就不会想要去下载，加上我本身特别不喜欢 classic pixel 这种风格。 而正是因为我读了相关的报道，并且看到 SNS 上很多人发状态提到这个游戏是多么虐心，我才会特别有耐心的去玩这个游戏。 看到有的人说只能过到第三关，有的人说辛苦了一个下午终于过了 50 关，让我越发好奇自己大概能过多少关。 虽然游戏本身突然撞管的猝死也使得玩家很不甘心，想要继续挑战，但我认为媒体效应在这个游戏的传播中还是占了主要。这个游戏不按常理出牌成为了它最大的卖点。
 
-[![Screenshot_2014-02-09-22-43-18](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2014/02/Screenshot_2014-02-09-22-43-18-168x300.png)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2014/02/Screenshot_2014-02-09-22-43-18.png)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2014/02/Screenshot_2014-02-09-22-43-18.png)
 
 **一天收入五万美金？**
 

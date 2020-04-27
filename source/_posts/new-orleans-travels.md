@@ -11,7 +11,7 @@ title: "\u65B0\u5965\u5C14\u826F\u6E38\u8BB0"
 
 在广场随便拍了几张照片：
 
-[![Exif_JPEG_PICTURE](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/12/R0015592-300x225.jpg)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/12/R0015592.jpg "Statue of General Andrew Jackson") [![Exif_JPEG_PICTURE](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/12/R0015594-300x225.jpg)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/12/R0015594.jpg "Statue of General Andrew Jackson") [![Exif_JPEG_PICTURE](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/12/R0015595-300x225.jpg)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/12/R0015595.jpg) [![Exif_JPEG_PICTURE](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/12/R0015597-300x225.jpg)](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/12/R0015597.jpg)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/12/R0015597.jpg)
 
 Jackson Square 最早是法国人修建的，原名 Place d’Armes (parade ground)。
 

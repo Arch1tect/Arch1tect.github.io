@@ -31,7 +31,7 @@ title: Fall Break, Start!
 
 照片如下，点击放大：
 
-[![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/10/lol-300x199.jpg "lol")](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/10/lol.jpg)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2012/10/lol.jpg)
 
 你也可以试试推理~ 首先要分析出是这是在哪里。
 
