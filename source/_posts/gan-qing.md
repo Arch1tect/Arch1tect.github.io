@@ -3,6 +3,7 @@ banner_img: https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/image
 date: "2019-09-09 09:19:56"
 index_img: https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/2019/09/IMG_1361.jpg
 title: "\u544A\u4E00\u6BB5\u843D\uFF0C\u8BA4\u8BC6\u65B0\u670B\u53CB"
+category: life
 ---
 
 一年前已经和前女友分手了，然而她去年搬去新公寓的时候发现新公寓有蚊虫，甚至还有 bed bug，于是第二天就跑回来我家继续住了，结果我们又一起住了一年。今年开学，她搬进了学校附近的公寓，而我，终于是孤身一人了。

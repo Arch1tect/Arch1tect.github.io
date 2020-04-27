@@ -8,7 +8,7 @@ category: life
 
 这是我第一次跳槽，一共面了五家公司，其中 Amazon, Hulu 等四家公司给了我 offer, 没有给我 offer 的是硅谷的大数据公司 Palantir，我最终决定去位于加州圣莫妮卡的 Hulu。
 
-从建筑设计到计算机科学
+## 从建筑设计到计算机科学
 
 我毕业后在一家互联网创业公司工作了一年有余，这次跳槽投了不少简历，然而给我面试机会的公司并不多，我的简历确实差强人意，关键是差在没有实习经验上，如果招聘者要在面试前进行简单的筛选，那么去掉没有实习的应届生应该是最常见的选择之一。我身边的小伙伴们对找工作都很上心，毕业前就干了好几个暑假的实习，更直接拿了 Amazon, Google 和 Facebook 等巨头的 return offer，为什么我的简历里连一个实习经历都没有呢？说来话长，我是读建筑设计专业的，每个学期的主要的任务就是发散思维，学习做各种抽象的概念设计，这些抽象的概念虽然最后总要用建筑的语言实现，我却逐渐感到建筑的表达方式（通过材质选取，空间分割，光线以及环境搭配等等）比较局限，最关键的是自己的概念想法最后只能生成模型和渲染图供教授和同学们点评，要想真的被建造出来，投入使用，还有太长太长的路。
 
@@ -20,5 +20,42 @@ category: life
 
 ![](/post_img/building_savoy.jpg)
 ![](/post_img/building_savoy2.jpg)
-![](/post_img/glasshouse.jpg)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/arch/1.jpg)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/arch/2.jpg)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/arch/3.jpg)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/arch/4.jpg)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/arch/5.jpg)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/arch/6.jpg)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/arch/7.jpg)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/arch/8.jpg)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/arch/9.jpg)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/arch/10.jpg)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/arch/11.jpg)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/arch/12.jpg)
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/arch/13.jpg)
+
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/arch/14.jpg)
+
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/arch/15.jpg)
+
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/arch/16.jpg)
+
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/arch/17.jpg)
+
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/arch/18.jpg)
+
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/arch/19.jpg)
+
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/arch/20.jpg)
+
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/arch/21.jpg)
+
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/arch/22.jpg)
+
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/arch/23.jpg)
+
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/arch/24.jpg)
+
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/arch/25.jpg)
+
 ![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2014/02/mearchgoku.jpg)
