@@ -61,7 +61,14 @@ custom_js: https://yiyesite.s3-ap-southeast-1.amazonaws.com/build/content-static
     # https://yiyechat.com/build/content-static/js/main.js # 指定自定义 js 文件路径，路径是相对 source 目录，如 /js/custom.js，支持列表
 custom_css: https://yiyesite.s3-ap-southeast-1.amazonaws.com/build/content-static/css/main.css
     # https://yiyechat.com/build/content-static/css/main.css # 指定自定义 css 文件路径，路径是相对 source 目录，如 /css/custom.css，支持列表
-custom_html: "<script>
+custom_html: "
+<style>
+    .post-content video {
+        max-width: 100%;
+        margin: 10px;
+    }
+</style>
+<script>
     window.spConfig = window.spConfig || {};
     window.spConfig.icon = {
         verticalCenter: true
@@ -223,7 +230,8 @@ post: # 部分配置同时控制自定义页面，注意备注
         enable: true
         content: '
         本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" rel="nofollow noopener">CC BY-SA 3.0协议</a> 。转载请注明出处！
-        <center style="cursor:pointer;" onclick="window.toggleChatbox()" >
+        <center>
+        <div style="cursor:pointer;  display: inline-block;" onclick="window.toggleChatbox()" >
             <div style="
                 width: 40px;
                 height: 40px;
@@ -233,6 +241,7 @@ post: # 部分配置同时控制自定义页面，注意备注
                 background-image: url(/img/chat_icon.png);
             "></div>
             <span>留言</span>
+        </div>
         </center>
         '
     prev_next: # 文章底部上一篇下一篇功能

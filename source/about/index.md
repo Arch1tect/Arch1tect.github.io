@@ -14,3 +14,17 @@ layout: about
 #### 关于该网站的弹幕留言系统
 
 这个留言系统是我自己开发的，叫做[一叶](/2019/09/28/kai-yuan-yi-xie/)，是一个开源项目，欢迎感兴趣的朋友使用或者一起来开发！
+
+<center>
+<div style="cursor:pointer; margin-top:50px; display: inline-block;" onclick="window.toggleChatbox()" >
+    <div style="
+        width: 40px;
+        height: 40px;
+        display: block;
+        margin: 5px;
+        background-size: cover;
+        background-image: url(/img/chat_icon.png);
+    "></div>
+    <span>留言</span>
+</div>
+</center>

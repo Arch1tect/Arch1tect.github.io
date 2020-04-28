@@ -9,6 +9,6 @@ title: "Avril\u6D1B\u6749\u77F6\u6F14\u5531\u4F1A"
 
 我很少去演唱会，但这种每首歌都会唱的演唱会体验真的很好，以后还可以多去去！但是要避免下班时间，交通真糟糕。
 
-  <video controls="true" allowfullscreen="true">
+  <video width="100%" controls="true" allowfullscreen="true">
     <source src="/video/avril_concert.mp4" type="video/mp4">
   </video>
