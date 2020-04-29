@@ -1,5 +1,4 @@
 ---
-banner_img: https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/device-2013-06-22-204230.png
 date: "2013-06-23 00:32:40"
 index_img: https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/device-2013-06-22-204230.png
 title: FaceMap v8.0
@@ -25,6 +24,8 @@ FaceMap  的开发总是伴着时刻不停的 StackOverflow 查询，因为感�
 选择发送私信给用户：
 
 ![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/device-2013-06-22-202814.png)
+
+![](https://architech-blog.s3-ap-southeast-1.amazonaws.com/content/images/uploads/2013/06/device-2013-06-22-204230.png)
 
 私信目前我只是设置了收件箱和发件箱而已：
 
