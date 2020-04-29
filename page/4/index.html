@@ -157,58 +157,6 @@
     
     
     <div class="col-12 col-md-12 mx-auto index-info">
-      <a class="index-header" href="/2015/11/02/migrate-images-from-wordpress-to-ghost/">Migrate images from Wordpress to Ghost without 3rd party hosting</a>
-
-      <a href="/2015/11/02/migrate-images-from-wordpress-to-ghost/" class="index-excerpt">
-        
-        
-          
-        
-        <div>Ghost made it easy to migrate posts from Wordpress through some json import/export, however, the images can’t be migrated that way. I found some tutorials about uploading images to 3rd party like Clou</div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>&nbsp;2015-11-02
-          </div>
-        
-        
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <div class="col-12 col-md-12 mx-auto index-info">
-      <a class="index-header" href="/2015/11/01/aws-ebs-still-charges-when-attached-instance-stop/">AWS EBS still charges after attached instance stop</a>
-
-      <a href="/2015/11/01/aws-ebs-still-charges-when-attached-instance-stop/" class="index-excerpt">
-        
-        
-          
-        
-        <div>I was examining my bills from AWS, it’s about $40 monthly which isn’t much. But I don’t use much of its computing power either. So I looked into it and found that I was charged $10 for about 100GB of </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>&nbsp;2015-11-01
-          </div>
-        
-        
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <div class="col-12 col-md-12 mx-auto index-info">
       <a class="index-header" href="/2015/10/31/ghostzai-wen-zhang-ye-mian-zeng-jia-bian-ji-lian-jie/">Ghost在文章页面增加编辑链接</a>
 
       <a href="/2015/10/31/ghostzai-wen-zhang-ye-mian-zeng-jia-bian-ji-lian-jie/" class="index-excerpt">
@@ -436,6 +384,72 @@ r</div>
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>&nbsp;2015-10-25
+          </div>
+        
+        
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <div class="col-12 col-md-12 mx-auto index-info">
+      <a class="index-header" href="/2015/10/24/run-ghost-with-forever/">运行Ghost（Forever）</a>
+
+      <a href="/2015/10/24/run-ghost-with-forever/" class="index-excerpt">
+        
+        
+          
+        
+        <div>接下来继续编辑config.js，将端口从2368改成80，并且将url改成服务器的地址。
+因为AWS EC2每次重启都会重新分配IP，我申请了Elastic IP并绑定到了当前instance上。
+如果仍然用下面的命令去运行Ghost，当前用户一旦关掉连接，这个Process也会停止。
+$ npm start --production
+Forever comes for rescue!
+用For</div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>&nbsp;2015-10-24
+          </div>
+        
+        
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <div class="col-12 col-md-12 mx-auto index-info">
+      <a class="index-header" href="/2015/10/24/an-zhuang-ghost/">安装Ghost （AWS EC2）</a>
+
+      <a href="/2015/10/24/an-zhuang-ghost/" class="index-excerpt">
+        
+        
+          
+        
+        <div>终于成功装好了Ghost,昨晚试了好久一直不成功今天才发现明明端口是2368，但我一直在试2386。。。 
+具体步骤
+
+安装Node 0.10.40版本
+下载安装Ghost:
+
+下载Ghost
+$ curl -L https://ghost.org/zip/ghost-latest.zip -o ghost.zip
+解压缩到特定文件夹
+$ unzip -uo ghost.zip -d /var/w</div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>&nbsp;2015-10-24
           </div>
         
         
